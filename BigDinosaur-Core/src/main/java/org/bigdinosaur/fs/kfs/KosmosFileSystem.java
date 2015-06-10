@@ -32,8 +32,8 @@ import org.bigdinosaur.fs.FileStatus;
 import org.bigdinosaur.fs.FileSystem;
 import org.bigdinosaur.fs.FileUtil;
 import org.bigdinosaur.fs.Path;
+import org.bigdinosaur.fs.permission.FsPermission;
 import org.bigdinosaur.util.Progressable;
-import org.hadoop.fs.permission.FsPermission;
 
 /**
  * A FileSystem backed by KFS.

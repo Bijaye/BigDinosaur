@@ -22,7 +22,7 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 import org.bigdinosaur.fs.FsShell.CmdHandler;
-import org.hadoop.fs.permission.FsPermission;
+import org.bigdinosaur.fs.permission.FsPermission;
 
 
 /**

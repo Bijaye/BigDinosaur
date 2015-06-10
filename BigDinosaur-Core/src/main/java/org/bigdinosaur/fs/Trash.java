@@ -23,8 +23,8 @@ import java.util.Date;
 
 import org.apache.commons.logging.*;
 import org.bigdinosaur.conf.*;
+import org.bigdinosaur.fs.permission.*;
 import org.bigdinosaur.util.StringUtils;
-import org.hadoop.fs.permission.*;
 
 /** Provides a <i>trash</i> feature.  Files are moved to a user's trash
  * directory, a subdirectory of their home directory named ".Trash".  Files are

@@ -25,9 +25,9 @@ import java.util.zip.CRC32;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.bigdinosaur.conf.Configuration;
+import org.bigdinosaur.fs.permission.FsPermission;
 import org.bigdinosaur.util.Progressable;
 import org.bigdinosaur.util.StringUtils;
-import org.hadoop.fs.permission.FsPermission;
 
 /****************************************************************
  * Abstract Checksumed FileSystem.

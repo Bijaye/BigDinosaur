@@ -15,7 +15,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.hadoop.fs.permission;
+package org.bigdinosaur.fs.permission;
 
 import org.bigdinosaur.conf.Configuration;
 import org.bigdinosaur.io.*;

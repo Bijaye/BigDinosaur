@@ -21,7 +21,7 @@ package org.bigdinosaur.security;
  * An exception class for access control related issues.
  */
 public class AccessControlException 
-    extends org.hadoop.fs.permission.AccessControlException {
+    extends org.bigdinosaur.fs.permission.AccessControlException {
 
   //Required by {@link java.io.Serializable}.
   private static final long serialVersionUID = 1L;

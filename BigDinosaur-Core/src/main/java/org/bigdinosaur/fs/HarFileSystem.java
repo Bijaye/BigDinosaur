@@ -25,10 +25,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.bigdinosaur.conf.Configuration;
+import org.bigdinosaur.fs.permission.FsPermission;
 import org.bigdinosaur.io.Text;
 import org.bigdinosaur.util.LineReader;
 import org.bigdinosaur.util.Progressable;
-import org.hadoop.fs.permission.FsPermission;
 
 /**
  * This is an implementation of the Hadoop Archive 

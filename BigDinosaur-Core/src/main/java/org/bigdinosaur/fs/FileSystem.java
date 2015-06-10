@@ -39,11 +39,11 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.bigdinosaur.conf.Configuration;
 import org.bigdinosaur.conf.Configured;
+import org.bigdinosaur.fs.permission.FsPermission;
 import org.bigdinosaur.io.MultipleIOException;
 import org.bigdinosaur.security.UserGroupInformation;
 import org.bigdinosaur.util.Progressable;
 import org.bigdinosaur.util.ReflectionUtils;
-import org.hadoop.fs.permission.FsPermission;
 
 /****************************************************************
  * An abstract base class for a fairly generic filesystem.  It

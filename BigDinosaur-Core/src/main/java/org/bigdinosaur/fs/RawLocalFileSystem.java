@@ -31,10 +31,10 @@ import java.nio.ByteBuffer;
 import java.util.StringTokenizer;
 
 import org.bigdinosaur.conf.Configuration;
+import org.bigdinosaur.fs.permission.FsPermission;
 import org.bigdinosaur.util.Progressable;
 import org.bigdinosaur.util.Shell;
 import org.bigdinosaur.util.StringUtils;
-import org.hadoop.fs.permission.FsPermission;
 
 /****************************************************************
  * Implement the FileSystem API for the raw local filesystem.

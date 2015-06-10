@@ -18,7 +18,7 @@
 
 package org.bigdinosaur.util;
 
-import org.bigdinosaur.HadoopVersionAnnotation;
+import org.bigdinosaur.BigDinosaurVersionAnnotation;
 
 /**
  * This class finds the package info for Hadoop and the HadoopVersionAnnotation
@@ -26,11 +26,11 @@ import org.bigdinosaur.HadoopVersionAnnotation;
  */
 public class VersionInfo {
   private static Package myPackage;
-  private static HadoopVersionAnnotation version;
+  private static BigDinosaurVersionAnnotation version;
   
   static {
-    myPackage = HadoopVersionAnnotation.class.getPackage();
-    version = myPackage.getAnnotation(HadoopVersionAnnotation.class);
+    myPackage = BigDinosaurVersionAnnotation.class.getPackage();
+    version = myPackage.getAnnotation(BigDinosaurVersionAnnotation.class);
   }
 
   /**

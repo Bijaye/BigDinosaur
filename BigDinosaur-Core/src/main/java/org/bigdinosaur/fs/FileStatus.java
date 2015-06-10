@@ -21,9 +21,9 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
+import org.bigdinosaur.fs.permission.FsPermission;
 import org.bigdinosaur.io.Text;
 import org.bigdinosaur.io.Writable;
-import org.hadoop.fs.permission.FsPermission;
 
 /** Interface that represents the client side information for a file.
  */

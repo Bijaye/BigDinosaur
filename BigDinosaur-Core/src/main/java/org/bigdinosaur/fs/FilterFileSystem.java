@@ -22,8 +22,8 @@ import java.io.*;
 import java.net.URI;
 
 import org.bigdinosaur.conf.Configuration;
+import org.bigdinosaur.fs.permission.FsPermission;
 import org.bigdinosaur.util.Progressable;
-import org.hadoop.fs.permission.FsPermission;
 
 /****************************************************************
  * A <code>FilterFileSystem</code> contains

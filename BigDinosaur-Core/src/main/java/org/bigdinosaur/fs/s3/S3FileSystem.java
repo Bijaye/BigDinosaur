@@ -33,12 +33,12 @@ import org.bigdinosaur.fs.FSDataOutputStream;
 import org.bigdinosaur.fs.FileStatus;
 import org.bigdinosaur.fs.FileSystem;
 import org.bigdinosaur.fs.Path;
+import org.bigdinosaur.fs.permission.FsPermission;
 import org.bigdinosaur.fs.s3native.NativeS3FileSystem;
 import org.bigdinosaur.io.retry.RetryPolicies;
 import org.bigdinosaur.io.retry.RetryPolicy;
 import org.bigdinosaur.io.retry.RetryProxy;
 import org.bigdinosaur.util.Progressable;
-import org.hadoop.fs.permission.FsPermission;
 
 /**
  * <p>

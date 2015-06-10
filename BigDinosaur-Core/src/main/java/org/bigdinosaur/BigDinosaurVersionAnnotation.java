@@ -24,7 +24,7 @@ import java.lang.annotation.*;
  */
 @Retention(RetentionPolicy.RUNTIME)
 @Target(ElementType.PACKAGE)
-public @interface HadoopVersionAnnotation {
+public @interface BigDinosaurVersionAnnotation {
  
   /**
    * Get the Hadoop version
