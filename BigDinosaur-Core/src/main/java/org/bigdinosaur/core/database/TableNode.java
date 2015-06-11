@@ -4,4 +4,20 @@ public class TableNode
 {
 String tablename;
 BdFile filename;
+public String getTablename()
+{
+  return tablename;
+}
+public BdFile getFilename()
+{
+  return filename;
+}
+public void setTablename(String tablename)
+{
+  this.tablename = tablename;
+}
+public void setFilename(BdFile filename)
+{
+  this.filename = filename;
+}
 }
