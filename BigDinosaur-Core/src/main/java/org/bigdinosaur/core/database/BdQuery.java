@@ -15,6 +15,7 @@ String endbdquery;// this field Narrow down searching criteria
 //local:file
 
 //example II
-//it implies search local file system all file directories with history data
+//it implies search local file system all file directories with history data.History data 
+// is the type of data 
 //local:file:historyDb
 }
