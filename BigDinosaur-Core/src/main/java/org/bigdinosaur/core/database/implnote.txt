@@ -1,3 +1,4 @@
-Update1:Every BigDinosaur Framework objects must possess BdCore character
+Update1:Every BigDinosaur Framework objects must possess BdCore characteristics
+BdCore as main interface is finalized
 Analyzing the pattern till now data structure takes 1 level branch of tree .
 BFileRow and NTableNode classes can be considered for tree nodes .BfileRow has pointing reference to  NTableNode
