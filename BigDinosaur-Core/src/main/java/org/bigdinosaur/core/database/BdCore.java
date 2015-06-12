@@ -8,7 +8,7 @@ public interface BdCore
  Object getAsBdTableNode(Object o);
  Object getAsBdQuery(Object o);
  Object getAsBdFileRow(Object o);
- // Universal Map scope is Global within the application .Any time can get value 
+ // Universal Map scope is Global within the application .Any time can get value from key
  Object AddOnUniversalMap(Object key,Object value);
  
  
