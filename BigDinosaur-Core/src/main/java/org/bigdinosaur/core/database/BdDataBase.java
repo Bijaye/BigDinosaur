@@ -6,7 +6,7 @@ public class BdDataBase
 {
   String databasename;
   String databasepath;
-  ArrayList<TableNode> tablenode=new ArrayList<TableNode>();
+  ArrayList<BdTableNode> tablenode=new ArrayList<BdTableNode>();
 public String getDatabasename()
   {
     return databasename;
@@ -15,7 +15,7 @@ public String getDatabasename()
   {
     return databasepath;
   }
-  public ArrayList<TableNode> getTablenode()
+  public ArrayList<BdTableNode> getTablenode()
   {
     return tablenode;
   }
@@ -27,7 +27,7 @@ public String getDatabasename()
   {
     this.databasepath = databasepath;
   }
-  public void setTablenode(ArrayList<TableNode> tablenode)
+  public void setTablenode(ArrayList<BdTableNode> tablenode)
   {
     this.tablenode = tablenode;
   }
