@@ -14,6 +14,7 @@ public interface BdCore
  Boird getBoird();
  BdSpace getBdSpace();
  BdSession getBdSession();
+ BdAcl getBdAcl();
  
  
 
