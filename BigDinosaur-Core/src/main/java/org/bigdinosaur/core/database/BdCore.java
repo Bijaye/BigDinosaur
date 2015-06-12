@@ -10,6 +10,10 @@ public interface BdCore
  Object getAsBdFileRow(Object o);
  // Universal Map scope is Global within the application .Any time can get value from key
  Object AddOnUniversalMap(Object key,Object value);
+ BdCore getBdCore();
+ Boird getBoird();
+ BdSpace getBdSpace();
+ BdSession getBdSession();
  
  
 
