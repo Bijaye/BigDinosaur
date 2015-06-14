@@ -10,3 +10,15 @@ Algorithm version 0.0
 4.Read no of map value .Say suppose map=10.Then distribute 100/10 files into slave clusters.BdSlave class represent it.
 5.File is distributed on locations slave cluster file system .It is part of BDDfs.
 6.Processing starts on the basis of map reduce business logic 
+7.Access to read and write is done via master .If client want to delete blocks ,read blocks i.e i.o operations then client access master and master calls slave 
+8.Acl is applied on this session
+
+Impl
+Capturing data
+Curation
+Storage
+Searching
+Sharing
+Transfer
+Analysis
+Presentation
