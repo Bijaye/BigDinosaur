@@ -1,6 +1,6 @@
 package org.bigdinosaur.core.database;
 
-public class Boird
+public class Boid
 {
 
 }
