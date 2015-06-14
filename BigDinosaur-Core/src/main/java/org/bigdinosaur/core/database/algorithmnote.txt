@@ -1,0 +1,12 @@
+Update1:Every BigDinosaur Framework objects must possess BdCore characteristics
+BdCore as main interface is finalized
+Analyzing the pattern till now data structure takes 1 level branch of tree .
+BFileRow and NTableNode classes can be considered for tree nodes .BfileRow has pointing reference to  NTableNode
+
+Algorithm version 0.0
+1 Start master node
+2.Start Slaves node
+3.Copy files from normal location of files to BDfilesystem.It exists in master node but has reference to all slave filesyetm.Say suppose exists 100 files
+4.Read no of map value .Say suppose map=10.Then distribute 100/10 files into slave clusters.BdSlave class represent it.
+5.File is distributed on locations slave cluster file system .It is part of BDDfs.
+6.Processing starts on the basis of map reduce business logic 
