@@ -22,3 +22,9 @@ Sharing
 Transfer
 Analysis
 Presentation
+
+BigDinosaur uses own Database system for file store integrated as core part of platform 
+File read algorithm
+ 1 read from .data that exists on some directory
+  2 Create BdFileNode object by reading every row .
+  3Every row represent BdFileNode

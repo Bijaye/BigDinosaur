@@ -5,6 +5,8 @@ import java.util.ArrayList;
 public class BdFile
 {
 String filename;
+String filepath;
+int  tableindex;
 public String getFilename()
 {
   return filename;
