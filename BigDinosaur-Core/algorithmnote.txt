@@ -22,3 +22,71 @@ Sharing
 Transfer
 Analysis
 Presentation
+
+Impl Parts:
+DNS round robin look on that as the part of request identify
+.See reference image 
+
+
+capabilities of platform 
+BDFS over HTTP
+1.provides a REST HTTP gateway to BDFS with full
+filesystem read & write capabilities.
+
+2.Must be able to browse the file bdfs from web .
+For example:User is populated combo with file lineage or combo with blocks .But the file lineage is part of
+big dinosaur file system and is distributed and only name node about its abstraction that is distributed on
+data nodes
+3.user must be able to see the view of data node and name nodes from browser .later impl 
+
+
+what hadoop has adopted
+Kerberos SPNEGO for auth
+
+BigDinosaur uses own Database system for file store integrated as core part of platform 
+File read algorithm
+  1 read from .data that exists on some directory
+  2 Create BdFileNode object by reading every row .
+  3 Every row represent BdFileNode
+  
+  Target Of processing 
+  First:
+ Data Size= 500 GB 
+ Running Tasks:12000
+ Seconds:
+ Consideration:waste,reduce,merge,shuffle,maps
+ 
+   Second:
+ Data Size= PetaByte
+ Running Tasks:35000
+ Minutes:
+ Consideration:waste,reduce,merge,shuffle,maps
+ 
+  Data Size= TeraByte
+ Running Tasks:12000
+ Minutes:
+ Consideration:waste,reduce,merge,shuffle,maps
+ 
+   Data Size= 100TeraByte
+ Running Tasks:30000
+ Minutes:
+ Consideration:waste,reduce,merge,shuffle,maps
+ 
+ 
+ Must able to run under big dinosaur
+ Knuth's dancing links algorithm 
+ Bailey-Borwein-Plouffe to compute exact 
+ * digits of Pi
+ 
+ Examples it must solve 
+ A map/reduce program that counts the words in the input files
+ A map/reduce program that counts the average length of the words in the input files
+ A map/reduce program that counts the median length of the words in the input files
+ A map/reduce program that counts the standard deviation of the length of the words in the input files
+ An Aggregate based map/reduce program that counts the words in the input files
+ An Aggregate based map/reduce program that computes the histogram of the words in the input files
+ A map/reduce program that counts the matches of a regex in the input
+ A map/reduce program that writes 10GB of random data per node
+ A map/reduce program that writes 10GB of random textual data per node
+ A map/reduce program that sorts the data written by the random writer
+ 
