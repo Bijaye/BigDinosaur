@@ -37,7 +37,23 @@ filesystem read & write capabilities.
 For example:User is populated combo with file lineage or combo with blocks .But the file lineage is part of
 big dinosaur file system and is distributed and only name node about its abstraction that is distributed on
 data nodes
-3.user must be able to see the view of data node and name nodes from browser .later impl 
+3.user must be able to see the view of data node and name nodes from browser .Like browse block ,browse directory
+4.Browse distributed file system contents from web browser 
+5.Browse dfs health status
+6.Browse job history
+7.Browse job details 
+8.Browse job failues 
+9.Browse job queue details
+10.Browse job tasks
+11.Browse job tasks history 
+12.Browse job tracker 
+13.Browse load history
+14.Browse machines 
+15.Browse task details 
+16.Browse task detail history
+
+
+later impl 
 
 
 what hadoop has adopted

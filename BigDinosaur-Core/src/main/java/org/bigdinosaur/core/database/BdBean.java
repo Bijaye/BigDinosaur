@@ -1,4 +1,5 @@
-package com.bigdinosaur.event;
+package org.bigdinosaur.core.database;
+
 
 import java.util.HashMap;
 import java.util.Map;
