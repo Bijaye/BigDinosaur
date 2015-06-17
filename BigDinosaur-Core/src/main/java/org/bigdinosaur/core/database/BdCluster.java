@@ -14,6 +14,14 @@ Object getJvmavailableMemory();
 Object getJvmTotalMemory();
 Object getNoOfClusterRunningApplicaiton();
 Object getNoOfClusterRunningContainer();
+Object getQueueAllocatedMemory(Object queuename);
+Object getUsuageMemory();
+Object getDemandMemory();
+Object getMaxShareMemory();
+Object getMinShareMemory();
+Object getfairShareMemory();
+// if there are a.txt and b.txt then getInputPathToProcess=2
+Object getInputPathToProcess(Object jobobject);
 
 
 
