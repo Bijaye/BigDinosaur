@@ -1,4 +1,7 @@
 package org.bigdinosaur.core.database;
+
+import java.util.List;
+
 // it is the combination of master node and slaves nodes
 public interface BdCluster
 {
@@ -36,6 +39,11 @@ Object writeObject(Object obj);
 byte[] encodeObjectToByte(Object object);
  Object decodeByteToObject(byte[] value);
  Object getFileSize();
+ // every object is a new type by itself .The character of data it holds determine the 
+ // type of object 
+ List<Object>getTypeList();
+ //convert jdkobject java object to Big Dinosaur object,providing new extra features supported from framework
+ Object makeBdObject(Object jdkobject);
 
 
 
