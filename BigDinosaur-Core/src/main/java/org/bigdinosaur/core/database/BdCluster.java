@@ -20,8 +20,16 @@ Object getDemandMemory();
 Object getMaxShareMemory();
 Object getMinShareMemory();
 Object getfairShareMemory();
+Object writeObjects(Object obj,Object objectlist,Object objecttype);
 // if there are a.txt and b.txt then getInputPathToProcess=2
 Object getInputPathToProcess(Object jobobject);
+Object sendPersistSignal(Object signal);
+Object sendFileUpdateSignal(Object signal);
+Object writeObject(Object obj);
+
+//byte[0],byte[1] ... and so on byte[n]
+//byte[0]=object.getSomeProperty();
+byte[] encodeObjectToByte(Object object);
 
 
 
