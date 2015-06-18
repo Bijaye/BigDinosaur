@@ -17,6 +17,10 @@ Object getNoOfClusterRunningContainer();
 Object getQueueAllocatedMemory(Object queuename);
 Object getUsuageMemory();
 Object getDemandMemory();
+Object getObjectType();
+Object getObjectInstance();
+Object getfileInstance();
+Object getObjectNo();
 Object getMaxShareMemory();
 Object getMinShareMemory();
 Object getfairShareMemory();
@@ -31,6 +35,7 @@ Object writeObject(Object obj);
 //byte[0]=object.getSomeProperty();
 byte[] encodeObjectToByte(Object object);
  Object decodeByteToObject(byte[] value);
+ Object getFileSize();
 
 
 
