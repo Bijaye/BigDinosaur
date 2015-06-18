@@ -30,6 +30,7 @@ Object writeObject(Object obj);
 //byte[0],byte[1] ... and so on byte[n]
 //byte[0]=object.getSomeProperty();
 byte[] encodeObjectToByte(Object object);
+ Object decodeByteToObject(byte[] value);
 
 
 

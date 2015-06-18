@@ -4,6 +4,8 @@ import java.util.ArrayList;
 
 public class BdFile
 {
+  String fileinstance;
+  String objectnstance;
 String filename;
 String filepath;
 int  tableindex;
@@ -24,4 +26,12 @@ public void setFilerow(ArrayList<BdFileRow> filerow)
   this.filerow = filerow;
 }
 ArrayList<BdFileRow> filerow=new ArrayList<BdFileRow>();
+public String getFileinstance()
+{
+  return fileinstance;
+}
+public void setFileinstance(String fileinstance)
+{
+  this.fileinstance = fileinstance;
+}
 }
