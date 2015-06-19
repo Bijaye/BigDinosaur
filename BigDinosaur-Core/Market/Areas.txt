@@ -1,0 +1,13 @@
+Discover event information 
+Research for ad system and web search pattern
+fast storage Backend for millions of documents 
+Processing log on demand analysis
+Trends Prediction 
+Faster data access from web application Filtering and indexing recommendation data 
+email analysis ,machine translation and language modeling 
+Analysing product view data ,risk data and security information 
+process and extract statistics over 1000 of news paper  
+content generation,data data agreggation ,analysis and reporting 
+for recommendation engine 
+personalization and recommendation job flow 
+mine data for recommendation system

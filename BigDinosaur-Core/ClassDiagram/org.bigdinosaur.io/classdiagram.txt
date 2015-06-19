@@ -1,0 +1,1 @@
+TypedBytesWritable extends BytesWritable extends BinaryComparable implements Comparable<BinaryComparable>
