@@ -1,5 +1,6 @@
 package org.bg.core.io.test;
 
+import java.io.ByteArrayOutputStream;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -42,6 +43,11 @@ public class BdReadTest
    FileWriter  out = new FileWriter("output.txt");
    BdWriteI write=new BdWriteI();
    write.writeCharacter(out,data);
+ }
+ static void  testBdByteBuffer() throws IOException{
+   ByteArrayOutputStream baos = new ByteArrayOutputStream();
+   BdWriteI write=new BdWriteI();
+   write.writeByte(baos,data);
  }
 
 }
