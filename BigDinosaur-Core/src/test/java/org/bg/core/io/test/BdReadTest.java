@@ -10,7 +10,8 @@ import java.io.IOException;
 import com.bigdinosaur.core.io.BdInputI;
 import com.bigdinosaur.core.io.BdRead;
 import com.bigdinosaur.core.io.BdWriteI;
-
+// It is applicable after output is written in files .For example map reduce is run and final result is there in 
+// file and which need to be read and send to another server or client 
 public class BdReadTest
 {
   static BdRead data;
