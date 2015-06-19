@@ -1,0 +1,26 @@
+package com.bigdinosaur.core.io;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class BdRead
+{
+List<BdRead> readdata=new ArrayList<BdRead>();
+int i;
+public int getI()
+{
+  return i;
+}
+public void setI(int i)
+{
+  this.i = i;
+}
+public List<BdRead> getReaddata()
+{
+  return readdata;
+}
+public void setReaddata(List<BdRead> readdata)
+{
+  this.readdata = readdata;
+}
+}
