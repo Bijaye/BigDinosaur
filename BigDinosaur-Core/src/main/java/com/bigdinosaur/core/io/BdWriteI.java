@@ -35,9 +35,22 @@ public class BdWriteI implements BdWrite
       catch (IOException e)
       {
       }
-    }
-    return data;
+   
     
     }
+  
+      if (stream != null) {
+        try
+        {
+          stream.close();
+        }
+        catch (IOException e)
+        {
+          e.printStackTrace();
+        }
+     
+  }
+    return data;
 
+}
 }
