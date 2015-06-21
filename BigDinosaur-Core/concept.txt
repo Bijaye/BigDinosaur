@@ -1,0 +1,6 @@
+Definition of data type according to Big Binosaur framework 
+Normally java say int for example as data type 
+but according to bd concept data type is type how u assume data.
+For example collection of positive integer number ranging from 1 to 100 can be considered one data type
+lets give it name posotiverange100datatype which is encapsulated in class BdPosotiveRangeDatatype
+so similar is the concept .Data is very important and it resemblies different data type 
