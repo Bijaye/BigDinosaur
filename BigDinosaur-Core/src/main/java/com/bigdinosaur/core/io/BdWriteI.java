@@ -7,7 +7,8 @@ import java.io.OutputStream;
 
 public class BdWriteI implements BdWrite
 {
-
+//TODO
+ // checking is not done on the basis of data type ,for byte array case 
   @Override
   public BdRead writeByte(OutputStream stream, BdRead data)
   {
