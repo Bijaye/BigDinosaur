@@ -2,13 +2,18 @@ package org.bigdinosaur.core.database;
 
 import java.util.ArrayList;
 
-public class BdFile
+public abstract class BdFile
 {
   String fileinstance;
   String objectnstance;
 String filename;
 String filepath;
 int  tableindex;
+public abstract boolean isEndOfFile();
+public abstract int getFileStart();
+
+public abstract long getRecordCount();
+public abstract long getRecordObjectRow();
 public String getFilename()
 {
   return filename;
@@ -34,4 +39,8 @@ public void setFileinstance(String fileinstance)
 {
   this.fileinstance = fileinstance;
 }
+
+
+  
+
 }
