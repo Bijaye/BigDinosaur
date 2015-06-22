@@ -9,6 +9,8 @@ public abstract class BdFile
 String filename;
 String filepath;
 int  tableindex;
+String dirlocation;
+String desfoldername;
 public abstract boolean isEndOfFile();
 public abstract int getFileStart();
 
@@ -38,6 +40,46 @@ public String getFileinstance()
 public void setFileinstance(String fileinstance)
 {
   this.fileinstance = fileinstance;
+}
+public String getObjectnstance()
+{
+  return objectnstance;
+}
+public String getFilepath()
+{
+  return filepath;
+}
+public int getTableindex()
+{
+  return tableindex;
+}
+public String getDirlocation()
+{
+  return dirlocation;
+}
+public void setObjectnstance(String objectnstance)
+{
+  this.objectnstance = objectnstance;
+}
+public void setFilepath(String filepath)
+{
+  this.filepath = filepath;
+}
+public String getDesfoldername()
+{
+  return desfoldername;
+}
+public void setDesfoldername(String desfoldername)
+{
+  this.desfoldername = desfoldername;
+}
+public void setTableindex(int tableindex)
+{
+  this.tableindex = tableindex;
+}
+public void setDirlocation(String dirlocation)
+{
+  this.dirlocation = dirlocation;
 }
 
 

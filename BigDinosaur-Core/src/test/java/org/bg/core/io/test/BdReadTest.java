@@ -25,7 +25,7 @@ public class BdReadTest extends TestCase
 //    testBdWriteByte();
 //    testBdReadCharacter();
 //    testBdWriteCharacter();
-    testBdByteBuffer();
+//    testBdByteBufferWrite();
   }
   
   public static void  testBdReadByte() throws FileNotFoundException{
@@ -48,7 +48,7 @@ public class BdReadTest extends TestCase
    BdWriteI write=new BdWriteI();
    write.writeCharacter(out,data);
  }
- public static void  testBdByteBuffer() throws IOException{
+ public static void  testBdByteBufferWrite() throws IOException{
    ArrayList<BdRead> dataarray=new ArrayList<BdRead>();
    BdRead data =new BdRead();
    data.setI(11);
@@ -57,7 +57,8 @@ public class BdReadTest extends TestCase
    ByteArrayOutputStream baos = new ByteArrayOutputStream();
    BdWriteI write=new BdWriteI();
    write.writeByte(baos,data);
-   baos.toByteArray();
+   byte[] value= write.getByteArray(baos);
+  
    
   
  }
