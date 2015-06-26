@@ -14,3 +14,43 @@ Facebook search
 what next 
 all search in same ui
 SO MORE tab for search one UI wwith all search capability
+
+
+
+--------------------------------------------------
+Case I:
+read every lines of file
+take out every character 
+encrypt every character n put in another file
+n again decrypt and get original character
+
+
+Case I:
+read every lines of file
+take out every character 
+encrypt every character n put in another file
+n again decrypt and get original character
+for example 
+there is character 
+my name is abishkar 
+take out 
+m
+y
+
+n
+a
+m
+e
+
+i
+s
+
+a
+b
+i
+s
+h
+k
+a
+r
+
