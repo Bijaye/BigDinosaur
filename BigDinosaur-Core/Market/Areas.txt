@@ -11,3 +11,8 @@ content generation,data data agreggation ,analysis and reporting
 for recommendation engine 
 personalization and recommendation job flow 
 mine data for recommendation system
+
+competitor
+teradata
+
+http://www.teradata.com/careers/
