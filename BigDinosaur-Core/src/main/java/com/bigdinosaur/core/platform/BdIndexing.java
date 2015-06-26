@@ -8,5 +8,21 @@ package com.bigdinosaur.core.platform;
   
 public class BdIndexing
 {
-
+  Object getPast(Object obj){
+    return obj;
+    
+  }
+  Object getPresnet(Object obj){
+    return obj;
+    
+  }
+  
+  Object getFuture(Object obj){
+    return obj;
+    
+  }
+  Object getProbabilityFuture(Object obj){
+    return obj;
+    
+  }
 }
