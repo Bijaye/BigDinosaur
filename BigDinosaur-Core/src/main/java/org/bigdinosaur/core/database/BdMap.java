@@ -17,7 +17,7 @@ public class BdMap
     return layersmap;
     
   }
-  HashMap<String, Object> dataMap = null;
+  HashMap<Integer, Object> dataMap = null;
   
   private BdMap(){
 dataMap = new HashMap();
@@ -28,7 +28,7 @@ dataMap = new HashMap();
 return BdEventBean;
   }
   
-  public BdMap add(String key, Object value){
+  public BdMap add(int key, Object value){
 dataMap.put(key, value);
 return this;
   }
