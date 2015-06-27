@@ -19,6 +19,7 @@ Single page ni more tags geting data for google from face book and vice versa
 
 There are lots of work need to be rework to create a better user experience. Unnecessary data load ,unnecessary click ,repetitive unnecessary actions to get information  need to be reduced.it would be better if same screen for all information.Data presentation should be based on pattern of data user want to see.Page UI must be intelligence enough to customize data and return right information on the basis of user regex  searching on but not on the basis of generic page for all users. 
 
+shoulbe able to put content in repo
 
 
 In single page i want to load all information i need

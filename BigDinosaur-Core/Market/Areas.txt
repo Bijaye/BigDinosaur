@@ -12,6 +12,15 @@ for recommendation engine
 personalization and recommendation job flow 
 mine data for recommendation system
 
+
+mining
+retail
+energy
+oil plant
+medicine manufacture
+chemical company
+oil and natural gas 
+restaurant
 competitor
 teradata
 
