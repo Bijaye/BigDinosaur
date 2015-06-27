@@ -34,16 +34,45 @@ for example
 there is character 
 my name is abishkar 
 take out 
+
+Character map reduce 
+map 
+1 m
+      -----------> reduce 
+1 y
 m
 y
+
+1 n
+1 a 
+        -----------> reduce
+1 m 
+1 e
 
 n
 a
 m
 e
 
+
+1 i
+  -----------> reduce
+
+1 s
+
 i
 s
+
+1 a                                  
+                                       
+1 b 
+1 i
+1 s
+          -----------> reduce
+1 h                      '
+1 k
+1 a
+1 r
 
 a
 b
@@ -53,4 +82,18 @@ h
 k
 a
 r
+
+
+                          reduce 
+                          
+2 a                                  
+                                       
+1 b 
+1 i
+1 s
+         
+1 h                      '
+1 k
+
+1 r
 
