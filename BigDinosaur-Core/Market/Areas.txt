@@ -15,11 +15,12 @@ mine data for recommendation system
 
 mining
 retail
-energy
+energy,hospitality
+helth insurance medicien 
 oil plant,health care services
 gas,transportation,power conversion,mining
 enerrgy management ,health industry,aviation
-motor company
+motor company,oil and wnergy company
 medicine manufacture
 chemical company
 oil and natural gas 
@@ -30,3 +31,7 @@ competitor
 teradata
 
 http://www.teradata.com/careers/
+
+
+
+Hess was the first energy company to discover an oil field using reflection seismic (1928) and we were among the first energy companies to link computers together into “arrays” for parallel processing of large amounts of data. Since then we have continued to be at the forefront of advances in the quality and processing of data from the subsurface of the earth.

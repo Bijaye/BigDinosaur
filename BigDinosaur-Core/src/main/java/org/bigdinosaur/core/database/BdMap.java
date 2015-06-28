@@ -28,6 +28,7 @@ dataMap = new HashMap();
 return BdEventBean;
   }
   
+  
   public BdMap add(int key, Object value){
 dataMap.put(key, value);
 return this;
@@ -38,8 +39,11 @@ return this;
 this.dataMap.putAll(dataMap);
 return this;
   }    
-  
-  public Object get(String key){
+  public BdMap put(Integer key,Object value){
+    this.dataMap.put(key, value);
+    return this;
+      }
+  public Object get(Object key){
 return dataMap.get(key);
   }
   

@@ -26,15 +26,30 @@ public class BdFileRead
         String[] array=   sCurrentLine.split(" ");
         for(int i=0;i<=array.length;i++){
           System.out.println(array[i]);
+          map.put(1, array[i]);
+        }
+        
+        for(int i=0;i<=array.length;i++){
+          System.out.println(array[i]);
+        
+          for(int j=i+1;j<=array.length-1;j++){
+            if(array[i].equals(array[j])){
+             int key= (int) map.get(array[i]);
+             map.put(key++, array[i]);
+            
+              
+            }
+            
+          }
           
 //        for (int i = 0;i < array[i].length(); i++){
 //          System.out.println(sCurrentLine.charAt(i));
 //      }
-        int ii=1;
-        if(array[i].equals(array[i-1])){
-        map.add(ii++, sCurrentLine);
+//        int ii=1;
+//        if(array[i].equals(array[i-1])){
+//        map.add(ii++, sCurrentLine);
       }
-        }
+//        }
       }
     } catch (IOException e) {
       e.printStackTrace();
