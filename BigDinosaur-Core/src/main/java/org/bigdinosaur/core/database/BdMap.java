@@ -11,12 +11,12 @@ import java.util.Map;
 // hold upto jvm can handle without affecting performance .
 public class BdMap
 {
-  BdMap layersmap=new BdMap();
+//  BdMap layersmap=new BdMap();
   private Map bdmap=new HashMap<>();
-  BdMap loadMap(){
-    return layersmap;
-    
-  }
+//  BdMap loadMap(){
+//    return layersmap;
+//    
+//  }
   HashMap<Integer, Object> dataMap = null;
   
   private BdMap(){
@@ -32,6 +32,7 @@ return BdEventBean;
 dataMap.put(key, value);
 return this;
   }
+  
   
   public BdMap addAll(Map dataMap){
 this.dataMap.putAll(dataMap);

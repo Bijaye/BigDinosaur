@@ -3,11 +3,15 @@ package org.bd.core.fs;
 import org.bigdinosaur.core.database.BdFile;
 
 import com.bigdinosaur.core.fs.BdFileI;
+import com.bigdinosaur.core.fs.BdFileRead;
 
-import junit.framework.TestCase;
+public class BdFileTest 
 
-public class BdFileTest extends TestCase
 {
+  public static void main(String[] args)
+  {
+    readFile();
+  }
   public static void copyfiles(){
   BdFile bdfile=new BdFile(){
 
@@ -45,4 +49,9 @@ public class BdFileTest extends TestCase
   BdFileI.moveBdfObject(bdfile);
   
 }
+  public static void readFile(){
+    BdFileRead readfile=new BdFileRead();
+    readfile.readFile("C://mnt//pd0//logs//2015//06//22/a.txt");
+    
+  }
 }
