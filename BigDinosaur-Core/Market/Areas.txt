@@ -16,10 +16,15 @@ mine data for recommendation system
 mining
 retail
 energy
-oil plant
+oil plant,health care services
+gas,transportation,power conversion,mining
+enerrgy management ,health industry,aviation
+motor company
 medicine manufacture
 chemical company
 oil and natural gas 
+food industry
+electrical applicances 
 restaurant
 competitor
 teradata
