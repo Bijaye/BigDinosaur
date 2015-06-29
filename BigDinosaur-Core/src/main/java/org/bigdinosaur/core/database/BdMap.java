@@ -3,6 +3,7 @@ package org.bigdinosaur.core.database;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Map.Entry;
 
 // go Recursively  
 // everything is key ,value 
@@ -12,7 +13,6 @@ import java.util.Map;
 public class BdMap
 {
 //  BdMap layersmap=new BdMap();
-  private Map bdmap=new HashMap<>();
 //  BdMap loadMap(){
 //    return layersmap;
 //    
@@ -54,4 +54,16 @@ return dataMap.toString();
   public Map getData(){
 return dataMap;
   }
+  
+  public Integer getKey(String value){
+    for (Entry<Integer, Object> entry : dataMap.entrySet()) {
+      if (entry.getValue().equals(value)) {
+          System.out.println(entry.getKey());
+          return entry.getKey();
+      }
+  }
+    return null;
+  }
+  
+  
 }
