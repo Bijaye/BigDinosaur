@@ -3,6 +3,7 @@ package com.bigdinosaur.core.fs;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.bigdinosaur.core.database.BdMap;
 
@@ -12,10 +13,12 @@ public class BdFileRead
   public BdMap readFile(String url){
     BufferedReader br = null;
     BdMap map=null;
+    ArrayList<BdMap> maplist;
     try {
  
       String sCurrentLine;
       map = BdMap.get();
+      maplist  =new ArrayList<BdMap>();
       br = new BufferedReader(new FileReader(url));
  
       while ((sCurrentLine = br.readLine()) != null) {
@@ -43,6 +46,7 @@ public class BdFileRead
             }
             
           }
+          maplist.add(map);
           
 //        for (int i = 0;i < array[i].length(); i++){
 //          System.out.println(sCurrentLine.charAt(i));
@@ -51,6 +55,7 @@ public class BdFileRead
 //        if(array[i].equals(array[i-1])){
 //        map.add(ii++, sCurrentLine);
       }
+        
 //        }
       }
     } catch (IOException e) {

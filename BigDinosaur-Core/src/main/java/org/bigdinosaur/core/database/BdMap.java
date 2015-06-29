@@ -1,6 +1,7 @@
 package org.bigdinosaur.core.database;
 
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Map.Entry;
@@ -17,6 +18,7 @@ public class BdMap
 //    return layersmap;
 //    
 //  }
+  ArrayList<BdMap> maplist;
   HashMap<Integer, Object> dataMap = null;
   
   private BdMap(){
@@ -35,8 +37,8 @@ return this;
   }
   
   
-  public BdMap addAll(Map dataMap){
-this.dataMap.putAll(dataMap);
+  public BdMap addAll(BdMap dataMap){
+this.dataMap.putAll(dataMap.getData());
 return this;
   }    
   public BdMap put(Integer key,Object value){
@@ -63,6 +65,26 @@ return dataMap;
       }
   }
     return null;
+  }
+
+  public ArrayList<BdMap> getMaplist()
+  {
+    return maplist;
+  }
+
+  public HashMap<Integer, Object> getDataMap()
+  {
+    return dataMap;
+  }
+
+  public void setMaplist(ArrayList<BdMap> maplist)
+  {
+    this.maplist = maplist;
+  }
+
+  public void setDataMap(HashMap<Integer, Object> dataMap)
+  {
+    this.dataMap = dataMap;
   }
   
   
