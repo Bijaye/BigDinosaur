@@ -109,3 +109,12 @@ r
 
 1 r
 
+
+
+map 1 to cluster machine capacity each
+for example
+no of maps=1000 maps
+map represnets reduced each line of text file 
+list.add(map1)
+list.add(map1)
+list.add(map1000)
