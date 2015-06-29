@@ -13,7 +13,7 @@ public class BdFileRead
   public BdMap readFile(String url){
     BufferedReader br = null;
     BdMap map=null;
-    ArrayList<BdMap> maplist;
+    ArrayList<BdMap> maplist=null;
     try {
  
       String sCurrentLine;
@@ -67,6 +67,7 @@ public class BdFileRead
         ex.printStackTrace();
       }
     }
+    map.setMaplist(maplist);
     return map;
   }
 

@@ -53,6 +53,6 @@ public class BdFileTest
   public static void readFile(){
     BdFileRead readfile=new BdFileRead();
     BdMap map=  readfile.readFile("C://mnt//pd0//logs//2015//06//22/a.txt");
-    System.out.println(map);
+    System.out.println(map.getMaplist());
   }
 }
