@@ -4,7 +4,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import org.bigdinosaur.core.database.BdMap;
@@ -62,7 +61,8 @@ public class BdInputI
   {
     System.out.println(map.getMaplist());
     for(int i=0;i<map.getMaplist().size();i++){
-      HashMap<Integer, Object> hashmap=   map.getMaplist().get(i).getDataMap();
+      BdMap hashmap;
+       hashmap=   map.getMaplist().get(i);
       System.out.println( hashmap.get(i));
       
   }
