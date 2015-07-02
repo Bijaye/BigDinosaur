@@ -33,6 +33,7 @@ public class BdFileRead
           map.getKey(array[i]);
           System.out.println("<Reading from map>"+  map.getKey(array[i]));
         }
+        BdMap     maptoreturn=null;
         
         for(int i=0;i<array.length;i++){
           System.out.println(array[i]);
@@ -40,13 +41,18 @@ public class BdFileRead
             System.out.println("<Comapring"+ array[i]+"with"+array[j]);
             if(array[i].equals(array[j])){
              int key= (int) map.getKey(array[i]);
-             map.put(key++, array[i]);
+                  maptoreturn = BdMap.get();
+             maptoreturn.put(key++, array[i]);
+             maplist.add(maptoreturn);
+             maptoreturn=null;
             
               
             }
             
           }
-          maplist.add(map);
+       
+         
+          
           
 //        for (int i = 0;i < array[i].length(); i++){
 //          System.out.println(sCurrentLine.charAt(i));

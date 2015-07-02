@@ -54,5 +54,11 @@ public class BdFileTest
     BdFileRead readfile=new BdFileRead();
     BdMap map=  readfile.readFile("C://mnt//pd0//logs//2015//06//22/a.txt");
     System.out.println(map.getMaplist());
+    for(int i=0;i<map.getMaplist().size();i++){
+      System.out.println(map.getMaplist().get(i).getDataMap());
+      //again rewrite to file and again perform map reduce 
+      ;
+      
+    }
   }
 }
