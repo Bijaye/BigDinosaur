@@ -5,6 +5,7 @@ import org.bigdinosaur.core.database.BdMap;
 
 import com.bigdinosaur.core.fs.BdFileI;
 import com.bigdinosaur.core.fs.BdFileRead;
+import com.bigdinosaur.core.io.BdInputI;
 
 public class BdFileTest 
 
@@ -54,8 +55,11 @@ public class BdFileTest
     BdFileRead readfile=new BdFileRead();
     BdMap map=  readfile.readFile("C://mnt//pd0//logs//2015//06//22/a.txt");
     System.out.println(map.getMaplist());
+    BdInputI ii=new BdInputI();
+    ii.readString(map);
     for(int i=0;i<map.getMaplist().size();i++){
       System.out.println(map.getMaplist().get(i).getDataMap());
+   
       //again rewrite to file and again perform map reduce 
       ;
       
