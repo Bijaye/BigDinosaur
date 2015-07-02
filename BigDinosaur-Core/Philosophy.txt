@@ -22,3 +22,8 @@ donot work  for money ,work for passion
 Viusalize data strucure on the basis of business data but not on the basis of what it is and how it is contructed
 it will be easier to implement how big the data strucuture can be .
 Viusalize on the basis of business use cases 
+
+rule data pattern of saving and retriving 
+make data valid for one user 
+make data valid for 2 user 
+.................make data valid for 100000 users 
