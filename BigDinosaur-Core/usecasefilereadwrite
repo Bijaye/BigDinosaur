@@ -1,0 +1,11 @@
+Scenario 1:
+Find specific no of   key words from all directory .Key words are 
+like and dislike 
+
+Algorithm
+Read all files from a specified url.There can be multiple directories and sub directories 
+Copy that files to BigDinosaur directories.
+Read every files . Perform map reduce on every files .
+On every files find out no of key words .
+Aggregate all results from all files to get the total  no of words 
+
