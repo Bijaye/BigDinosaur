@@ -7,6 +7,15 @@ public class BdRead
 {
 List<BdRead> readdata=new ArrayList<BdRead>();
 int i;
+String mapstring;
+public String getMapstring()
+{
+  return mapstring;
+}
+public void setMapstring(String mapstring)
+{
+  this.mapstring = mapstring;
+}
 public int getI()
 {
   return i;

@@ -59,13 +59,19 @@ public class BdInputI
   @Override
   public BdRead readString(BdMap map)
   {
+    BdRead read=new BdRead();
     System.out.println(map.getMaplist());
+    ArrayList<BdRead> arraylist=new ArrayList<BdRead>();
     for(int i=0;i<map.getMaplist().size();i++){
       BdMap hashmap;
        hashmap=   map.getMaplist().get(i);
-      System.out.println( hashmap.get(i));
-      
+      System.out.println( hashmap.toString());
+      read.setMapstring(hashmap.toString());
+      arraylist.add(read);
   }
+  
+   
+    read.setReaddata(arraylist);
     return null;
   }
 }

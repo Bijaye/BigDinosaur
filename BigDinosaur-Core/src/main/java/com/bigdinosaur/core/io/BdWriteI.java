@@ -55,6 +55,36 @@ public class BdWriteI implements BdWrite
     return data;
 
 }
+  
+  
+  public BdRead writeString(FileWriter stream, BdRead data)
+  {
+    for(BdRead value:data.getReaddata()){
+      try
+      {
+        stream.write(value.getMapstring());
+      }
+      catch (IOException e)
+      {
+      }
+   
+    
+    }
+  
+      if (stream != null) {
+        try
+        {
+          stream.close();
+        }
+        catch (IOException e)
+        {
+          e.printStackTrace();
+        }
+     
+  }
+    return data;
+
+}
 
 
   @Override
