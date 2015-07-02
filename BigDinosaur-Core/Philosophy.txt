@@ -5,3 +5,5 @@ Ideate
 Prototype
 Test
 Our success depends on ability to transfer ideas 
+
+Listen to what user wanted in qualitatively and quantitivley   looking at the behaviour that they take  
