@@ -4,7 +4,10 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+
+import org.bigdinosaur.core.database.BdMap;
 
 public class BdInputI
     implements BdInput
@@ -54,4 +57,15 @@ public class BdInputI
     return bddata;
   }
 
+  @Override
+  public BdRead readString(BdMap map)
+  {
+    System.out.println(map.getMaplist());
+    for(int i=0;i<map.getMaplist().size();i++){
+      HashMap<Integer, Object> hashmap=   map.getMaplist().get(i).getDataMap();
+      System.out.println( hashmap.get(i));
+      
+  }
+    return null;
+  }
 }
