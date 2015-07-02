@@ -1,4 +1,4 @@
-package org.bd.core.mapreduce;
+package org.bd.core.mp;
 
 import java.io.FileWriter;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import com.bigdinosaur.core.io.BdInputI;
 import com.bigdinosaur.core.io.BdRead;
 import com.bigdinosaur.core.io.BdWriteI;
 
-public class MapReduceTest
+public class MrTest
 {
   public static void main(String[] args) throws IOException
   {

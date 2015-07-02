@@ -72,6 +72,6 @@ public class BdInputI
   
    
     read.setReaddata(arraylist);
-    return null;
+    return read;
   }
 }
