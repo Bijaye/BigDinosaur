@@ -17,3 +17,8 @@ Value is differrent from price
 If you dnt love  it you gonna fail
 Donot talk do and show them 
 donot work  for money ,work for passion 
+
+
+Viusalize data strucure on the basis of business data but not on the basis of what it is and how it is contructed
+it will be easier to implement how big the data strucuture can be .
+Viusalize on the basis of business use cases 
