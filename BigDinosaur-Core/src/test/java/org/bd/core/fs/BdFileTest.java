@@ -88,7 +88,7 @@ public class BdFileTest
   }
  public static void readFiles() throws IOException{
    BdFile bdfile=new BdFile();
-   bdfile.setDirlocation("C://input");
+   bdfile.setDirlocation("C://mnt//pd0//logs//2015//07//02//d");
    BdFileWrite write=new BdFileWrite();
    List<File> list =write.getFileList(bdfile);
    
@@ -100,7 +100,8 @@ public class BdFileTest
      BdRead data= ii.readString(map);
      FileWriter  out = new FileWriter("output.txt");
      BdWriteI writei1=new BdWriteI();
-     writei1.writeCharacter(out,data);
+     writei1.writeString(out,data);
+    
      
    }
  }
