@@ -26,8 +26,21 @@ public class BdFileWrite
 
     for (String temp : files)
     {
+      File filei =null;
       File file = new File(source, temp);
-      list.add(file);
+      if(file.isDirectory()){
+        String filesd[] = file.list();
+
+        for (String filed: filesd)
+        {
+           filei = new File(file, filed);
+        }
+          list.add(filei);
+      }
+      else{
+        list.add(file);
+      }
+   
       
 
     }
