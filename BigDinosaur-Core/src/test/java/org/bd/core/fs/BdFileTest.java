@@ -17,7 +17,8 @@ public class BdFileTest
 {
   public static void main(String[] args)
   {
-    readFile();
+    copyfiles();
+//    readFile();
   }
   public static void copyfiles(){
   BdFile bdfile=new BdFile(){
@@ -52,7 +53,7 @@ public class BdFileTest
     
   };
   bdfile.setDirlocation("C://input");
-  bdfile.setDesfoldername("C://output");
+//  bdfile.setDesfoldername("C://output");
   BdFileI.moveBdfObject(bdfile);
   
 }
