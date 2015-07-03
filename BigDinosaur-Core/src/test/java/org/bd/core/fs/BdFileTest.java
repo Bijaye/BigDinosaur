@@ -1,7 +1,9 @@
 package org.bd.core.fs;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 
 import org.bigdinosaur.core.database.BdFile;
 import org.bigdinosaur.core.database.BdMap;
@@ -16,7 +18,7 @@ import com.bigdinosaur.core.io.BdWriteI;
 public class BdFileTest 
 
 {
-  public static void main(String[] args)
+  public static void main(String[] args) throws IOException
   {
 //    copyfiles();
 //    readFile();
@@ -84,11 +86,22 @@ public class BdFileTest
     write.writeCharacter(out,data);
     
   }
- public static void readFiles(){
+ public static void readFiles() throws IOException{
    BdFile bdfile=new BdFile();
    bdfile.setDirlocation("C://input");
    BdFileWrite write=new BdFileWrite();
-   write.getFileList(bdfile);
+   List<File> list =write.getFileList(bdfile);
    
+   for(File x:list){
+     BdFileRead readfile=new BdFileRead();
+     BdMap map=  readfile.readFile(x.getAbsolutePath());
+     System.out.println(map.getMaplist());
+     BdInputI ii=new BdInputI();
+     BdRead data= ii.readString(map);
+     FileWriter  out = new FileWriter("output.txt");
+     BdWriteI writei1=new BdWriteI();
+     writei1.writeCharacter(out,data);
+     
+   }
  }
 }
