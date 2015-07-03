@@ -27,3 +27,8 @@ rule data pattern of saving and retriving
 make data valid for one user 
 make data valid for 2 user 
 .................make data valid for 100000 users 
+
+
+----------------imp ----------------
+Make it effortable to client --make product effort to client and make it much valuable than other prodcuts 
+reduce costs ,how? 
