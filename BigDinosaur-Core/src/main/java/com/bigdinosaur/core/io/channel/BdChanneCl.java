@@ -5,14 +5,15 @@ import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
-public class BdChannel
+
+public class BdChanneCl
 {
 
-  void connectServer(){
+  void connectServer(String url){
     try
     {
         SocketChannel socketChannel = SocketChannel.open();
-        socketChannel.connect(new InetSocketAddress("127.0.0.1",
+        socketChannel.connect(new InetSocketAddress(url,
             9000));
         
         // wait for the message from the server...
@@ -55,6 +56,10 @@ public class BdChannel
     {
         System.out.println(e);
     }
+    
+  }
+Object   passObject(Object obj){
+  return obj;
     
   }
 }
