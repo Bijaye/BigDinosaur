@@ -18,4 +18,5 @@ public interface BdChannel
   void sendDataToClient(ServerSocket serverSocket, DataInputStream dataInputStream,
                         DataOutputStream dataOutputStream);
 Object getObjectToSendToClient( DataInputStream dataInputStream);
+Object createServer(String port);
 }
