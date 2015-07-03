@@ -2,7 +2,7 @@ package org.bigdinosaur.core.database;
 
 import java.util.ArrayList;
 
-public abstract class BdFile
+public  class BdFile
 {
   String fileinstance;
   String objectnstance;
@@ -11,11 +11,23 @@ String filepath;
 int  tableindex;
 String dirlocation;
 String desfoldername;
-public abstract boolean isEndOfFile();
-public abstract int getFileStart();
+public  boolean isEndOfFile(){
+  return false;
+  
+}
+public  int getFileStart(){
+  return tableindex;
+  
+}
 
-public abstract long getRecordCount();
-public abstract long getRecordObjectRow();
+public  long getRecordCount(){
+  return tableindex;
+  
+}
+public  long getRecordObjectRow(){
+  return tableindex;
+  
+}
 public String getFilename()
 {
   return filename;

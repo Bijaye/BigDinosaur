@@ -1,8 +1,11 @@
 package com.bigdinosaur.core.fs;
 
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.util.List;
 
+import org.bigdinosaur.core.database.BdFile;
 import org.bigdinosaur.core.database.BdMap;
 
 import com.bigdinosaur.core.io.BdRead;
@@ -15,4 +18,16 @@ public class BdFileWrite
   BdWriteI write=new BdWriteI();
   write.writeCharacter(out,data);
 }
+  public List<File>getFileList(BdFile bdfile){
+    File source = new File(bdfile.getDirlocation());
+    String files[] = source.list();
+
+    for (String temp : files)
+    {
+      File fileDelete = new File(source, temp);
+      
+
+    }
+    return null;
+  }
 }

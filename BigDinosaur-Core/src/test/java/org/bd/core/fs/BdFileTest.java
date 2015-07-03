@@ -8,6 +8,7 @@ import org.bigdinosaur.core.database.BdMap;
 
 import com.bigdinosaur.core.fs.BdFileI;
 import com.bigdinosaur.core.fs.BdFileRead;
+import com.bigdinosaur.core.fs.BdFileWrite;
 import com.bigdinosaur.core.io.BdInputI;
 import com.bigdinosaur.core.io.BdRead;
 import com.bigdinosaur.core.io.BdWriteI;
@@ -17,8 +18,9 @@ public class BdFileTest
 {
   public static void main(String[] args)
   {
-    copyfiles();
+//    copyfiles();
 //    readFile();
+    readFiles();
   }
   public static void copyfiles(){
   BdFile bdfile=new BdFile(){
@@ -82,4 +84,11 @@ public class BdFileTest
     write.writeCharacter(out,data);
     
   }
+ public static void readFiles(){
+   BdFile bdfile=new BdFile();
+   bdfile.setDirlocation("C://input");
+   BdFileWrite write=new BdFileWrite();
+   write.getFileList(bdfile);
+   
+ }
 }
