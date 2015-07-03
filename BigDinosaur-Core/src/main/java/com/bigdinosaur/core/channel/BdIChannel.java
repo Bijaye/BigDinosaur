@@ -15,7 +15,7 @@ import java.util.Set;
 public class BdIChannel
 {
 
-  Object createServer(int port) throws IOException
+ public  Object createServer(int port) throws IOException
   {
     try
     {
