@@ -5,6 +5,8 @@ import java.net.InetSocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.channels.SocketChannel;
 
+import org.bigdinosaur.core.database.BdFile;
+
 
 public class BdChanneCl
 {
@@ -58,7 +60,7 @@ public class BdChanneCl
     }
     
   }
-Object   passObject(Object obj){
+Object   passObject(BdFile obj){
   return obj;
     
   }
