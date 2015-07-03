@@ -5,6 +5,8 @@ like and dislike
 Algorithm
 Read all files from a specified url.There can be multiple directories and sub directories 
 Copy that files to BigDinosaur directories.
+Create a list of all files in directory
+Iterate each files  and get file object 
 Read every files . Perform map reduce on every files .
 On every files find out no of key words .
 Aggregate all results from all files to get the total  no of words 
