@@ -9,3 +9,4 @@ Read every files . Perform map reduce on every files .
 On every files find out no of key words .
 Aggregate all results from all files to get the total  no of words 
 
+
