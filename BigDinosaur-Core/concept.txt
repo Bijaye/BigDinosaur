@@ -128,3 +128,11 @@ fb,twitter,google data sdtructure how they differ on the basis d data they play
 Create Name:Abishkar
 Search Abishkar 
 Must display Abishkar in search result 
+
+
+
+
+create a directory and put that data on that directory 
+and when searched retreve from that directory 
+
+if u can some simple business use base ,logic is all same just u need to be prepared for big data 
