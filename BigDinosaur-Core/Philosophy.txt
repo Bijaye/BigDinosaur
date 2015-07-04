@@ -29,6 +29,10 @@ make data valid for 2 user
 .................make data valid for 100000 users 
 
 
+We can build the things that can control the giant things 
+
+Must have an idea what computer is and what it can do ,and how to use it 
+
 ----------------imp ----------------
 Make it effortable to client --make product effort to client and make it much valuable than other prodcuts 
 reduce costs ,how? 
