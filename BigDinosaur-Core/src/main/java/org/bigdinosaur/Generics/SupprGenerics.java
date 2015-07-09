@@ -1,4 +1,4 @@
-package GenericsDemo;
+package org.bigdinosaur.Generics;
 
 public class SupprGenerics {
 	private String String1 ;

@@ -1,4 +1,4 @@
-package GenericII;
+package org.bigdinosaur.GenericII;
 
 public interface Iterator<T> {
 	  boolean hasNext();

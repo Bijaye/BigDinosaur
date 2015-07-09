@@ -1,4 +1,4 @@
-package GenericsDemo;
+package org.bigdinosaur.Generics;
 
 
 

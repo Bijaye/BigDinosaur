@@ -1,4 +1,4 @@
-package Node;
+package org.bigdinosaur.Node;
 
  class Node1<T> {
 	private T data;
