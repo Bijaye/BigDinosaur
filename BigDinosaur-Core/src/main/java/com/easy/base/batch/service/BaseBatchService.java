@@ -5,7 +5,7 @@ import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.TransactionStatus;
 import org.springframework.transaction.support.DefaultTransactionDefinition;
 
-import com.base.easy.batch.BatchRunner;
+import com.base.bigdinosaur.batch.BatchRunner;
 import com.easy.base.batch.util.BatchUtils;
 import com.easy.base.context.RequestContext;
 

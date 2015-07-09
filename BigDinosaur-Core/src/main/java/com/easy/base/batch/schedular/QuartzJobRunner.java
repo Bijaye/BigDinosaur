@@ -6,7 +6,7 @@ import org.quartz.JobExecutionContext;
 import org.quartz.JobExecutionException;
 import org.springframework.scheduling.quartz.QuartzJobBean;
 
-import com.base.easy.batch.BatchRunner;
+import com.base.bigdinosaur.batch.BatchRunner;
 
 
 public class QuartzJobRunner extends QuartzJobBean {

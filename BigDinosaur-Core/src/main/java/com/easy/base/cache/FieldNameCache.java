@@ -1,6 +1,6 @@
 package com.easy.base.cache;
 
-import com.base.easy.core.Cachable;
+import com.base.bigdinosaur.core.Cachable;
 
 
 

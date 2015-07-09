@@ -1,7 +1,7 @@
 
 package com.easy.base.batch.test;
 
-import com.base.easy.batch.BatchRunner;
+import com.base.bigdinosaur.batch.BatchRunner;
 
 
 

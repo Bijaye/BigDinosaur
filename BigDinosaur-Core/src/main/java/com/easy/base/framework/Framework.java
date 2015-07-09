@@ -1,6 +1,6 @@
 package com.easy.base.framework;
 
-import com.base.easy.core.Cachable;
+import com.base.bigdinosaur.core.Cachable;
 
 
 public abstract class Framework {
