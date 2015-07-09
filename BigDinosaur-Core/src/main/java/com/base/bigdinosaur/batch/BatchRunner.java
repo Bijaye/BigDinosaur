@@ -6,7 +6,7 @@ package com.base.bigdinosaur.batch;
 import org.apache.log4j.Logger;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.easy.base.batch.service.BaseBatchService;
+import com.bigdinosaur.base.batch.service.BaseBatchService;
 import com.easy.base.batch.util.BatchUtils;
 
 public class BatchRunner implements BatchRunnable {
