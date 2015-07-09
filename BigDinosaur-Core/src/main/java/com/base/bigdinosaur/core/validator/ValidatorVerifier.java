@@ -6,13 +6,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import com.bigdinosaur.base.client.basecomponent.ComponentParts;
-import com.easy.base.client.validator.ValidatorTask;
-//Note:Easy Framework has broad sense for validation.Just Validation Does not mean only UI validation
-//Validation has broad scope validation can be anything from UI,service,server,database .It makes program,modules ,packages less error free
-// providing per checking,post checking 
-//Important  every call or every action that happens in JVM ,require validation.For example call to any method ,has lots of common behaviour in common
-// so for every event the attribute need a common interface .
-// Need more enhancment 
+import com.bigdinosaur.base.client.validator.ValidatorTask;
 
 public class ValidatorVerifier
 {

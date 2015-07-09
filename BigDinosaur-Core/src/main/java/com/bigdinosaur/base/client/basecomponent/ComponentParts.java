@@ -4,7 +4,7 @@ package com.bigdinosaur.base.client.basecomponent;
 
 
 
-import com.easy.base.client.ui.request.UiobjectRequest;
+import com.bigdinosaur.base.client.ui.request.UiobjectRequest;
 
 public interface ComponentParts
 {

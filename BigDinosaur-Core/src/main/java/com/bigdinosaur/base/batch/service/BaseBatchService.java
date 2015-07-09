@@ -7,7 +7,7 @@ import org.springframework.transaction.support.DefaultTransactionDefinition;
 
 import com.base.bigdinosaur.batch.BatchRunner;
 import com.bigdinosaur.base.batch.util.BatchUtils;
-import com.easy.base.context.RequestContext;
+import com.bigdinosaur.base.context.RequestContext;
 
 public abstract class BaseBatchService extends BatchRunner
 {
