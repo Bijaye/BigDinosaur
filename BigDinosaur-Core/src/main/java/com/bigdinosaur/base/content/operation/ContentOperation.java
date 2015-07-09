@@ -1,6 +1,6 @@
 package com.bigdinosaur.base.content.operation;
 
-import com.easy.base.ecm.information.InformationContainer;
+import com.bigdinosaur.base.ecm.information.InformationContainer;
 
 public interface ContentOperation {
 	void pull();
