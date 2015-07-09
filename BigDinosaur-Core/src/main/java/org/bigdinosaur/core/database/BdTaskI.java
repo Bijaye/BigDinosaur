@@ -5,7 +5,7 @@ import org.apache.log4j.Logger;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import com.bigdinosaur.base.batch.service.BaseBatchService;
-import com.easy.base.batch.util.BatchUtils;
+import com.bigdinosaur.base.batch.util.BatchUtils;
 
 public class BdTaskI implements BdTask {
 

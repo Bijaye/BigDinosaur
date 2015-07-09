@@ -1,6 +1,6 @@
 package com.easy.base.client.validator;
 
-import com.easy.base.client.basecomponent.ComponentParts;
+import com.bigdinosaur.base.client.basecomponent.ComponentParts;
 
 
 public interface ValidatorTask

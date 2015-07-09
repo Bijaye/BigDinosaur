@@ -5,7 +5,7 @@ import java.util.Collection;
 import java.util.Iterator;
 import java.util.List;
 
-import com.easy.base.client.basecomponent.ComponentParts;
+import com.bigdinosaur.base.client.basecomponent.ComponentParts;
 import com.easy.base.client.validator.ValidatorTask;
 //Note:Easy Framework has broad sense for validation.Just Validation Does not mean only UI validation
 //Validation has broad scope validation can be anything from UI,service,server,database .It makes program,modules ,packages less error free
