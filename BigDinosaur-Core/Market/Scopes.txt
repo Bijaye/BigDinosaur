@@ -9,4 +9,9 @@ Make Data-Driven Business Decisions
 category of data that can ot be saved in relational data base is the best candidate for big dinosaur
 there are lotd of data that is genereated that is unflexible to save in relatiopnla data base system 
 
-Put urs unstrucure data in bigdinosaur dabase ,therea can be logs files ,images ,docs and many more   
+Put urs unstrucure data in bigdinosaur dabase ,therea can be logs files 
+store millions of emails and scanned documents   
+
+if you have a lot of data you do not know what to do and you do not want to loose it.
+
+if you have a massive amount of unstructured data.  Unstructured data is very rare.  A few examples might be...  Email, Poorly designed log files, twitter feeds, every web page in the world, things you would normally put in a BLOB but at such a scale that would break a RDBMS
