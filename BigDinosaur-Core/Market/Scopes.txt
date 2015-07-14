@@ -7,4 +7,6 @@ BIG DATA ANALYTICS
 Make Data-Driven Business Decisions
 
 category of data that can ot be saved in relational data base is the best candidate for big dinosaur
-there are lotd of data that is genereated that is unflexible to save in relatiopnla data base system   
+there are lotd of data that is genereated that is unflexible to save in relatiopnla data base system 
+
+Put urs unstrucure data in bigdinosaur dabase ,therea can be logs files ,images ,docs and many more   
