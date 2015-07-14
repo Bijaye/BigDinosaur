@@ -1,0 +1,10 @@
+DATA WAREHOUSING
+The Foundation for Sharing Business Knowledge
+
+MARKETING APPLICATIONS
+Power Marketing with Individualized Insights
+BIG DATA ANALYTICS
+Make Data-Driven Business Decisions
+
+category of data that can ot be saved in relational data base is the best candidate for big dinosaur
+there are lotd of data that is genereated that is unflexible to save in relatiopnla data base system   
