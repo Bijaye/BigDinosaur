@@ -1,0 +1,23 @@
+Greenplum. Vertica. Netezza
+cloudera  pivotal
+hortonworks  cloudera  mapr  pivotal
+Pivotal HD
+parallel query processing technology
+data in the form of logs, blogs, email, and other technical
+unstructured information streams
+
+2003 - Google launches project Nutch to handle billions of searches and indexing millions of web pages.
+Oct 2003 - Google releases papers with GFS (Google File System)
+Dec 2004 - Google releases papers with MapReduce
+2005 - Nutch used GFS and MapReduce to perform operations
+2006 - Yahoo! created Hadoop based on GFS and MapReduce (with Doug Cutting and team)
+2007 - Yahoo started using Hadoop on a 1000 node cluster
+Jan 2008 - Apache took over Hadoop
+Jul 2008 - Tested a 4000 node cluster with Hadoop successfully
+2009 - Hadoop successfully sorted a petabyte of data in less than 17 hours to handle billions of searches and indexing millions of web pages.
+Dec 2011 - Hadoop releases version 1.0
+Aug 2013 - Version 2.0.6 is available
+
+
+https://gigaom.com/2013/03/04/the-history-of-hadoop-from-4-nodes-to-the-future-of-data/
+http://www.networkworld.com/article/2369327/software/comparing-the-top-hadoop-distributions.html

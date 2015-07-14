@@ -53,3 +53,5 @@ The Hadoop Applier is designed to address these issues to perform real-time repl
 
 Puting log some where and transferring log on hadoop clusters 
 Replication via the Hadoop Applier is implemented by connecting to the MySQL master and reading binary log events as soon as they are committed, and writing them into a file in HDFS
+
+unstructured files like images ,videos 
