@@ -5,6 +5,7 @@ import java.util.List;
 
 public class BdGraphI
 {
+  String hiddengraphid;
   String id;
   List<String> personal;
 
