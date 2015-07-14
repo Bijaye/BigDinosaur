@@ -27,3 +27,29 @@ I suggest hadoop not MySQL cluster for offline compute & storage.
 
 Highly scalable distributd  framework  yahoo has a 400 nodes cluster 
 extreme powerful in terms of computation ,sorts tera byte of random integers in 60 secs 
+
+
+Map reduce algortihm sharing data between one another 
+This structured data is typically joined with unstructured content such as web logs, clickstreams, social media, email, sensors, images, video, etc, enabling business analysts to seek answers to questions that were previously impossible to ask.
+
+Sentiment analysis;
+Marketing campaign analysis;
+Customer churn modeling;
+Fraud detection;
+Research and Development;
+Risk Modeling;
+
+
+
+
+
+
+Apache Sqoop is a well-proven approach for bulk data loading. However, with the growing number of use-cases for streaming real-time updates from MySQL into Hadoop for immediate analysis, we need to look at complementary solutions.
+
+In addition, the process of bulk loading to and from tables can place additional demands on production database infrastructure, potentially impacting performance, measured in predictable throughput and latency.
+
+The Hadoop Applier is designed to address these issues to perform real-time replication of events between MySQL and Hadoop.
+
+
+Puting log some where and transferring log on hadoop clusters 
+Replication via the Hadoop Applier is implemented by connecting to the MySQL master and reading binary log events as soon as they are committed, and writing them into a file in HDFS
