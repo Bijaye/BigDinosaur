@@ -1,1 +1,17 @@
-column-oriented stores, graph databases and even object databases ,document oriented ,key-value 
+column-oriented stores, graph databases and even object databases ,document oriented ,key-value
+document-oriented database :In the form of json format ,key and value in json 
+{officeName:”3Pillar Noida”, 
+{Street: “B-25, City:”Noida”, State:”UP”, Pincode:”201301”}
+}
+{officeName:”3Pillar Timisoara”,
+{Boulevard:”Coriolan Brediceanu No. 10”, Block:”B, Ist Floor”, City: “Timisoara”, Pincode: 300011”}
+}
+{officeName:”3Pillar Cluj”,
+{Latitude:”40.748328”, Longitude:”-73.985560”}
+}
+ 
+ 
+ Key Value Store NoSQL Database
+ India”	{“B-25, Sector-58, Noida, India – 201301″
+“Romania”	{“IMPS Moara Business Center, Buftea No. 1, Cluj-Napoca, 400606″,City Business Center, Coriolan Brediceanu No. 10, Building B, Timisoara, 300011″}
+“US”	{“3975 Fair Ridge Drive. Suite 200 South, Fairfax, VA 22033″}
