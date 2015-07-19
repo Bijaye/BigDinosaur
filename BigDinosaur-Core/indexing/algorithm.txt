@@ -33,5 +33,17 @@ A nonclustered index can be defined on a table or view with a clustered index or
 
 
 
+ Collect data from various sources.
 
+ Import, extract and transform text from any files.
+
+ Commit it in your own repository (e.g. search engine, database, etc)
+
+
+inmemory indexing 
+file indexing 
+
+the pattern of indexing can be anything ,there is no any rule like
+user data can be in any form 
+/pattern1/pattern2/cluster1/data/a.txt=indexing key 
 
