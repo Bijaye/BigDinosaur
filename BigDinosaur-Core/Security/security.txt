@@ -1,2 +1,6 @@
 providing another abstraction for another level of security on the top of hadoop
 providing another abstraction for another level of enterprise content management  on the top of hadoop
+Sentry is a highly modular system for providing fine grained role based authorization to both data and metadata stored on an Apache Hadoop cluster.
+SINGA is a distributed, scalable platform for deep learning.
+Taverna is a domain-independent suite of tools used to design and execute data-driven workflows.
+TinkerPop is a graph computing framework, written in Java.
