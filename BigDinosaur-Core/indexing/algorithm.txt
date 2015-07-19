@@ -42,8 +42,19 @@ A nonclustered index can be defined on a table or view with a clustered index or
 
 inmemory indexing 
 file indexing 
-
+location where the index will be stored.
 the pattern of indexing can be anything ,there is no any rule like
 user data can be in any form 
 /pattern1/pattern2/cluster1/data/a.txt=indexing key 
+
+
+primary key index
+2.unique index
+3.bitmap index
+4.hash index
+5.function based index
+6.B-tree index(default index created) on table.
+7.Virtual index(which do not show entry in DBA_segment). 
+bitmap index
+2.B-tree index 
 
