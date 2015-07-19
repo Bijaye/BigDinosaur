@@ -58,3 +58,6 @@ primary key index
 bitmap index
 2.B-tree index 
 
+
+ndex billions of data points and query them in real-time.
+
