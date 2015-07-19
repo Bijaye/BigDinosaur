@@ -1,0 +1,26 @@
+Location of file=a/encrypted/cluster1/location/a1.txt
+Location of file=a/encrypted/cluster2/location/a2.txt
+Location of file=a/encrypted/cluster3/location/a3.txt
+.
+.
+.
+.
+.
+N
+a1.txt
+abishkar pokhara developer
+yro   ktm     developer
+use case 
+search abishkar 
+
+search every location until abishkar is found 
+if found create index on another file index.txt
+index created=abishkar a/location2/a.txt in index.txt
+
+again second time search abishkar 
+search abishkar ,this time search from index.txt
+
+
+
+
+
