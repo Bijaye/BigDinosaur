@@ -1,0 +1,2 @@
+providing another abstraction for another level of security on the top of hadoop
+providing another abstraction for another level of enterprise content management  on the top of hadoop
