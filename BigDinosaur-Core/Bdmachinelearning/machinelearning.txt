@@ -1,0 +1,6 @@
+The goal of any supervised learning algorithm is to find a function that best maps a set of inputs to its correct output.
+For example there is a method that is called for particular use case and data is retrived on the  basis of machine learning 
+data ads to display for particular group and user 
+int getMachineLearningValueOfuser(User user)--here theer are expecial fields say more than 100 flags and on the basis of data that is set on 100 flags we can learn the pattern 
+int getParticularGroupOfAddOnTheBasisOfMachineLearningValue(int );
+List<>getAdsOnthebasisOfAddGroup(int )
