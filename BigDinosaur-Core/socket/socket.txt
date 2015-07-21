@@ -1,0 +1,22 @@
+Client                                                     Server
+
+1. OutputStream -->\                                   /--> 2. InputStream -->
+                    Socket<--->network<--->ServerSocket                       |
+4. InputStream <--/                                    \<--3. OutputStream <--
+
+
+ Input stream always read
+ Output stream always write 
+ to write for server it need output stream of client 
+ to write for client it need output stream of server 
+ 
+ client has input stream and output stream.
+ Client read from output stream what is written in input stream 
+ if server write in output stream of server then client can read from input stream 
+ same is the case for server 
+ 
+ process  Server
+ 1 Server get Output stream of client 
+ 2 Server write in output stream of client 
+ 3 client read from input stream written by server 
+ 

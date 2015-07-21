@@ -1,0 +1,15 @@
+break file into 2 parts .
+Read lines of file .
+Get file no of lines .
+check no of file line .If equals half ,take out that file contents into another .
+again resume for loop and after reaching last ,again take out file content into another 
+caseII
+  byte[] bs = new byte[40];
+      
+      try{
+         // create new file input stream
+         fis = new FileInputStream("D://test.txt");
+         
+         // read bytes to the buffer
+         i=fis.read(bs, 3, 20);
+         read upto 20 character and convert byte array to string 

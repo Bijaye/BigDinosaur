@@ -1,0 +1,7 @@
+https://stephenholiday.com/notes/flumejava/
+http://www.iterativemapreduce.org/samples.html
+https://github.com/apache/crunch
+
+Apache Crunch (Incubating)
+FlumeJava:Efficient Data-Parallel Pipelines
+Twister :iteractive mapreduce 

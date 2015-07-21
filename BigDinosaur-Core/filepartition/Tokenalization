@@ -1,0 +1,6 @@
+Class 
+Token 
+String filesingleword;
+Single line of file creates many tokens 
+Add that tokens in arraylist 
+and iterate  arraylist to check pattern against the token class
