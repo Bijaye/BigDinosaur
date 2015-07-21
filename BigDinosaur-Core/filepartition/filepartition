@@ -13,3 +13,5 @@ caseII
          // read bytes to the buffer
          i=fis.read(bs, 3, 20);
          read upto 20 character and convert byte array to string 
+         
+         todo split into multiple files
