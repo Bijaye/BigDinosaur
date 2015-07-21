@@ -1,0 +1,20 @@
+Node 
+id
+name 
+location
+age
+List<Like>
+List<Follow>
+List<Node> friends
+Queue socialstatus
+
+data pattern 
+id abishkar pokhara 27
+likeid Aishwaraid,Sonaliid
+followid billid stevenid
+friendid ramid hariid
+
+In one cluster follow is loaded 
+In one cluster like is loaded 
+
+AI and machine learning based cluster(Impl)
