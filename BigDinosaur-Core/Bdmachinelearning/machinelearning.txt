@@ -4,3 +4,12 @@ data ads to display for particular group and user
 int getMachineLearningValueOfuser(User user)--here theer are expecial fields say more than 100 flags and on the basis of data that is set on 100 flags we can learn the pattern 
 int getParticularGroupOfAddOnTheBasisOfMachineLearningValue(int );
 List<>getAdsOnthebasisOfAddGroup(int )
+
+Second alternative 
+max no of assumption variable is valid
+int assumptionaboutdisese;
+if assumptionaboutdisese is greater than 2 against checking disease name from list
+there are arraylist of disease 
+iterate array 
+for every disease name pattern match with text file ,
+if that disese name is there in text file ,simple assumption is that it is disease 
