@@ -1,0 +1,55 @@
+Save money of client that is invested to get more and more deeper information of their big data
+Replace normal database system and cut cost that is invested on it 
+
+Grow revenue of business by proper data analytics of their data in 360 degree view 
+Achieve other business oppurtunity
+
+Replace highly-customized, expensive legacy systems with a standard solution that runs on commodity hardware
+provide cheaper solution than proprietary technologies
+reduced the license and hardware costs associated with the proprietary relational database
+Volume:
+Facebook ingests 500 terabytes of new data every day
+ a Boeing 737 will generate 240 terabytes of flight data during a single flight across the US
+ 
+ velocity
+ 
+ Clickstreams and ad impressions capture user behavior at millions of events per second
+ high-frequency stock trading algorithms reflect market changes within microseconds
+  machine to machine processes exchange data between billions of devices; infrastructure and sensors generate massive log data in real-time
+  on-line gaming systems support millions of concurrent users, each producing multiple inputs per second.
+  
+  Variety. Big Data data isn't just numbers, dates, and strings. Big Data is also geospatial data, 3D data, audio and video, and unstructured text, including log files and social media.
+  
+  For example, MongoDB allowed one of the largest Human Capital Management (HCM) solution providers to rapidly build mobile applications that integrated data from a wide variety of disparate sources.
+  
+  For example, a top 5 global insurance provider, MetLife, used MongoDB to quickly consolidate customer information from over 70 different sources and provide it in a single, rapidly-updated view.
+  
+  Combining Operational and Analytical Technologies; Using Hadoop
+  Analytical Big Data
+  Operational Big Data
+  
+  | Operational | Analytical 
+---- | --- | ---
+Latency | 1 ms - 100 ms | 1 min - 100 min
+Concurrency | 1000 - 100,000 | 1 - 10
+Access Pattern | Writes and Reads | Reads
+Queries | Selective | Unselective
+Data Scope | Operational | Retrospective
+End User | Customer | Data Scientist
+Technology | NoSQL | MapReduce, MPP Database
+
+
+
+Complex information processing is needed
+Unstructured data needs to be turned into structured data
+Queries can’t be reasonably expressed using SQL
+Heavily recursive algorithms
+Complex but parallelizable algorithms needed, such as geo-spatial analysis or genome sequencing
+Machine learning
+Data sets are too large to fit into database RAM, discs, or require too many cores (10’s of TB up to PB)
+Data value does not justify expense of constant real-time availability, such as archives or special interest info, which can be moved to Hadoop and remain available at lower cost
+Results are not needed in real time
+Fault tolerance is critical
+Significant custom coding would be required to handle job scheduling
+
+hortonworks vs cloudera vs mapr vs pivotal

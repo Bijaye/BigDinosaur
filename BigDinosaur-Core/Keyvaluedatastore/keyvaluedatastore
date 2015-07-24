@@ -1,0 +1,1 @@
+ key-value data store. You can insert any kind of content into it, and it will give you back a key that you can use to retrieve the content again at any time
