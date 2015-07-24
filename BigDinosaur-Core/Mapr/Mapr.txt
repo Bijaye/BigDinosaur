@@ -1,1 +1,5 @@
 Multi-Tenancy
+Mapr db enterprise addition integrates maprdb no sql database 
+Maprdb tables are path into the MapR file system 
+apache drill
+spark
