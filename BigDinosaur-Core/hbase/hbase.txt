@@ -1,0 +1,4 @@
+pseudo-distributed mode:
+
+In local file system home/testuser/hbase
+HBase and ZooKeeper write data
