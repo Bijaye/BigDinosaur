@@ -3,3 +3,26 @@ Mapr db enterprise addition integrates maprdb no sql database
 Maprdb tables are path into the MapR file system 
 apache drill
 spark
+
+MapR is a complete distribution for Apache Hadoop that packages more than a dozen projects from the Hadoop ecosystem
+
+allows Hadoop to be easily accessed as traditional network attached storage (
+
+
+data storage
+integration from multiple sources
+database operations, analytics, search, and real-time stream processing.
+
+Store file uploaded from browser in file system
+Retrive same file back from file browser
+In case of any error   recover replica and resynchronized
+Create a single file writer ,dnt allow for file read by another process
+Create read only file system 
+Create a schedular that does not stop on job failure,try to execute job on another cluster
+
+Insert,update ,read and delete file contenet from browser  
+
+architecture 
+Container Architecture ,no name node 
+
+ easy integration with the rest of the enterprise data architecture and tools
