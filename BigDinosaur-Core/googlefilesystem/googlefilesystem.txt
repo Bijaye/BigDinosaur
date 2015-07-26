@@ -1,0 +1,1 @@
+BigTable is a distributed storage system that is structured as a large table: one that may be petabytes in size and distributed among tens of thousands of machines
