@@ -13,6 +13,14 @@ It is used whenever there is a need to write heavy applications.
 HBase is used whenever we need to provide fast random access to available data.
 
 ---------------Randow access --------------
+Random real time crud operation 
+distributed designed to server millions of rows and columns 
 indexing is done concpet is simple 
 
 HBase stores data in HFiles that are indexed (sorted) by their key. Given a random key, the client can determine when region server to ask for the row from. The region server can determine which region to retrieve the row from, and then do a binary search through the region to access the correct row. This is accomplished by having sufficient statistics to know the number of blocks, block size, start key, and end key.
+
+
+concept 
+Simple concept is used.Concept of region.Data is divided into different regions .
+If data is divided into regions then it will help for fast data recovery,easy to load balance 
+can be moved on another server based on region 
