@@ -24,3 +24,19 @@ concept
 Simple concept is used.Concept of region.Data is divided into different regions .
 If data is divided into regions then it will help for fast data recovery,easy to load balance 
 can be moved on another server based on region 
+
+
+HDFS files are write once files. You can append to files in some of the recent versions but that is not a feature that is very commonly used. Consider HDFS files as write-once and read-many files. There is no concept of random writes.
+3. HDFS doesn't do random reads very well.
+
+
+
+-------it is actually optimized for streaming access of large files
+
+
+HBase on the other hand is a database that stores it's data in a distributed filesystem. The filesystem of choice typically is HDFS owing to the tight integration between HBase and HDFS. 
+HBase provides you with the following:
+1. Low latency access to small amounts of data from within a large data set. You can access single rows quickly from a billion row table.
+2. Flexible data model to work with and data is indexed by the row key.
+3. Fast scans across tables.
+4. Scale in terms of writes as well as total volume of data.
