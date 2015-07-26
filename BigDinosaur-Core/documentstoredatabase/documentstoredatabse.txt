@@ -1,0 +1,10 @@
+Document Store NoSQL Database
+{officeName:”3Pillar Noida”, 
+{Street: “B-25, City:”Noida”, State:”UP”, Pincode:”201301”}
+}
+{officeName:”3Pillar Timisoara”,
+{Boulevard:”Coriolan Brediceanu No. 10”, Block:”B, Ist Floor”, City: “Timisoara”, Pincode: 300011”}
+}
+{officeName:”3Pillar Cluj”,
+{Latitude:”40.748328”, Longitude:”-73.985560”}
+}
