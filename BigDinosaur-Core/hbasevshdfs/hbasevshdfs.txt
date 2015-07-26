@@ -1,0 +1,15 @@
+Hadoop is basically 2 things, a FS (Hadoop Distributed File System) and a computation framework (MapReduce). HDFS allows you store huge amounts of data in a distributed (provides faster read/write access) and redundant (provides better availability) manner. And MapReduce allows you to process this huge data in a distributed and parallel manner. But MapReduce is not limited to just HDFS. Being a FS, HDFS lacks the random read/write capability. It is good for sequential data access. And this is where HBase comes into picture. It is a NoSQL database that runs on top your Hadoop cluster and provides you random real-time read/write access to your data.
+
+You can store both structured and unstructured data in Hadoop, and HBase as well. Both of them provide you multiple mechanisms to access the data, like the shell and other APIs. And, HBase stores data as key/value pairs in a columnar fashion while HDFS stores data as flat files. Some of the salient features of both the systems are :
+
+Hadoop
+
+Optimized for streaming access of large files.
+Follows write-once read-many ideology.
+Doesn't support random read/write.
+HBase
+
+Stores key/value pairs in columnar fashion (columns are clubbed together as column families).
+Provides low latency access to small amounts of data from within a large data set.
+Provides flexible data model.
+Hadoop is most suited for offline batch-processing kinda stuff while HBase is used when you have real-time needs.
