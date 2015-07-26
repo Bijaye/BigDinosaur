@@ -2,3 +2,17 @@ pseudo-distributed mode:
 
 In local file system home/testuser/hbase
 HBase and ZooKeeper write data
+
+Apache HBase is used to have random, real-time read/write access to Big Data.
+
+It hosts very large tables on top of clusters of commodity hardware.
+
+Apache HBase is a non-relational database modeled after Google's Bigtable. Bigtable acts up on Google File System, likewise Apache HBase works on top of Hadoop and HDFS.
+
+It is used whenever there is a need to write heavy applications.
+HBase is used whenever we need to provide fast random access to available data.
+
+---------------Randow access --------------
+indexing is done concpet is simple 
+
+HBase stores data in HFiles that are indexed (sorted) by their key. Given a random key, the client can determine when region server to ask for the row from. The region server can determine which region to retrieve the row from, and then do a binary search through the region to access the correct row. This is accomplished by having sufficient statistics to know the number of blocks, block size, start key, and end key.
