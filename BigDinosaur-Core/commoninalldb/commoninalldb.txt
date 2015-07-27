@@ -1,0 +1,5 @@
+Scalability
+ is the ability of a system, network, or process to handle a growing amount of work in a capable manner or its ability to be enlarged to accommodate that growth.
+ 
+ High availability
+ In information technology, high availability refers to a system or component that is continuously operational for a desirably long length of time.
