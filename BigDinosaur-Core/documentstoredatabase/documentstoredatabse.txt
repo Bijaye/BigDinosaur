@@ -1,3 +1,4 @@
+Mango Db
 Document Store NoSQL Database
 {officeName:”3Pillar Noida”, 
 {Street: “B-25, City:”Noida”, State:”UP”, Pincode:”201301”}
@@ -8,3 +9,59 @@ Document Store NoSQL Database
 {officeName:”3Pillar Cluj”,
 {Latitude:”40.748328”, Longitude:”-73.985560”}
 }
+mongodb concept 
+db.post.insert([
+{
+   title: 'MongoDB Overview', 
+   description: 'MongoDB is no sql database',
+   by: 'tutorials point',
+   url: 'http://www.tutorialspoint.com',
+   tags: ['mongodb', 'database', 'NoSQL'],
+   likes: 100
+},
+{
+   title: 'NoSQL Database', 
+   description: 'NoSQL database doesn't have tables',
+   by: 'tutorials point',
+   url: 'http://www.tutorialspoint.com',
+   tags: ['mongodb', 'database', 'NoSQL'],
+   likes: 20, 
+   comments: [	
+      {
+         user:'user1',
+         message: 'My first comment',
+         dateCreated: new Date(2013,11,10,2,35),
+         like: 0 
+      }
+   ]
+}
+])
+
+
+document oriented 
+for user post on status generated document .
+min to max of document is to be determined
+
+
+{
+   _id: POST_ID
+   title: TITLE_OF_POST, 
+   description: POST_DESCRIPTION,
+   by: POST_BY,
+   url: URL_OF_POST,
+   tags: [TAG1, TAG2, TAG3],
+   likes: TOTAL_LIKES, 
+   comments: [	
+      {
+         user:'COMMENT_BY',
+         message: TEXT,
+         dateCreated: DATE_TIME,
+         like: LIKES 
+      },
+      {
+         user:'COMMENT_BY',
+         message: TEXT,
+         dateCreated: DATE_TIME,
+         like: LIKES
+      }
+   ]

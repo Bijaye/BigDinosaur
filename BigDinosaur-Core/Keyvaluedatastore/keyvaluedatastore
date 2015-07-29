@@ -1,1 +1,104 @@
+ Redis
+ Memcached
  key-value data store. You can insert any kind of content into it, and it will give you back a key that you can use to retrieve the content again at any time
+ 
+ redis 
+ 
+ redis 127.0.0.1:6379> HMSET user:1 username tutorialspoint password tutorialspoint points 200
+OK
+redis 127.0.0.1:6379> HGETALL user:1
+
+1) "username"
+2) "tutorialspoint"
+3) "password"
+4) "tutorialspoint"
+5) "points"
+6) "200"
+
+Above user:1 is key 
+
+Lists
+
+redis 127.0.0.1:6379> lpush tutoriallist redis
+(integer) 1
+redis 127.0.0.1:6379> lpush tutoriallist mongodb
+(integer) 2
+redis 127.0.0.1:6379> lpush tutoriallist rabitmq
+(integer) 3
+redis 127.0.0.1:6379> lrange tutoriallist 0 10
+
+1) "rabitmq"
+2) "mongodb"
+3) "redis"
+
+
+Sets
+
+redis 127.0.0.1:6379> sadd tutoriallist redis
+(integer) 1
+redis 127.0.0.1:6379> sadd tutoriallist mongodb
+(integer) 1
+redis 127.0.0.1:6379> sadd tutoriallist rabitmq
+(integer) 1
+redis 127.0.0.1:6379> sadd tutoriallist rabitmq
+(integer) 0
+redis 127.0.0.1:6379> smembers tutoriallist
+
+1) "rabitmq"
+2) "mongodb"
+3) "redis"
+
+
+
+
+
+S.N.	Command & Description
+1	DEL key
+This command deletes the key, if exists
+2	DUMP key 
+This command returns a serialized version of the value stored at the specified key.
+3	EXISTS key 
+This command checks whether the key exists or not.
+4	EXPIRE key seconds
+Expires the key after the specified time
+5	EXPIREAT key timestamp 
+Expires the key after the specified time. Here time is in Unix timestamp format
+6	PEXPIRE key milliseconds 
+Set the expiry of key in milliseconds
+7	PEXPIREAT key milliseconds-timestamp 
+Set the expiry of key in unix timestamp specified as milliseconds
+8	KEYS pattern 
+Find all keys matching the specified pattern
+9	MOVE key db 
+Move a key to another database
+10	PERSIST key 
+Remove the expiration from the key
+11	PTTL key 
+Get the remaining time in keys expiry in milliseconds.
+12	TTL key 
+Get the remaining time in keys expiry.
+13	RANDOMKEY 
+Return a random key from redis
+14	RENAME key newkey 
+Change the key name
+15	RENAMENX key newkey 
+Rename key, if new key doesn't exist
+16	TYPE key 
+Return the data type of value stored in key.
+
+
+
+Publishing and subscribing 
+transaction
+support data type that developer already know 
+ranage partitioning 
+
+
+ypes of Partitioning
+There are two types of partitioning available in redis. Suppose we have four redis instances R0, R1, R2, R3 and many keys representing users like user:1, user:2, ... and so forth
+
+Range Partitioning
+Range partitioning is accomplished by mapping ranges of objects into specific Redis instances. Suppose in our example users from ID 0 to ID 10000 will go into instance R0, while users form ID 10001 to ID 20000 will go into instance R1 and so forth.
+
+Hash Partitioning
+In this type of partitioning, a hash function (eg. modulus function) is used to convert key into a number and then data is stored in different- different redis instances.

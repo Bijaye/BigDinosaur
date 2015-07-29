@@ -1,0 +1,19 @@
+Hbase column oriented database 
+In column oriented database there is table 
+say suppose table name is User 
+User has two column family 
+personal data and professional data 
+ in table user in column family personal data  there are 2 attributes 
+ name and city 
+ 
+ In table in user in column family professional data there  2 attributes 
+ designation and salalry 
+ 
+ ypes of Partitioning
+There are two types of partitioning available in redis. Suppose we have four redis instances R0, R1, R2, R3 and many keys representing users like user:1, user:2, ... and so forth
+
+Range Partitioning
+Range partitioning is accomplished by mapping ranges of objects into specific Redis instances. Suppose in our example users from ID 0 to ID 10000 will go into instance R0, while users form ID 10001 to ID 20000 will go into instance R1 and so forth.
+
+Hash Partitioning
+In this type of partitioning, a hash function (eg. modulus function) is used to convert key into a number and then data is stored in different- different redis instances.

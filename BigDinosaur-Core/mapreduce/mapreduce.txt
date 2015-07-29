@@ -5,3 +5,11 @@ https://github.com/apache/crunch
 Apache Crunch (Incubating)
 FlumeJava:Efficient Data-Parallel Pipelines
 Twister :iteractive mapreduce 
+
+My algorithm to solve use case 
+Find total no of abishkar name in nepal
+There is a application that has users all over the world more than 10 millions user(say facbook eg).
+How facebook puts data for analytics purpose?Not only fb larger applications how they put their data in which format
+how the data is strucutred
+What is their format of data they put 
+For 10 millions users they are  
