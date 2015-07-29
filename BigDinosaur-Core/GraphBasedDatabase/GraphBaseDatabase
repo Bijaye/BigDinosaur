@@ -1,0 +1,50 @@
+To create Nodes without properties
+
+To create Nodes with Properties
+
+To create Relationships between Nodes without Properties
+
+To create Relationships between Nodes with Properties
+
+To create single or multiple labels to a Node or a Relationship
+Example demonstrates how to create a Simple "Employee" node
+
+
+CREATE (emp:Employee{id:123,name:"Lokesh",sal:35000,deptno:10})
+
+Added 1 label, created 1 node, set 4 properties, returned 0 rows
+
+Neo4j Database Server uses this <node-name> to store this node details in Database.As a Neo4j DBA or Developer, we cannot use it to access node details.
+
+Neo4j Database Server creates a <label-name> as an alias to internal node name.As a Neo4j DBA or Developer, we should use this label name to access node details.
+
+
+To retrieve some properties of a Node
+To retrieve all properties of a Node
+To retrieve some properties of Nodes and associated Relationships
+To retrieve all properties of Nodes and associated relationships
+
+example 
+create Department as node name and has property department no 
+return RETURN dept.deptno
+return deptno from node dept 
+
+
+demonstrates How to retrieve some properties(deptno,dname) data of Dept Node from Database.
+
+MATCH (dept: Dept)
+RETURN dept.deptno,dept.dname
+
+
+
+
+retrieve data of Dept Node from Database without specifying its properties.
+
+MATCH (dept: Dept)
+RETURN dept
+
+d = 3215 shows one node
+
+Id = 25 shows another node
+
+return 2 department node .2 department node has 2 id
