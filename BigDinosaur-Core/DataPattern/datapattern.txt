@@ -1,0 +1,22 @@
+Scenario 1:Data pattern of facebook
+Scenario2:Data Pattern of Linkedin
+Scenario3:Data Pattern of google
+Scenario4:Data pattern of yahoo
+Scenario5:Data pattern of stackoverflow
+Scenario5:Data pattern of amazon
+
+
+
+Does your data pattern is matching with your storage system?
+Does your data pattern growth rate can be handled by your storage system 
+Do data storage are modeling your real data pattern ?
+Do data storage system  understand your data pattern ?
+is it right algorithm for data storage ?
+is it right algorithm for data read ?
+
+Analyze your data for present 
+Analyse your data pattern growth rate 
+Predict your data pattern might look in future .
+Show your business use case for present and future 
+Is it right choice for u ?
+
