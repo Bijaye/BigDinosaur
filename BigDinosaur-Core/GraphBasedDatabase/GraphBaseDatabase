@@ -1,3 +1,45 @@
+Nodes,Relationship,Properties 
+Employee node and Department node 
+Employee works for Department
+works for relationship
+as key value 
+key=works for 
+value=id =id to department 
+
+suppose there are 1000 nodes ,need to query for 
+
+CREATE	To create nodes, relationships and properties
+2.	MATCH	To retrieve data about nodes, relationships and properties
+3.	RETURN	To return query results
+4.	WHERE	To provide conditions to filter retrieval data
+5.	DELETE	To delete nodes and relationships
+6.	REMOVE	To delete properties of nodes and relationships
+7.	ORDER BY	To sort retrieval data
+8.	SET
+
+
+example 
+CREATE (dept:Dept { deptno:10,dname:"Accounting",location:"Hyderabad" })
+
+
+Neo4j CQL RETURN clause is used -
+
+
+
+
+making relationship between two nodes
+
+CREATE (e:Customer{id:"1001",name:"Abc",dob:"01/10/1982"})
+
+CREATE (cc:CreditCard{id:"5001",number:"1234567890",cvv:"888",expiredate:"20/17"})
+
+
+To retrieve some properties of a Node
+To retrieve all properties of a Node
+To retrieve some properties of Nodes and associated Relationships
+To retrieve all properties of Nodes and associated relationships
+
+
 To create Nodes without properties
 
 To create Nodes with Properties
