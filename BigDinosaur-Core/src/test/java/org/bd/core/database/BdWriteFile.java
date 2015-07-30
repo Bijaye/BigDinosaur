@@ -30,7 +30,8 @@ public class BdWriteFile
    BdWriteFile write =new BdWriteFile();
 //   String webfilecontenet="abc company ,pokhara ";
 //   write.write("D://database/company.txt", webfilecontenet);
-   write.search("", "", "", "");
+   System.out.println(write.search("", "123", "", ""));
+   
    
    
    
@@ -56,9 +57,16 @@ String search(String username,String content,String databasename,String tablenam
      ArrayList<BdFileContent> eachfilelist= allfilelist.get(j);
       for(int k=0;k<eachfilelist.size();k++){//loop each row
          BdFileContent eachfilelinelist=   eachfilelist.get(k);
+        
        
         System.out.println( eachfilelinelist.getFilecontent());
-        System.out.println( eachfilelinelist.getFolderpath());
+        if(eachfilelinelist.getFilecontent().equals(content)){
+          System.out.println( eachfilelinelist.getFolderpath());
+          return eachfilelinelist.getFolderpath();
+          
+          
+        }
+       
        
         
         
