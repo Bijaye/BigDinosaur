@@ -51,6 +51,7 @@ public class BdFilewalker {
           
                 BdFileContent filecontent=new BdFileContent();
             filecontent.setFilecontent(  split[i]);
+            filecontent.setFolderpath(filepath);
             filecontentlisteachline.add(filecontent);
             
           }

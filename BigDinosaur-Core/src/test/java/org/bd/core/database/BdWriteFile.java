@@ -58,6 +58,7 @@ String search(String username,String content,String databasename,String tablenam
          BdFileContent eachfilelinelist=   eachfilelist.get(k);
        
         System.out.println( eachfilelinelist.getFilecontent());
+        System.out.println( eachfilelinelist.getFolderpath());
        
         
         

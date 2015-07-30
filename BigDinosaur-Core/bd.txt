@@ -1,0 +1,23 @@
+ less than 50K, stores one table per file, including index
+  unparallelled parallel database experience
+  Concurrency
+  Replication Clusters
+  In-Memory Database
+  On-Disk & In-Memory Support
+  Distributed Capabilities
+  master .slave replication 
+  async master slave
+  online backup
+  record and file level locking 
+  Concurrency control via task locks, file locks & shareable/exclusive record locks
+  primary key indexing 
+  secondary key indexing 
+  Hot Backup
+  Transaction locking 
+  real time backup
+  table &/or row locking
+  In-memory and persistent mode
+  data streams
+  Index types: BTree, single, path, collection Misc
+ 
+  objects between nodes without impact to application code
