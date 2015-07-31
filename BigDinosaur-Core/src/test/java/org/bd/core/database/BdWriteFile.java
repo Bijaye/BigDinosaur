@@ -11,6 +11,7 @@ import java.util.ArrayList;
 
 //First create database folder-it is database name 
 //create table folder-e.g company table ,user table ,Likes table,Follow table 
+// Create file index table 
 // Insert 
 
 public class BdWriteFile
@@ -48,7 +49,8 @@ public class BdWriteFile
    
    
 }
-String search(String username,String content,String databasename,String tablename){
+ // before executing this method indexing value is need to be searched ,if it is not found in indexing then only this method is executed and it is indexed 
+String search(String username,String content,String databasename,String tablename) throws IOException{
   BdFilewalker walker=new BdFilewalker();
   ArrayList<ArrayList<ArrayList<BdFileContent>>> allfilecontent= walker.main("");
   for(int i=0;i<allfilecontent.size();i++){// loop all files
@@ -61,7 +63,13 @@ String search(String username,String content,String databasename,String tablenam
        
         System.out.println( eachfilelinelist.getFilecontent());
         if(eachfilelinelist.getFilecontent().equals(content)){
+          FileIndexing indexfile=new FileIndexing();
+          String folderpath=eachfilelinelist.getFolderpath();
+          indexfile.setIndexlocation(folderpath);
+          indexfile.setKey(content);
           System.out.println( eachfilelinelist.getFolderpath());
+          write("D://database//fileindex//fileindex.txt", indexfile.toString());
+          
           return eachfilelinelist.getFolderpath();
           
           
