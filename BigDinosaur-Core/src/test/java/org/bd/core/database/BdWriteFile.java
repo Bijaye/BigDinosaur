@@ -40,6 +40,20 @@ public class BdWriteFile
    }
    else{
      System.out.println("file content path  from indexing" + index);
+     // now search file from index
+     BdFilewalker walker=new BdFilewalker();
+     ArrayList<ArrayList<BdFileContent>> list=   walker.read(index);
+     for(int i=0;i<list.size();i++){
+       ArrayList<BdFileContent> filecontent= list.get(i);
+       for(int j=0;j<filecontent.size();j++){
+         System.out.println(filecontent.get(j));
+         BdFileContent content= filecontent.get(j);
+         System.out.println(content.getFilecontent());
+         
+         
+       }
+       
+     }
    }
    
    
