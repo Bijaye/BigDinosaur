@@ -4,7 +4,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-
+// it is single node three 
+//depth of nodes goes on increasing 
+//assumption  of implementation 
+// latest data is on high depth node 
 ////////////////Note /////////////////////
 //Folder structure is written in file folderstrcuturetestedfor
 
@@ -14,7 +17,7 @@ import java.util.Map;
 public class BdTree
 {
   // it is the case for loading object in memory .All file objects exists in memory in tree forms 
-  public static void main(String[] args)
+  public BdTree  getInMemoryDatabase(String[] args)
   {
     //for first file 
      
@@ -67,6 +70,7 @@ public class BdTree
     BdTree nextfile3= nextfile2.getNextfile();
     nextfile3.setFiledirectory("D://database//user//likes//likes.txt");
     // and  similiar process for all 
+    return nextfile3;
     
     
     
@@ -91,6 +95,20 @@ public class BdTree
  
  BdTree nextfile=new BdTree();
 
+ 
+ BdTree getInMemoryTree(){
+   BdTree tree=new BdTree();
+   return tree.getInMemoryDatabase(new String[2]);
+   
+   
+ }
+ String SearchOnInMemoryDataBase(String userid){
+   BdTree tree=new BdTree(); getInMemoryTree();
+   //recursively search data on tree 
+  return userid;
+  
+   
+ }
 
 public String getFilename()
 {
