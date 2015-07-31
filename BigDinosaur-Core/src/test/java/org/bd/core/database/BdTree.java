@@ -1,88 +1,165 @@
 package org.bd.core.database;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+////////////////Note /////////////////////
+//Folder structure is written in file folderstrcuturetestedfor
+
+
 //visualize in terms of file system 
+// DdTree gives all objects of file system 
 public class BdTree
 {
-  String rootdata;
-  BdNode root;
-  
-  
-  BdNode nodeleft;
-  BdNode noderight;
-  BdNode nodrightplus;
-  BdNode nodeleftplus;
-  BdNode getNode(){
-    return new BdNode();
-  }
-  void addleft(){
-    
-  }
- void addright(){
-    
-  }
- void addData(){
-   root= getRoot();
-   if(root==null){
-     root=new BdNode();
-     
-   }
-   
-   
-   
- }
-  
+  // it is the case for loading object in memory .All file objects exists in memory in tree forms 
   public static void main(String[] args)
   {
+    //for first file 
+     
     BdTree tree=new BdTree();
-    tree.addData();
+    tree.setEncryptedfilename("99494949");
+    //this value is refilecontentastokenaslist come by calling BdFilewalker.read();
+    //this is for dummy purpose 
+    tree.setFilecontentastokenaslist(new ArrayList<ArrayList<BdFileContent>>());
+    
+  //this value is refilecontentastokenaslist come by calling BdFilewalker.read();
+    //this is for dummy purpose 
+    
+    tree.setFilecontentkeyvalueasmap(new HashMap<String, Map<String,BdFileContent>>());
+    tree.setFiledirectory("D://database");
+    tree.setFileid("1000");
+    
+    
+    
+    
+    
+    
+    
+    // for second file 
+    
+    BdTree nextfile=  tree.nextfile;
+    nextfile.setEncryptedfilename("99494940");
+    nextfile.setFiledirectory("D://database//fileindex/fileindex.txt");
+    // setFilecontentastokenaslist is the content of fileindex.txt in arraylist as all tokens 
+    nextfile.setFilecontentastokenaslist(new ArrayList<ArrayList<BdFileContent>>());
+    
+    nextfile.setFileid("1001");
+    // setFilecontentastokenaslist is the content of fileindex.txt in map as key value  
+    nextfile.setFilecontentkeyvalueasmap(new HashMap<String, Map<String,BdFileContent>>());
+    
+    
+    
+    
+    // for third file 
+    
+    BdTree nextfile2=nextfile.getNextfile();
+    nextfile2.setEncryptedfilename("99494943");
+    nextfile.setFiledirectory("D://database//user/user.txt");
+ // setFilecontentastokenaslist is the content of user.txt
+    nextfile2.setFilecontentastokenaslist(new ArrayList<ArrayList<BdFileContent>>());
+    nextfile2.setFileid("1002");
+ // setFilecontentastokenaslist is the content of user.txt in map as key value  
+    nextfile2.setFilecontentkeyvalueasmap(new HashMap<String, Map<String,BdFileContent>>());
+    
+    
+    BdTree nextfile3= nextfile2.getNextfile();
+    nextfile3.setFiledirectory("D://database//user//likes//likes.txt");
+    // and  similiar process for all 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
   }
-  
-  public String getRootdata()
-  {
-    return rootdata;
-  }
-  public BdNode getRoot()
-  {
-    return root;
-  }
-  public BdNode getNodeleft()
-  {
-    return nodeleft;
-  }
-  public BdNode getNoderight()
-  {
-    return noderight;
-  }
-  public BdNode getNodrightplus()
-  {
-    return nodrightplus;
-  }
-  public BdNode getNodeleftplus()
-  {
-    return nodeleftplus;
-  }
-  public void setRootdata(String rootdata)
-  {
-    this.rootdata = rootdata;
-  }
-  public void setRoot(BdNode root)
-  {
-    this.root = root;
-  }
-  public void setNodeleft(BdNode nodeleft)
-  {
-    this.nodeleft = nodeleft;
-  }
-  public void setNoderight(BdNode noderight)
-  {
-    this.noderight = noderight;
-  }
-  public void setNodrightplus(BdNode nodrightplus)
-  {
-    this.nodrightplus = nodrightplus;
-  }
-  public void setNodeleftplus(BdNode nodeleftplus)
-  {
-    this.nodeleftplus = nodeleftplus;
-  }
+  // it loads all contents of files in the form of strings
+  // Though this might be right option but i dont have choice now.It need to be more optimized and refined
+  // each object of BdFileContent is tokens 
+  String filename;
+ List<ArrayList<BdFileContent>> filecontentastokenaslist=new  ArrayList<ArrayList<BdFileContent>>();
+ Map<String,Map<String,BdFileContent>> filecontentkeyvalueasmap=new   HashMap<String, Map<String,BdFileContent>>();
+ String filedirectory;
+ String fileid;
+ String encryptedfilename;
+ 
+ BdTree nextfile=new BdTree();
+
+
+public String getFilename()
+{
+  return filename;
+}
+
+public List<ArrayList<BdFileContent>> getFilecontentastokenaslist()
+{
+  return filecontentastokenaslist;
+}
+
+public Map<String, Map<String, BdFileContent>> getFilecontentkeyvalueasmap()
+{
+  return filecontentkeyvalueasmap;
+}
+
+public String getFiledirectory()
+{
+  return filedirectory;
+}
+
+public String getFileid()
+{
+  return fileid;
+}
+
+public String getEncryptedfilename()
+{
+  return encryptedfilename;
+}
+
+public BdTree getNextfile()
+{
+  return nextfile;
+}
+
+public void setFilename(String filename)
+{
+  this.filename = filename;
+}
+
+public void setFilecontentastokenaslist(List<ArrayList<BdFileContent>> filecontentastokenaslist)
+{
+  this.filecontentastokenaslist = filecontentastokenaslist;
+}
+
+public void setFilecontentkeyvalueasmap(Map<String, Map<String, BdFileContent>> filecontentkeyvalueasmap)
+{
+  this.filecontentkeyvalueasmap = filecontentkeyvalueasmap;
+}
+
+public void setFiledirectory(String filedirectory)
+{
+  this.filedirectory = filedirectory;
+}
+
+public void setFileid(String fileid)
+{
+  this.fileid = fileid;
+}
+
+public void setEncryptedfilename(String encryptedfilename)
+{
+  this.encryptedfilename = encryptedfilename;
+}
+
+public void setNextfile(BdTree nextfile)
+{
+  this.nextfile = nextfile;
+}
 
 }
