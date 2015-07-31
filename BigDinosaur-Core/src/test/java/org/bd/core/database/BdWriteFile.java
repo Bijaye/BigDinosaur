@@ -8,6 +8,7 @@ import java.io.IOException;
 //D//movies/Hindi/Oldmovie/movie1.mp3
 //D//movies/Hindi/newmovie/movie2.mp3
 import java.util.ArrayList;
+import java.util.Map;
 
 //First create database folder-it is database name 
 //create table folder-e.g company table ,user table ,Likes table,Follow table 
@@ -31,7 +32,15 @@ public class BdWriteFile
    BdWriteFile write =new BdWriteFile();
 //   String webfilecontenet="abc company ,pokhara ";
 //   write.write("D://database/company.txt", webfilecontenet);
+   //first search in indexed location.
+   //if not found then only search in real location
+   String index=searchIndexing("D://database//fileindex//fileindex.txt","123");
+   if(index==null){
    System.out.println(write.search("", "123", "", ""));
+   }
+   else{
+     System.out.println("file content path  from indexing" + index);
+   }
    
    
    
@@ -49,6 +58,18 @@ public class BdWriteFile
    
    
 }
+public static  String searchIndexing(String indexlocation,String id){
+   BdFilewalker walker=new BdFilewalker();
+   Map<String,String> map=  walker.readasMap(indexlocation);
+   String reallocation=map.get(id);
+   if(reallocation!=null){
+     System.out.println(reallocation);
+     
+  
+   }
+  return reallocation;
+   
+ }
  // before executing this method indexing value is need to be searched ,if it is not found in indexing then only this method is executed and it is indexed 
 String search(String username,String content,String databasename,String tablename) throws IOException{
   BdFilewalker walker=new BdFilewalker();

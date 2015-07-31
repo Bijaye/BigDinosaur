@@ -5,7 +5,9 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class BdFilewalker {
   List<String> listofdir=new ArrayList<String>();
@@ -72,6 +74,48 @@ public class BdFilewalker {
       return filecontentlisteachfile;
     }
 
+  
+  
+  
+  static  Map<String,String>  readasMap(String filepath){
+    Map<String,String> map = new HashMap<String,String>() ;
+      BufferedReader br = null;
+      
+      try {
+   
+        String sCurrentLine;
+   
+        br = new BufferedReader(new FileReader(filepath));
+   
+        while ((sCurrentLine = br.readLine()) != null) {
+          String[] split=   sCurrentLine.split(" ");
+         
+          
+            map.put(split[0], split[1]);
+            
+          }
+          
+          
+   
+      } catch (IOException e) {
+        e.printStackTrace();
+      } finally {
+        try {
+          if (br != null)br.close();
+        } catch (IOException ex) {
+          ex.printStackTrace();
+        }
+      }
+      return map;
+    }
+
+  
+  
+  
+  
+  
+  
+  
     public static  ArrayList<ArrayList<ArrayList<BdFileContent>>> main(String args) {
         BdFilewalker fw = new BdFilewalker();
         ArrayList<ArrayList<ArrayList<BdFileContent>>> nodes = new ArrayList<ArrayList<ArrayList<BdFileContent>>>();
