@@ -7,9 +7,73 @@ File:D:\database\database.txt
 File:D:\database\user\likes\follow\follow.txt
 File:D:\database\user\likes\likes.txt
 File:D:\database\user\user.txt
+File:D:\database\user\Friends.txt
 
+there is 2 category of user ,one user does not have freinds  and one user has 
+friends  
+
+Column oriented database form 
 
 Insert data on company.txt,database.txt,follow.txt,likes.txt,user.txt from web UI 
+If column oriented database chosen then 
+Create table User ,
+Create column family as company,follow,likes ,Professionalinfo,Personalinfo
+company column family has following attributes
+company name,location,company registered no
+Follow column family has following attributes
+followername,followerlocation
+Likes column family has following attribites 
+bookname,moviename
+professionalcolumn family has following attributes
+ designation and salalry
+ personalinfor column family has following attributes 
+  name and city
+  
+  
+  document oriented database form 
+  First of all create collection 
+  say employee collection 
+  Collection name=employee collection 
+  employee collection has following data
+  there can be 100 items on employee collection 
+  
+  
+  {name:”abishkar bhattarai”, 
+companyname: “bigdinosaur, 
+City:”pokhara”,
+designation:"java architect",
+Salary:"0$",
+Likes:['Steve Jobs,Life Is beacutiful],
+Follow:['Steve Jobs,Warren Buffat'],
+
+// below is for user with friends 
+
+  {name:”steveawa ”, 
+companyname: “bigdinosaur, 
+City:”pokhara”,
+designation:"java architect",
+Salary:"0$",
+Likes:['Steve Jobs,Life Is beacutiful],
+Follow:['Steve Jobs,Warren Buffat'],
+
+ friends: [	
+      {
+         user:'user1',
+         relationship: 'family',
+        
+      },
+       user:'user2',
+         relationship: 'close family',
+      
+      
+   ]
+
+
+
+
+
+}
+}
 
 
 
