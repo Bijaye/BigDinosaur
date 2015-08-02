@@ -76,6 +76,28 @@ Follow:['Steve Jobs,Warren Buffat'],
 }
 
 
+key value based database 
+
+key=user:1
+value=abishkar bhattarai pokhara java architect bigdinosaur
+can add on key user:1 and value goes on increasing suppose 
+add user:2  
+value=abishkar1 pokhara java architect bigdinosaur1
+
+key=friendlist
+value=susan
+add in key friendlist value susan
+add in key friendlist value hari
+frienslist key must return susan,hari
+
+key=like
+value=Steve Jobs,
+value=Life Is beacutiful
+so in key like values are
+steve jobs 
+life is beautiful
+
+
 
 
  
