@@ -96,7 +96,7 @@ value=Life Is beacutiful
 so in key like values are
 steve jobs 
 life is beautiful
-in same key thee can be thousands of likes value 
+in same key there can be thousands of likes value 
 
 
 
