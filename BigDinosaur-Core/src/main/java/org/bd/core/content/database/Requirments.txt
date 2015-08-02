@@ -1,0 +1,17 @@
+Create DataBase From WebUI
+Database name=Database ,it exists in drive C://Database 
+Create table Name from web UI
+
+File:D:\database\company.txt
+File:D:\database\database.txt
+File:D:\database\user\likes\follow\follow.txt
+File:D:\database\user\likes\likes.txt
+File:D:\database\user\user.txt
+
+
+Insert data on company.txt,database.txt,follow.txt,likes.txt,user.txt from web UI 
+
+
+
+
+ 

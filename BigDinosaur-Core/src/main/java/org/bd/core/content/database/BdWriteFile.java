@@ -1,4 +1,4 @@
-package org.bd.core.database;
+package org.bd.core.content.database;
 
 import java.io.FileOutputStream;
 import java.io.IOException;

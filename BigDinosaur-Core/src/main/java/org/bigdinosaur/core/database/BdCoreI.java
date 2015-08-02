@@ -2,7 +2,7 @@ package org.bigdinosaur.core.database;
 
 public class BdCoreI implements BdCore
 {
-private String pigeonhole;//it can be property or action 
+private String slots;//it can be property or action 
 //for example pigeonhole=Property or pigeonhole=action;
 private String propertyname;
 //propertyname=file;

@@ -1,4 +1,4 @@
-package org.bd.core.database;
+package org.bd.core.content.database;
 
 public class BdFileContent
 {
