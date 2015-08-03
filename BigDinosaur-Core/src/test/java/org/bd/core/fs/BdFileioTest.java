@@ -8,6 +8,28 @@ public class BdFileioTest
 {
   public static void main(String[] args) throws IOException
   {
+//    writeMetadata();
+    
+//    test.writeTableColumns("D://databasename//metadata.txt", columns1);
+    writeColumns(args);
+  }
+  static void writeColumns(String[] columns) throws IOException{
+    BdFileio test=new  BdFileio();
+    String coumns[]=new String[6];
+    coumns[0]="user";
+    coumns[1]="123";
+    coumns[2]="abishkar_bhattarai@hotmail.com";
+    coumns[3]="14 feb ";
+    coumns[4]="D://databasename//user.txt";
+  
+    
+    
+    test.writeTable("D://databasename//user.txt", coumns);
+    
+  }
+
+  private static void writeMetadata() throws IOException
+  {
     BdFileio test=new  BdFileio();
     test.createFile("D://databasename//bigdinosaur");
     test.createFile("D://databasename//user");
@@ -22,7 +44,6 @@ public class BdFileioTest
     String  columns=new  String("follow idname SteveJobs,WarrentBuffet,locationofusertextfile\n");
     
     
-    test.writeTableColumns("D://databasename//metadata.txt", columns);
-//    test.writeTableColumns("D://databasename//metadata.txt", columns1);
+    test.writeTableMetadata("D://databasename//metadata.txt", columns);
   }
 }
