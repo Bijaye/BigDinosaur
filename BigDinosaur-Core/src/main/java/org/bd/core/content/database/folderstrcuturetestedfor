@@ -7,3 +7,8 @@ Dir:D:\database\user\likes
 File:D:\database\user\user.txt
 Dir:D:\database
 D:\database\fileindex\fileindex.txt
+
+filecontent inside metadata.txt
+user,idname,email, location ,date of birth,locationofusertextfile
+likes idname moviename,bookname,locationname,foodname,locationofliketextfile
+follow idname SteveJobs,WarrentBuffet,locationofusertextfile
