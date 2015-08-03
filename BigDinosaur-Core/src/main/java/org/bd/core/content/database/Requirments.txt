@@ -1,8 +1,41 @@
 Create DataBase From WebUI
 Database name=Database ,it exists in drive C://Database 
 Create table Name from web UI
+User give the location of table with table name 
+there can be any format of folder,it depends on how user wants to use database structure.
+Database name is the base folder  .
 
-File:D:\database\company.txt
+Give attributes that can hold in table 
+for example user table has four attributes 
+User table
+idname,email, location ,date of birth
+Likes table
+idname moviename,bookname,locationname,foodname  
+
+Follow table 
+idname SteveJobs,WarrentBuffet
+databasemetadata.txt
+it contains information about tables in database 
+key=tablename and value=table columns 
+key=User and value=idname,email, location ,date of birth
+User,idname,email, location ,date of birth,locationofusertextfile
+Likes idname moviename,bookname,locationname,foodname,locationofliketextfile
+Follow idname SteveJobs,WarrentBuffet,locationofusertextfile
+so database.txt has following contents
+User,idname,email, location ,date of birth,locationofusertextfile
+Likes idname moviename,bookname,locationname,foodname,locationofliketextfile
+Follow idname SteveJobs,WarrentBuffet,locationofusertextfile
+
+these data are created by user from web ui
+so data final form is 
+C://Databasename/databasemetadata.txt
+C://Databasename/databasemetadata.txt/User.txt
+C://Databasename/databasemetadata.txt/likes.txt
+C://Databasename/databasemetadata.txt/follow.txt
+
+
+
+
 File:D:\database\database.txt
 File:D:\database\user\likes\follow\follow.txt
 File:D:\database\user\likes\likes.txt
