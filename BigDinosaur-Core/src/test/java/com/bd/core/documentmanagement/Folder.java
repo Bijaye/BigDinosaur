@@ -12,16 +12,5 @@ public class Folder
   }
   Folder Foldernext;
   
-  public Folder getFoldernext()
-  {
-    return Foldernext;
-  }
-  public void setFoldernext(Folder Foldernext)
-  {
-    this.Foldernext = Foldernext;
-  }
-  Folder getNewFolder(String Foldername,byte[] bytedata){
-    return new Folder(Foldername,bytedata);
-    
-  }
+  
 }

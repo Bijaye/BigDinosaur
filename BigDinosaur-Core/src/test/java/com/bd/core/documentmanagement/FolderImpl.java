@@ -14,7 +14,7 @@ public class FolderImpl{
 
 
   void getListOfFilesLineage( ArrayList<String> listoffilesname) throws IOException{
-    Folder folder=null;
+;    Folder folder=null;
     for(int i=0;i<listoffilesname.size();i++){
       String filepath= listoffilesname.get(i);
       byte[] bytevalue=readByte(filepath);
@@ -26,15 +26,26 @@ public class FolderImpl{
      
   }
   Folder  CreateFolderTree( String filepath,byte[] bytevalue,Folder folder){
-    Folder next = null;
+    Folder originaltree = null;
+    Folder nextfol;
     if(folder==null){
     Folder Folder=new Folder(filepath,bytevalue);
+    originaltree=Folder;
     return Folder;
     }
     else{
-      next= folder.getNewFolder(filepath, bytevalue);
-      folder.setFoldernext(next);
-      return folder;
+       nextfol =new Folder(filepath, bytevalue);
+    
+     
+      while(true){
+        if(  nextfol.Foldernext==null){
+          
+          folder.Foldernext=nextfol;
+        }
+        return nextfol;
+        
+      }
+     
      
       
     }
