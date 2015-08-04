@@ -34,6 +34,7 @@ public class BdWriteFile
 //   write.write("D://database/company.txt", webfilecontenet);
    //first search in indexed location.
    //if not found then only search in real location
+   // it is checked against user id 
    String index=searchIndexing("D://database//fileindex//fileindex.txt","123");
    if(index==null){
    System.out.println(write.search("", "123", "", ""));
