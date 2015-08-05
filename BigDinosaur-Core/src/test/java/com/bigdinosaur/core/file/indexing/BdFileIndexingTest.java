@@ -4,7 +4,7 @@ import java.io.IOException;
 
 import org.bd.core.content.database.BdWriteFile;
 
-public class FileIndexingTest
+public class BdFileIndexingTest
 {
   public static void main(String[] args) throws IOException
   {

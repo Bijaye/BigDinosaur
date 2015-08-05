@@ -8,13 +8,13 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 
-public class FolderImpl{
+public class BdFolderImpl{
 
 
 
 
   void getListOfFilesLineage( ArrayList<String> listoffilesname) throws IOException{
-;    Folder folder=null;
+;    BdFolder folder=null;
     for(int i=0;i<listoffilesname.size();i++){
       String filepath= listoffilesname.get(i);
       byte[] bytevalue=readByte(filepath);
@@ -25,16 +25,16 @@ public class FolderImpl{
     System.out.println(folder);
      
   }
-  Folder  CreateFolderTree( String filepath,byte[] bytevalue,Folder folder){
-    Folder originaltree = null;
-    Folder nextfol;
+  BdFolder  CreateFolderTree( String filepath,byte[] bytevalue,BdFolder folder){
+    BdFolder originaltree = null;
+    BdFolder nextfol;
     if(folder==null){
-    Folder Folder=new Folder(filepath,bytevalue);
+    BdFolder Folder=new BdFolder(filepath,bytevalue);
     originaltree=Folder;
     return Folder;
     }
     else{
-       nextfol =new Folder(filepath, bytevalue);
+       nextfol =new BdFolder(filepath, bytevalue);
     
      
       while(true){

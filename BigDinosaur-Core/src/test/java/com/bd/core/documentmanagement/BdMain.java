@@ -4,7 +4,7 @@ package com.bd.core.documentmanagement;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Main
+public class BdMain
 {
   public static void main(String[] args) throws IOException
   {
@@ -18,7 +18,7 @@ public class Main
     listoffilesname.add("D://database//user//user.txt");
     listoffilesname.add("D://database//fileindex//fileindex.txt");
    
-    FolderImpl impl=new FolderImpl();
+    BdFolderImpl impl=new BdFolderImpl();
     impl.getListOfFilesLineage(listoffilesname);
    
   
