@@ -52,3 +52,15 @@ File successfully copied to location clientid/companyname/data
 
 there can be following format for content 
 .docs,.txt,.pdf,.json,.csv
+
+
+
+
+data structure format
+key=abishkar,26,pokhara,Nepal
+value=abishkar bhattarai,abishkar paudel,abishkar gurung 
+
+but the values can range to large no ..
+for example values=abishkar bhattarai,abishkar paudel,abishkar gurung ...................................................
+.............................. 1 thousand  .
+so need to consider this one .
