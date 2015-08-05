@@ -5,6 +5,7 @@ import java.util.Map;
 
 public class BdResultMap
 {
+  // this is the final result to be seen by client 
   Map<BdSearchKey,BdSearchResultValue> keyvaluetotal=new  HashMap<BdSearchKey,BdSearchResultValue>();
 
 }
