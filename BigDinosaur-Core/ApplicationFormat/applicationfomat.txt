@@ -1,0 +1,54 @@
+use case I:
+Give your document Name:abishkar.doc
+Give your document location:c//mydocument
+Result :abishkar.doc is downloaded
+
+Use Case II:
+File name:a.txt
+Content to search:abishkar 
+Filelocation:C://myfile
+Result
+No of words matched =5 
+
+
+Use CaseIII:
+File Name:a.tx,b.txt,c.txt
+Search word:abishkar
+Criteria
+location:pokhara
+Country:nepal
+age:26
+
+Result
+Total Result:3
+abishkar bhattarai
+abishkar paudel
+abishkar gurung 
+
+
+Use caseIV
+Location Of source file:http://somelocation/data
+DestinatonSource:clientid/companyname/data
+Give dataformat type:json
+Give file format:.json
+Give data format status:Structured
+Give database type:document oriented database 
+
+Result
+File successfully copied to location clientid/companyname/data
+
+
+
+Use caseIV
+Location Of source file:http://somelocation/data
+DestinatonSource:clientid/companyname/data
+Give dataformat type:xml
+Give file format:.xml
+Give data format status:unStructured
+Give database type:column oriented data 
+Result
+File successfully copied to location clientid/companyname/data
+
+
+there can be following format for content 
+.docs,.txt,.pdf,.json,.csv
