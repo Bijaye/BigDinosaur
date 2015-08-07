@@ -27,17 +27,9 @@ package org.bigdinosaur.core.datastructure;
     return null;
   }
 
-  @Override
-  public Object[] toArray()
-  {
-    return null;
-  }
 
-  @Override
-  public <T> T[] toArray(T[] a)
-  {
-    return null;
-  }
+
+
 
   @Override
   public boolean add(E e)
@@ -51,29 +43,30 @@ package org.bigdinosaur.core.datastructure;
     return false;
   }
 
-  @Override
-  public boolean containsAll(BdCollection<?> c)
-  {
-    return false;
-  }
+ 
 
+//  BdArrayList<BdFileDirSingleVm> clusterarrlist = new BdArrayList<BdFileDirSingleVm>(5);
+  // From One JVM it return object of type BdFileDirSingleVm
+//From another JVM it return object of type BdFileDirSingleVm
+//From another JVM it return object of type BdFileDirSingleVm
+  //so add all providea mechanism to add objects at once for all jvm 
+//  BdArrayList<BdFileDirSingleVm> arrlist1 = new BdArrayList<BdFileDirSingleVm>(5);
+//  BdArrayList<BdFileDirSingleVm> arrlist2 = new BdArrayList<BdFileDirSingleVm>(5);
+//  BdArrayList<BdFileDirSingleVm> arrlist3 = new BdArrayList<BdFileDirSingleVm>(5);
+//  clusterarrlist.addAll(arrlist1);
+//  clusterarrlist.addAll(arrlist2);
+//  clusterarrlist.addAll(arrlist3);
+  
+  
   @Override
   public boolean addAll(BdCollection<? extends E> c)
   {
     return false;
   }
 
-  @Override
-  public boolean removeAll(BdCollection<?> c)
-  {
-    return false;
-  }
 
-  @Override
-  public boolean retainAll(BdCollection<?> c)
-  {
-    return false;
-  }
+
+ 
 
   @Override
   public void clear()
