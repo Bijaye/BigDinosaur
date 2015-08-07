@@ -14,14 +14,14 @@ import java.util.Map;
 
 //visualize in terms of file system 
 // DdTree gives all objects of file system 
-public class BdTree
+public class BdFileDirSingleVm
 {
   // it is the case for loading object in memory .All file objects exists in memory in tree forms 
-  public BdTree  getInMemoryDatabase(String[] args)
+  public BdFileDirSingleVm  getInMemoryDatabase(String[] args)
   {
     //for first file 
      
-    BdTree tree=new BdTree();
+    BdFileDirSingleVm tree=new BdFileDirSingleVm();
     tree.setEncryptedfilename("99494949");
     //this value is refilecontentastokenaslist come by calling BdFilewalker.read();
     //this is for dummy purpose 
@@ -42,7 +42,7 @@ public class BdTree
     
     // for second file 
     
-    BdTree nextfile=  tree.nextfile;
+    BdFileDirSingleVm nextfile=  tree.nextfile;
     nextfile.setEncryptedfilename("99494940");
     nextfile.setFiledirectory("D://database//fileindex/fileindex.txt");
     // setFilecontentastokenaslist is the content of fileindex.txt in arraylist as all tokens 
@@ -57,7 +57,7 @@ public class BdTree
     
     // for third file 
     
-    BdTree nextfile2=nextfile.getNextfile();
+    BdFileDirSingleVm nextfile2=nextfile.getNextfile();
     nextfile2.setEncryptedfilename("99494943");
     nextfile.setFiledirectory("D://database//user/user.txt");
  // setFilecontentastokenaslist is the content of user.txt
@@ -67,7 +67,7 @@ public class BdTree
     nextfile2.setFilecontentkeyvalueasmap(new HashMap<String, Map<String,BdFileContent>>());
     
     
-    BdTree nextfile3= nextfile2.getNextfile();
+    BdFileDirSingleVm nextfile3= nextfile2.getNextfile();
     nextfile3.setFiledirectory("D://database//user//likes//likes.txt");
     // and  similiar process for all 
     return nextfile3;
@@ -93,17 +93,17 @@ public class BdTree
  String fileid;
  String encryptedfilename;
  
- BdTree nextfile=new BdTree();
+ BdFileDirSingleVm nextfile=new BdFileDirSingleVm();
 
  
- BdTree getInMemoryTree(){
-   BdTree tree=new BdTree();
+ BdFileDirSingleVm getInMemoryTree(){
+   BdFileDirSingleVm tree=new BdFileDirSingleVm();
    return tree.getInMemoryDatabase(new String[2]);
    
    
  }
  String SearchOnInMemoryDataBase(String userid){
-   BdTree tree=new BdTree(); getInMemoryTree();
+   BdFileDirSingleVm tree=new BdFileDirSingleVm(); getInMemoryTree();
    //recursively search data on tree 
   return userid;
   
@@ -140,7 +140,7 @@ public String getEncryptedfilename()
   return encryptedfilename;
 }
 
-public BdTree getNextfile()
+public BdFileDirSingleVm getNextfile()
 {
   return nextfile;
 }
@@ -175,7 +175,7 @@ public void setEncryptedfilename(String encryptedfilename)
   this.encryptedfilename = encryptedfilename;
 }
 
-public void setNextfile(BdTree nextfile)
+public void setNextfile(BdFileDirSingleVm nextfile)
 {
   this.nextfile = nextfile;
 }
