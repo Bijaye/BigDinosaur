@@ -6,6 +6,8 @@ public interface BdCollection<E> extends BdIterable<E> {
     int size();
     boolean isEmpty();
 
+    
+   // checked against in collection of jvm 
     boolean contains(Object o);
    
     BdIterator<E> iterator();
