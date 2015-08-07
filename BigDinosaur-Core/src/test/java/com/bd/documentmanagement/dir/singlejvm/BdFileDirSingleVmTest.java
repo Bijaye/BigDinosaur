@@ -8,18 +8,19 @@ public class BdFileDirSingleVmTest
   public class NodeImpl
   {
     public void main(String[] args)
-    {    Bdtree tree=new Bdtree(new BdFileDirSingleVm());
-    tree.add(tree, new BdFileDirSingleVm());
-    tree.add(tree, new BdFileDirSingleVm());
-    tree.add(tree, new BdFileDirSingleVm());
-    tree.add(tree, new BdFileDirSingleVm());
-    tree.add(tree, new BdFileDirSingleVm());
-     tree.add(tree, new BdFileDirSingleVm());
+    {
+      Bdtree tree = new Bdtree(new BdFileDirSingleVm());
       tree.add(tree, new BdFileDirSingleVm());
-       tree.add(tree, new BdFileDirSingleVm());
-        tree.add(tree, new BdFileDirSingleVm());
-    System.out.println(tree);
-    
-  }
+      tree.add(tree, new BdFileDirSingleVm());
+      tree.add(tree, new BdFileDirSingleVm());
+      tree.add(tree, new BdFileDirSingleVm());
+      tree.add(tree, new BdFileDirSingleVm());
+      tree.add(tree, new BdFileDirSingleVm());
+      tree.add(tree, new BdFileDirSingleVm());
+      tree.add(tree, new BdFileDirSingleVm());
+      tree.add(tree, new BdFileDirSingleVm());
+      System.out.println(tree);
+
+    }
   }
 }
