@@ -1,4 +1,4 @@
-package com.bd.documentmanagement.dir.singlejvm;
+package com.bd.documentmanagement.dir.jvm;
 
 import org.bd.core.content.database.BdFileDirSingleVm;
 import org.bd.core.content.database.Bdtree;

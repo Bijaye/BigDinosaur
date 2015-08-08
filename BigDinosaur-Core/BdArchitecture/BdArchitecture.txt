@@ -1,0 +1,3 @@
+BdtreeMultipleNode has many BdFileDirSingleVm-- 
+
+BdTreeClusterNode has many BdtreeMultipleNode--same concept as BdtreeMultipleNode
