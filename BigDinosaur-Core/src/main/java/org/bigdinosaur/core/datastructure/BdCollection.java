@@ -24,10 +24,8 @@ public interface BdCollection<E> extends BdIterable<E> {
     boolean containsAll(BdCollection<?> c);
 
    
-    boolean removeAll(BdCollection<?> c);
 
    
-    boolean retainAll(BdCollection<?> c);
 
    
     void clear();

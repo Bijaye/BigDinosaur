@@ -5,6 +5,7 @@ import org.bd.core.content.database.Bdtree;
 
 public class BdFileDirSingleVmTest
 {
+  
   public class NodeImpl
   {
     public void main(String[] args)

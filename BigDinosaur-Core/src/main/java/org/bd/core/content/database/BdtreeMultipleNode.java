@@ -21,7 +21,7 @@ public BdtreeMultipleNode getleft()
 {
   return leftnode;
 }
-BdtreeMultipleNode add(BdtreeMultipleNode node,BdFileDirSingleVm data,int checker){
+public BdtreeMultipleNode add(BdtreeMultipleNode node,BdFileDirSingleVm data,int checker){
   if(node==null){
      node =new BdtreeMultipleNode(data);
   }

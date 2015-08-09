@@ -21,7 +21,7 @@ public BdTreeClusterNode getleft()
 {
   return leftnode;
 }
-BdTreeClusterNode add(BdTreeClusterNode node,BdtreeMultipleNode data,int checker){
+public BdTreeClusterNode add(BdTreeClusterNode node,BdtreeMultipleNode data,int checker){
   if(node==null){
      node =new BdTreeClusterNode(data);
   }
