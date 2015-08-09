@@ -1,31 +1,39 @@
 package org.bigdinosaur.core.datastructure;
 
+
+
+
  public abstract class BdAbstractCollection<E> implements BdCollection<E>
 {
 
-  @Override
-  public int size()
-  {
-    return 0;
-  }
+  abstract public int size();
+ 
 
   @Override
   public boolean isEmpty()
   {
-    return false;
+    return (size()==0);
+ 
   }
 
   @Override
   public boolean contains(Object o)
   {
+    BdIterator<E> iterator= iterator();
+    while(iterator.hasNext()){
+      Object obj=  iterator.next();
+      if(obj.equals(o)){
+        return true;
+      }
+      
+    }
     return false;
-  }
+    
+      
+    }
 
-  @Override
-  public BdIterator<E> iterator()
-  {
-    return null;
-  }
+  public abstract BdIterator<E> iterator();
+   
 
 
 
@@ -40,7 +48,14 @@ package org.bigdinosaur.core.datastructure;
   @Override
   public boolean remove(Object o)
   {
-    return false;
+    BdIterator iterator= iterator();
+  if(iterator.hasNext()){
+   Object obj= iterator.next();
+   iterator.remove();
+   
+  }
+  return false;
+  
   }
 
  
@@ -61,7 +76,13 @@ package org.bigdinosaur.core.datastructure;
   @Override
   public boolean addAll(BdCollection<? extends E> c)
   {
-    return false;
+    BdIterator<? extends E> iterator=  c.iterator();
+    if(iterator.hasNext()){
+      E obj=(E) iterator.next();
+      add(obj);
+      
+    }
+    return true;
   }
 
 
@@ -71,6 +92,12 @@ package org.bigdinosaur.core.datastructure;
   @Override
   public void clear()
   {
+    BdIterator<?> iterator= iterator();
+    if(iterator.hasNext()){
+      
+      iterator.remove();
+      
+    }
     
   }
 
