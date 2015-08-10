@@ -31,4 +31,12 @@ public interface BdCollection<E> extends BdIterable<E> {
    
     int hashCode();
     boolean addAll(BdCollection<? extends E> c);
+   boolean  addPriority(Object obj,String prioritylevel);
+   Object Search(Object obj);
+   Object checkDublicate(Object obj);
+   int countNodes(BdCollection coll);
+  boolean put(Object key,Object value);
+  boolean get(Object key);
+  boolean delete(Object key);
+  
 }
