@@ -1,10 +1,9 @@
 package org.bd.core.content.database;
 
 
-/*
- * Java Program to Implement Stack
- */
+// Should be able to push, pop,  peek , check empty, check full for content BdFileDirSingleVm 
  
+
 import java.util.*;
  
 /*  Class arrayStack  */

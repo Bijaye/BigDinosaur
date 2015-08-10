@@ -3,7 +3,11 @@ package org.bd.core.content.database;
 
 import java.util.*;
  
-/*  Class arrayQueue  */
+// Queue Operations
+//should be able to insert, remove, peek , check empty, check full,  size for content BdFileDirSingleVm
+
+
+
 class arrayQueue
 {
     protected int Queue[] ;

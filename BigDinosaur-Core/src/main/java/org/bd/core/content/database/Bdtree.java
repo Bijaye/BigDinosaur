@@ -1,5 +1,5 @@
 package org.bd.core.content.database;
-
+//should be able to insert,countnodes,delete ,search,checkempty for content BdFileDirSingleVm
 public class Bdtree
 {
   public Bdtree( BdFileDirSingleVm x)
