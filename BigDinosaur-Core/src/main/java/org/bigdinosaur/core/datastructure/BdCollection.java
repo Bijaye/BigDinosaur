@@ -2,13 +2,15 @@ package org.bigdinosaur.core.datastructure;
 
 public interface BdCollection<E> extends BdIterable<E> {
    
+  
+  // below is the method definition and polymorphic algorithm can be applied on below 
+ // mentioned method impl
     int size();
     boolean isEmpty();
-
     boolean contains(Object o);
-   
     BdIterator<E> iterator(); 
     boolean add(E e);
+    boolean addAllowDublicate(E e);
     boolean remove(Object o);
     boolean containsAll(BdCollection<?> c);
     void clear();
