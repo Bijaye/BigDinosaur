@@ -34,6 +34,7 @@ public interface BdCollection<E> extends BdIterable<E> {
    boolean  addPriority(Object obj,String prioritylevel);
    Object Search(Object obj);
    Object checkDublicate(Object obj);
+   BdCollection  sort(BdCollection coll);
    int countNodes(BdCollection coll);
   boolean put(Object key,Object value);
   boolean get(Object key);
