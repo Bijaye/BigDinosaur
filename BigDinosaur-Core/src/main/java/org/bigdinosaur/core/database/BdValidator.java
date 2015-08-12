@@ -1,4 +1,5 @@
-package com.base.bigdinosaur.core.validator;
+package org.bigdinosaur.core.database;
+
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -8,10 +9,10 @@ import java.util.List;
 import com.bigdinosaur.base.client.basecomponent.ComponentParts;
 import com.bigdinosaur.base.client.validator.ValidatorTask;
 
-public class ValidatorVerifier
+public class BdValidator
 {
 
-            public ValidatorVerifier()
+            public BdValidator()
             {
        taskList = new ArrayList();
             }
@@ -23,7 +24,7 @@ public class ValidatorVerifier
 
 public List<Collection> validate()
 {
-	 List<Collection> result=null;
+   List<Collection> result=null;
    
     for(Iterator iterator = taskList.iterator(); iterator.hasNext();)
     {
@@ -31,19 +32,19 @@ public List<Collection> validate()
         boolean error = false;
         try
         {
-        	error = task.validate();
+          error = task.validate();
         }
         catch(Exception ex)
         {
-        	error = false;
+          error = false;
         }
         if(!error)
         {
-        	ComponentParts componentparts[];
+          ComponentParts componentparts[];
             int j = (componentparts = task.getFields()).length;
             for(int i = 0; i < j; i++)
             {
-            	ComponentParts field = componentparts[i];
+              ComponentParts field = componentparts[i];
                 field.setErrorStyle(true);
             }
 

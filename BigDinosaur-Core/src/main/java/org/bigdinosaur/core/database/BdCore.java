@@ -29,11 +29,11 @@ public interface BdCore
  //OOP power resemble i to Production lines 
  Object ConstructObjectIterateObjectGrowth(Object growth);
  Class ConstructObjectIterateClassGrowth(Class growth);
- Business getBusinessType();
- Business getBusiness();
- Business getBusinessPackages(String businesstype);
- Business getModulesList(String businesspackage);
- Business getModule(String programid);
+  void getBusinessType();
+  void getBusiness();
+  void getBusinessPackages(String businesstype);
+  void getModulesList(String businesspackage);
+  void getModule(String programid);
  
  
  

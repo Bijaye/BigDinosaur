@@ -10,6 +10,27 @@ Object readBlocks();
 Object createBlock();
 Object deleteBlock();
 Object replicateBlock();
+Object AccessLogService();
+Object FieldNameService();
+Object MessageService();
+Object PostConditionService();
+Object PreconditionService();
+Object PreferenceService();
+Object SessionContext();
+void deleteLogInSuccess();
+
+void deleteSuccessDBOnly();
+
+void resetContext();
+void log();
+public abstract Object lock(String key, String refKey, String fileId,
+                            String exclusiveKey1, String exclusiveKey2, String workStationId,
+                            String moduleid, String packageid, String businessid);
+
+                        public abstract Object unlock(String key, String refKey, String fileId,
+                            String exclusiveKey1, String exclusiveKey2, String workStationId,
+                            String moduleid, String packageid, String businessid,
+                            String repoid, String documentid);
 
 
 }
