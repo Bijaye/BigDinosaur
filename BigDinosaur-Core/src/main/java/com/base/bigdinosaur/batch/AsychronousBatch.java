@@ -1,4 +1,4 @@
-package com.base.bigdinosaur.batch.asychronous.batching;
+package com.base.bigdinosaur.batch;
 
 public interface AsychronousBatch {
 	// Every Batch id share the common Attribute.For example 

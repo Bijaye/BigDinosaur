@@ -1,4 +1,4 @@
-package com.base.bigdinosaur.batch.asychronous.batching;
+package com.base.bigdinosaur.batch;
 
 import java.util.Collection;
 

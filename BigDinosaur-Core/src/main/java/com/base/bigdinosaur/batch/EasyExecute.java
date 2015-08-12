@@ -1,4 +1,4 @@
-package com.base.bigdinosaur.batch.bigdata;
+package com.base.bigdinosaur.batch;
 
 
 public interface EasyExecute {

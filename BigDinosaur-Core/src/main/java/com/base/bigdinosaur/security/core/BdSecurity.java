@@ -22,5 +22,14 @@ public interface BdSecurity {
 	  BdSession getSessionInfoStandAloneApp();
 	  BdSession getSessionInfoDistributed();
 	  BdSession getSessionInfoWeb();
+	  Object runUiSourcecomponentCheckIntercpetor();
+	  Object  runAutheticationCheckInterceptor();
+	  Object runAuthorizationCheckInterceptor();
+	  Object runFieldCacheInterceptor();
+	  Object runLoginCheckInterceptor();
+	  Object runMenuCheckIntercpetor();
+	  Object runPrivilegeCheckInterceptor();
+	  Object runRequestInterceptor();
+	  Object runTableCheckIntercpetor();
 
 }
