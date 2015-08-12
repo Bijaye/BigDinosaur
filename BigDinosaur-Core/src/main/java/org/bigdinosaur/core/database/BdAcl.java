@@ -9,4 +9,8 @@ public interface BdAcl
   void CreateRemoteUserSystem();
   String getUserName();
   String getSessionid();
+  public abstract boolean checkPrivilege(String programID) ;
+  // secret logic check ,object can be any of paramter like programid and many more 
+  public  abstract String getOperationType(BdAcl service, Object inputServiceDto);
+  public String getClientComputerName();
 }
