@@ -1,5 +1,7 @@
 package org.bigdinosaur.core.database;
 
+import com.base.bigdinosaur.core.business.Business;
+
 public interface BdCore
 {
  boolean canRead(Object o);
@@ -27,6 +29,11 @@ public interface BdCore
  //OOP power resemble i to Production lines 
  Object ConstructObjectIterateObjectGrowth(Object growth);
  Class ConstructObjectIterateClassGrowth(Class growth);
+ Business getBusinessType();
+ Business getBusiness();
+ Business getBusinessPackages(String businesstype);
+ Business getModulesList(String businesspackage);
+ Business getModule(String programid);
  
  
  

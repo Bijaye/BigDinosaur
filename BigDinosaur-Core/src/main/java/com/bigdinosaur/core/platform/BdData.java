@@ -1,8 +1,12 @@
 package com.bigdinosaur.core.platform;
 
+import java.util.List;
+
 public abstract class BdData
 {
   // it implies to int value in big data station
+  
+  abstract List<Object>getdataAsychronousOrQueue();
 Object getInt(Object obj){
   return obj;
   
