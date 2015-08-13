@@ -39,6 +39,7 @@ boolean isLocked();
 boolean isUnlocked();
  BdClient getLockingStatus();
  BdClient getVersionSeries();
+ BdClient sychronizeMasterSlave();
 
 
 public abstract String getLanguage();
