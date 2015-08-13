@@ -31,5 +31,10 @@ public interface BdSecurity {
 	  Object runPrivilegeCheckInterceptor();
 	  Object runRequestInterceptor();
 	  Object runTableCheckIntercpetor();
+	  Object getRoles();
+	  Object getTeam();
+	  Object getUser();
+	  Object getGroup();
+	  Object getEcmObject();
 
 }

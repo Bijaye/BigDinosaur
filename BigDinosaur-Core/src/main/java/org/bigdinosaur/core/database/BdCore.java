@@ -30,6 +30,8 @@ public interface BdCore
  void WorkFlow();
  void WorkFlowState();
  void AccessLogInterceptor();
+ 
+ 
  // new concept 
  //Object move into mature stage from child stage.Form goes on improving till reaches mature state .
  // Similar to evolution of human specifies that is gradually going on from one from to another with certain improvement.
