@@ -13,6 +13,17 @@ import java.util.Map.Entry;
 // hold upto jvm can handle without affecting performance .
 public class BdMap
 {
+  
+  
+ void  BigMap(){
+   
+ }
+void   DynamicBigMap(){
+  
+}
+ void  StaticBigMap(){
+   
+ }
 //  BdMap layersmap=new BdMap();
 //  BdMap loadMap(){
 //    return layersmap;

@@ -13,4 +13,11 @@ BdSession getSessionInfoStandAloneApp();
 BdSession getSessionInfoDistributed();
 BdSession getSessionInfoWeb();
 
+void deleteLogInSuccess();
+
+  void deleteSuccessDBOnly();
+
+  void resetContext();
+  void log();
+
 }
