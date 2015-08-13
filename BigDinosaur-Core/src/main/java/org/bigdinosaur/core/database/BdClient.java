@@ -18,6 +18,8 @@ Object PreconditionService();
 Object PreferenceService();
 Object SessionContext();
 void deleteLogInSuccess();
+
+
 public abstract String getLanguage();
 public abstract String getpreference();
 
