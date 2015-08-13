@@ -26,6 +26,9 @@ void ServerConfigurationMultipleNode();
 void ServerConfigurationSessionMultipleNode();
 void ServerConfigurationSessionSingleNode();
 void ServerConfigurationSingleNode();
+void asssignCpu();
+void asssigMemory();
+void asssigStorage();
 
 
 public abstract String getLanguage();
