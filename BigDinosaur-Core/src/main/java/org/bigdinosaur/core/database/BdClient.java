@@ -20,6 +20,7 @@ Object SessionContext();
 void deleteLogInSuccess();
 
 void deleteSuccessDBOnly();
+public abstract String getPgmId();
 
 void resetContext();
 void log();
