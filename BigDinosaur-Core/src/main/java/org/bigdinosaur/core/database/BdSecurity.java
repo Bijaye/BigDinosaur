@@ -1,4 +1,4 @@
-package com.base.bigdinosaur.security.core;
+package org.bigdinosaur.core.database;
 
 
 

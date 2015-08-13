@@ -1,4 +1,4 @@
-package com.bigdinosar.security.utils;
+package com.base.bigdinosaur.utility;
 
 import java.io.FileInputStream;
 import java.io.IOException;

@@ -23,4 +23,6 @@ public interface BdContent
   void setCurrentTime();
   void SetCurrentDate();
   void setLockNo();
+  public  boolean isCheckedOut(Object object) throws Exception;
+  public  boolean isCheckedIn(Object object) throws Exception;
 }
