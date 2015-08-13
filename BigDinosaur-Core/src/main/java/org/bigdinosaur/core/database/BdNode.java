@@ -16,5 +16,6 @@ public interface BdNode
   public int getLevel();
   /** Set this node's level in the tree.*/
   public void setLevel(int i);
+  
 
 }

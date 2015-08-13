@@ -1,8 +1,11 @@
 package org.bigdinosaur.core.database;
 
 import java.io.DataInput;
+import java.io.DataInputStream;
 import java.io.DataOutput;
+import java.io.DataOutputStream;
 import java.io.IOException;
+import java.net.ServerSocket;
 
 
 public interface BdStreamIn
@@ -37,4 +40,7 @@ public interface BdStreamIn
   void resetBlock(long filePos, int size);
 
   byte[] getBuffer();
+  void sendDataToClient(ServerSocket serverSocket, DataInputStream dataInputStream,
+                        DataOutputStream dataOutputStream);
+Object getObjectToSendToClient( DataInputStream dataInputStream);
 }
