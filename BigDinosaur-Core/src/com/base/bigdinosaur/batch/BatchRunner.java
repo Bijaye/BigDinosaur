@@ -5,8 +5,7 @@ package com.base.bigdinosaur.batch;
 
 
 
-import com.bigdinosaur.base.batch.service.BaseBatchService;
-import com.bigdinosaur.base.batch.util.BatchUtils;
+
 
 public class BatchRunner implements BatchRunnable {
 
@@ -45,7 +44,7 @@ public class BatchRunner implements BatchRunnable {
         }
         jobId = args[1].trim();
         try {
-            service = (BaseBatchService) BatchUtils.getBean(jobId);
+//            service = (BaseBatchService) BatchUtils.getBean(jobId);
         } catch (Exception e) {
 
             return false;
@@ -56,14 +55,14 @@ public class BatchRunner implements BatchRunnable {
     protected int executeBatchService(String args[]) {
         int result = 0;
         try {
-            result = service.doExecute(args);
+//            result = service.doExecute(args);
         } catch (Exception e) {
 
         }
         return result;
     }
 
-    protected BaseBatchService service;
+//    protected BaseBatchService service;
     protected String jobId;
     @Override
     public boolean execute() {
