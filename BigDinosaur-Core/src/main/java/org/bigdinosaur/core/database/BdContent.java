@@ -25,4 +25,11 @@ public interface BdContent
   void setLockNo();
   public  boolean isCheckedOut(Object object) throws Exception;
   public  boolean isCheckedIn(Object object) throws Exception;
+  void pull();
+  void push();
+  void commit();
+  BdContent CreateBranch();
+  BdContent Tag();
+  BdContent ListHistoryInformationContainer();
+  BdContent Branch();
 }

@@ -8,4 +8,8 @@ public abstract class BdEvent {
     public static final String PROCESSINGCOMPLETE = "processingcomplete";
     abstract String getProgramId(String screenId);
      public abstract String getScreenId();
+     public abstract void  PostExecutionstore();
+     public abstract void  PostexExecutioncreate();
+     public abstract void   PreExecutioncreate();
+     public abstract void   PreExecutionstore();
 }

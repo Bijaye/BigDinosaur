@@ -44,6 +44,21 @@ public interface BdCore
   void getBusinessPackages(String businesstype);
   void getModulesList(String businesspackage);
   void getModule(String programid);
+  void BdDynamicObject();
+  void BdMaster();
+  void BdmasterLinkSlaveStation();
+  void  BdPlaceholderEvent();
+  void BdSlave();
+  void BdStaticObject();
+  void BdThreeWayCommunication();
+  void BdTwoWayCommunication();
+  void  BigDinosaurObject();
+  void   CommonObjectModel();
+  void InsfractureProvider();
+  void  MainStationControlEngine();
+  void  ObjectInformationResolutionDescriptor();
+  void  StationJVM();
+  void TimerBindToClusterComponent();
  
  
  
