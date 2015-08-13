@@ -29,6 +29,16 @@ void ServerConfigurationSingleNode();
 void asssignCpu();
 void asssigMemory();
 void asssigStorage();
+BdClient getEventId();
+BdClient getActivityId();
+BdClient getWorkFlowId();
+BdClient getErpPackageId();
+void TaskQueue();
+void TaskQueueLinkageQueue();
+boolean isLocked();
+boolean isUnlocked();
+ BdClient getLockingStatus();
+ BdClient getVersionSeries();
 
 
 public abstract String getLanguage();
