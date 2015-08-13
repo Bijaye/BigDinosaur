@@ -2,6 +2,7 @@ package org.bigdinosaur.core.database;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.List;
 
 public class BdAclI implements BdAcl
 {
@@ -80,5 +81,82 @@ public class BdAclI implements BdAcl
  }
  return computerName;
 }
+
+  @Override
+  public String getPerformaceframeId()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public String getPackageId()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public String getSecurityid()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public List<BdAcl> getSecurity()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public String getAgentId()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public String getProgramPid()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public String getScreenPid()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public String getMenuPid()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public String getModulePid()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public String getExecutionPid()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public List<BdAcl> getResultInforMap()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
 
 }

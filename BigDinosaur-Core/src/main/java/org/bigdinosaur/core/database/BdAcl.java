@@ -2,8 +2,6 @@ package org.bigdinosaur.core.database;
 
 import java.util.List;
 
-import com.base.bigdinosaur.core.EasyBase;
-
 public interface BdAcl
 {
   public abstract boolean isActionEnabled();
@@ -20,12 +18,12 @@ public interface BdAcl
   String getPerformaceframeId();
   String getPackageId();
   String getSecurityid();
-  List<EasyBase> getSecurity();
+  List<BdAcl> getSecurity();
   String getAgentId();
   String getProgramPid();
   String getScreenPid();
   String getMenuPid();
   String getModulePid();
   String getExecutionPid();
-  List<EasyBase>getResultInforMap();
+  List<BdAcl>getResultInforMap();
 }

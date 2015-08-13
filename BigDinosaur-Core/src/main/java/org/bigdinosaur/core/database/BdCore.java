@@ -1,6 +1,5 @@
 package org.bigdinosaur.core.database;
 
-import com.base.bigdinosaur.core.business.Business;
 
 public interface BdCore
 {

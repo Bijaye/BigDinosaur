@@ -99,4 +99,249 @@ private String flags;
     return null;
   }
 
+  @Override
+  public String getModuleId()
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public void ConstructObjectAccess()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void ConstructObjectBpm()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void ConstructObjectEcm()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void ConstructObjectBatch()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void BridgeBpm()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void BridgeUI()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void Process()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void ProcessState()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void State()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void WorkFlow()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void WorkFlowState()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void AccessLogInterceptor()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public Object ConstructObjectIterateObjectGrowth(Object growth)
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public Class ConstructObjectIterateClassGrowth(Class growth)
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public void getBusinessType()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void getBusiness()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void getBusinessPackages(String businesstype)
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void getModulesList(String businesspackage)
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void getModule(String programid)
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void BdDynamicObject()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void BdMaster()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void BdmasterLinkSlaveStation()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void BdPlaceholderEvent()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void BdSlave()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void BdStaticObject()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void BdThreeWayCommunication()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void BdTwoWayCommunication()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void BigDinosaurObject()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void CommonObjectModel()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void InsfractureProvider()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void MainStationControlEngine()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void ObjectInformationResolutionDescriptor()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void StationJVM()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
+  @Override
+  public void TimerBindToClusterComponent()
+  {
+    // TODO Auto-generated method stub
+    
+  }
+
 }
