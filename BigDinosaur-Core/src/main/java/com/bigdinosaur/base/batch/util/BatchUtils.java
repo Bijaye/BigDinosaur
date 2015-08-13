@@ -1,23 +1,22 @@
 package com.bigdinosaur.base.batch.util;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 public final class BatchUtils {
-    private static ClassPathXmlApplicationContext batchCtx;
+    private static Object batchCtx;
 
     private BatchUtils() {
     }
 
-    public static ClassPathXmlApplicationContext getBatchCtx() {
+    public static Object getBatchCtx() {
         return batchCtx;
     }
 
-    public static void setBatchCtx(ClassPathXmlApplicationContext batchCtx) {
+    public static void setBatchCtx(Object batchCtx) {
         batchCtx = batchCtx;
     }
 
     public static Object getBean(String beanName) {
-        return batchCtx.getBean(beanName);
+        return beanName;
     }
 
     

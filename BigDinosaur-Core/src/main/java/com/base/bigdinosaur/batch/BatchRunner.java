@@ -3,8 +3,7 @@
 
 package com.base.bigdinosaur.batch;
 
-import org.apache.log4j.Logger;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 
 import com.bigdinosaur.base.batch.service.BaseBatchService;
 import com.bigdinosaur.base.batch.util.BatchUtils;
@@ -32,11 +31,7 @@ public class BatchRunner implements BatchRunnable {
 
     }
 
-    protected void setApplicationContext(String contextPath) {
-        ClassPathXmlApplicationContext batchCtx = new ClassPathXmlApplicationContext(contextPath);
-        BatchUtils.setBatchCtx(batchCtx);
-    }
-
+  
     protected boolean checkArgs(String args[]) {
         if (args == null || args.length < 2) {
 
@@ -44,7 +39,6 @@ public class BatchRunner implements BatchRunnable {
         }
         try {
             if (!args[0].trim().isEmpty()) {
-                setApplicationContext(args[0].trim());
             }
         } catch (Exception e) {
             return false;
@@ -69,7 +63,6 @@ public class BatchRunner implements BatchRunnable {
         return result;
     }
 
-    protected Logger logger;
     protected BaseBatchService service;
     protected String jobId;
     @Override

@@ -5,5 +5,12 @@ package com.bigdinosaur.cluster.data.log;
 
 public interface Bdlogetl
 {
+  void deleteLogInSuccess();
+
+  void deleteSuccessDBOnly();
+
+  void resetContext();
+  void log();
+
 
 }

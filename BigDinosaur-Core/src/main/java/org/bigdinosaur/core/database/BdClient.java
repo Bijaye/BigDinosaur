@@ -18,6 +18,14 @@ Object PreconditionService();
 Object PreferenceService();
 Object SessionContext();
 void deleteLogInSuccess();
+void ClusterConfigurationCacheMultipleNode();
+void ClusterConfigurationCacheSingleNode();
+void ClusterManagedServer();
+void ClusterManagementClient();
+void ServerConfigurationMultipleNode();
+void ServerConfigurationSessionMultipleNode();
+void ServerConfigurationSessionSingleNode();
+void ServerConfigurationSingleNode();
 
 
 public abstract String getLanguage();
