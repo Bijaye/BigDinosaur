@@ -3,8 +3,6 @@ package com.bigdinosaur.cluster.space;
 import java.util.HashMap;
 import java.util.Map;
 
-import com.bigdinosaur.cluster.host.Bdhost;
-
 public class ClusterSpace
 {
   private Map bdmap=new HashMap<>();
@@ -41,7 +39,7 @@ public class ClusterSpace
   
    
   }
-  Bdhost getHost(){
+  Object getHost(){
     return null;
     
   }

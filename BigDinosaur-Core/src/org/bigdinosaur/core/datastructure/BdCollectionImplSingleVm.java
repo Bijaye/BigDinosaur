@@ -174,4 +174,32 @@ public class BdCollectionImplSingleVm<E> extends   BdAbstractCollection<E> imple
     
   }
 
+  @Override
+  public boolean addAllowNoDublicate(E e)
+  {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
+  @Override
+  public boolean addAllCheckDublicate(BdCollection<? extends E> c)
+  {
+    // TODO Auto-generated method stub
+    return false;
+  }
+
+  @Override
+  public Object getObjectByIndex(int index)
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
+  @Override
+  public BdCollection getInRandomOrder(BdCollection coll)
+  {
+    // TODO Auto-generated method stub
+    return null;
+  }
+
 }

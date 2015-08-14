@@ -342,7 +342,8 @@ public class TypedBytesInput {
    * @throws IOException
    */
   public String readString() throws IOException {
-    return WritableUtils.readString(in);
+    return null;
+//    return WritableUtils.readString(in);
   }
 
   /**

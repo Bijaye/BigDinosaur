@@ -1,7 +1,7 @@
 package com.bigdinosaur.base.web.val.impl;
 
 
-import org.springmodules.validation.util.condition.Condition;
+import java.util.concurrent.locks.Condition;
 
 public class SimpleExSpring
 {
@@ -12,17 +12,17 @@ public class SimpleExSpring
 
             public static Condition I18nImpl(int maxByteLength)
             {
-       return new I18nImpl();
+       return (Condition) new I18nImpl();
             }
 
             public static Condition EmptyImpl()
             {
-       return new EmptyImpl();
+       return (Condition) new EmptyImpl();
             }
 
             public static Condition ObjectValImpl()
             {
-       return new ObjectValImpl();
+       return (Condition) new ObjectValImpl();
             }
 
 }

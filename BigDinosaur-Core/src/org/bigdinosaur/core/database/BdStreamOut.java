@@ -22,12 +22,12 @@ public interface BdStreamOut
 
   void writeLong(long i);
 
-  void writeData(Row row, BdGraphType[] types);
+  void writeData(Object row, BdGraphType[] types);
 
-  void writeData(int l, BdGraphType[] types, Object[] data, HashMappedList cols,
+  void writeData(int l, BdGraphType[] types, Object[] data, Object cols,
                  int[] primarykeys);
 
-  int getSize(Row row);
+  int getSize(Object row);
 
   int getStorageSize(int size);
 

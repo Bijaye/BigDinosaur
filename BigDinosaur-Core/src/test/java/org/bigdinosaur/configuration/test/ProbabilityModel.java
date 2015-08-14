@@ -2,49 +2,13 @@ package org.bigdinosaur.configuration.test;
 
 import java.util.Random;
 
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.bigdinosaur.conf.Configuration;
 
-/*
- * Licensed to the Apache Software Foundation (ASF) under one
- * or more contributor license agreements.  See the NOTICE file
- * distributed with this work for additional information
- * regarding copyright ownership.  The ASF licenses this file
- * to you under the Apache License, Version 2.0 (the
- * "License"); you may not use this file except in compliance
- * with the License.  You may obtain a copy of the License at
- *
- *     http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
+import test.java.org.bigdinosaur.configuration.test.FiConfig;
 
 
-/**
- * This class is responsible for the decision of when a fault 
- * has to be triggered within a class of Hadoop
- * 
- *  Default probability of injection is set to 0%. To change it
- *  one can set the sys. prop. -Dfi.*=<new probability level>
- *  Another way to do so is to set this level through FI config file,
- *  located under src/test/fi-site.conf
- *  
- *  To change the level one has to specify the following sys,prop.:
- *  -Dfi.<name of fault location>=<probability level> in the runtime
- *  Probability level is specified by a float between 0.0 and 1.0
- *  
- *  <name of fault location> might be represented by a short classname
- *  or otherwise. This decision is left up to the discretion of aspects
- *  developer, but has to be consistent through the code 
- */
 public class ProbabilityModel {
   private static Random generator = new Random();
-  private static final Log LOG = LogFactory.getLog(ProbabilityModel.class);
 
   static final String FPROB_NAME = "fi.";
   private static final String ALL_PROBABILITIES = FPROB_NAME + "*";
@@ -60,7 +24,6 @@ public class ProbabilityModel {
         System.getProperty(ALL_PROBABILITIES, 
             conf.get(ALL_PROBABILITIES, Float.toString(DEFAULT_PROB))));
 
-    LOG.info(ALL_PROBABILITIES + "=" + conf.get(ALL_PROBABILITIES));
   }
 
   /**
@@ -96,12 +59,8 @@ public class ProbabilityModel {
 
     float ret = conf.getFloat(newProbName,
         conf.getFloat(ALL_PROBABILITIES, DEFAULT_PROB));
-    if(LOG.isDebugEnabled()) {
-      LOG.debug("Request for " + newProbName + " returns=" + ret);
-    }
     // Make sure that probability level is valid.
     if (ret < DEFAULT_PROB || ret > MAX_PROB) {
-      LOG.info("Probability level is incorrect. Default value is set");
       ret = conf.getFloat(ALL_PROBABILITIES, DEFAULT_PROB);
     }
     

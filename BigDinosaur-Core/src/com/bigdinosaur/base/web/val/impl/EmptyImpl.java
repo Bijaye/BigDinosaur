@@ -1,6 +1,5 @@
 package com.bigdinosaur.base.web.val.impl;
 
-import org.springmodules.validation.util.condition.string.AbstractStringCondition;
 
 public class EmptyImpl extends AbstractStringCondition {
 

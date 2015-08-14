@@ -1,6 +1,8 @@
 package org.bigdinosaur.configuration.test;
 
-import org.bigdinosaur.conf.Configuration;
+import test.java.org.bigdinosaur.configuration.test.FiConfig;
+
+
 
 public class BigDinosaurConfigurationTest
 {

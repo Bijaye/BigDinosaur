@@ -41,7 +41,7 @@ public class BdSpaceI
   
    
   }
-  Bdhost getHost(){
+  Object getHost(){
     return null;
     
   }

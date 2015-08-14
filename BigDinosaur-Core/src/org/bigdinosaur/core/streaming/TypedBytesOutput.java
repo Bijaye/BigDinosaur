@@ -225,7 +225,7 @@ public class TypedBytesOutput {
    */
   public void writeString(String s) throws IOException {
     out.write(Type.STRING.code);
-    WritableUtils.writeString(out, s);
+//    WritableUtils.writeString(out, s);
   }
 
   /**

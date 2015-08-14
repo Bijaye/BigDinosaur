@@ -4,8 +4,6 @@ package com.bigdinosaur.base.client.ui.response;
 import java.util.HashSet;
 import java.util.Set;
 
-import javax.servlet.http.HttpServletRequest;
-
 
 public class ValidatorImpl implements Validator {
 
@@ -16,8 +14,7 @@ public class ValidatorImpl implements Validator {
 
  
   
-  @Override
-  public boolean validate(HttpServletRequest request) {
+  public boolean validate(Object request) {
       validateGrantType(request);
       
       validateAttributes(request);
@@ -30,21 +27,21 @@ public class ValidatorImpl implements Validator {
 
 
 
-private void validateAccessTokenRequest(HttpServletRequest request) {
+private void validateAccessTokenRequest(Object request) {
 	
 }
 
 
 
 
-private void validateAttributes(HttpServletRequest request) {
+private void validateAttributes(Object request) {
 	
 }
 
 
 
 
-private void validateGrantType(HttpServletRequest request) {
+private void validateGrantType(Object request) {
 	// TODO Auto-generated method stub
 	
 }

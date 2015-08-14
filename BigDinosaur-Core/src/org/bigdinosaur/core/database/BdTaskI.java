@@ -1,15 +1,14 @@
 package org.bigdinosaur.core.database;
 
 
-import org.apache.log4j.Logger;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import java.util.logging.Logger;
 
 import com.bigdinosaur.base.batch.service.BaseBatchService;
 import com.bigdinosaur.base.batch.util.BatchUtils;
 
 public class BdTaskI implements BdTask {
 
-    public BatchRunner() {
+    public BdTaskI() {
 
     }
 
@@ -31,8 +30,8 @@ public class BdTaskI implements BdTask {
     }
 
     protected void setApplicationContext(String contextPath) {
-        ClassPathXmlApplicationContext batchCtx = new ClassPathXmlApplicationContext(contextPath);
-        BatchUtils.setBatchCtx(batchCtx);
+//        ClassPathXmlApplicationContext batchCtx = new ClassPathXmlApplicationContext(contextPath);
+//        BatchUtils.setBatchCtx(batchCtx);
     }
 
     protected boolean checkArgs(String args[]) {
@@ -78,6 +77,38 @@ public class BdTaskI implements BdTask {
     @Override
     public boolean executeMultipleRunnable() {
         return false;
+    }
+
+
+    @Override
+    public boolean executeAgentControllerExternalBusinessprocess()
+    {
+      // TODO Auto-generated method stub
+      return false;
+    }
+
+
+    @Override
+    public boolean AgentControllerInternalBusinessprocess()
+    {
+      // TODO Auto-generated method stub
+      return false;
+    }
+
+
+    @Override
+    public boolean LockingExternal()
+    {
+      // TODO Auto-generated method stub
+      return false;
+    }
+
+
+    @Override
+    public boolean LockingInternal()
+    {
+      // TODO Auto-generated method stub
+      return false;
     }
 
 }

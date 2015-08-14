@@ -1,6 +1,6 @@
 package com.bigdinosaur.base.framework;
 
-import com.base.bigdinosaur.core.Cachable;
+import com.base.bigdinosaur.cache.Cachable;
 
 
 public abstract class Framework {
