@@ -1,15 +1,20 @@
+package com.bigdinosaur.core.io.channel;
+
 
 import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.util.regex.Pattern;
 
-import org.apache.avro.reflect.Stringable;
-import org.apache.commons.lang.StringUtils;
-import org.apache.hadoop.HadoopIllegalArgumentException;
-import org.apache.hadoop.classification.InterfaceAudience;
-import org.apache.hadoop.classification.InterfaceStability;
-import org.apache.hadoop.conf.Configuration;
+
+
+
+
+
+import org.apache.commons.lang3.StringUtils;
+
+import com.bigdinosaur.config.Configuration;
+import com.bigdinosaur.config.FileSystem;
 
 
 public class Path implements Comparable {
@@ -33,21 +38,7 @@ public class Path implements Comparable {
 
   private URI uri;                                // a hierarchical uri
 
-  /**
-   * Pathnames with scheme and relative path are illegal.
-   */
-  void checkNotSchemeWithRelative() {
-    if (toUri().isAbsolute() && !isUriPathAbsolute()) {
-      throw new Exception(
-          "Unsupported name: has scheme but relative path-part");
-    }
-  }
 
-  void checkNotRelative() {
-    if (!isAbsolute() && toUri().getScheme() == null) {
-      throw new Exception("Path is relative");
-    }
-  }
 
   public static Path getPathWithoutSchemeAndAuthority(Path path) {
     // This code depends on Path.toString() to remove the leading slash before
@@ -265,9 +256,10 @@ public class Path implements Comparable {
   /** Convert this to a URI. */
   public URI toUri() { return uri; }
 
-  /** Return the FileSystem that owns this Path. */
-  public FileSystem getFileSystem(Configuration conf) throws IOException {
-    return FileSystem.get(this.toUri(), conf);
+  /** Return the FileSystem that owns this Path. 
+   * @throws InterruptedException */
+  public FileSystem getFileSystem(Configuration conf) throws IOException, InterruptedException {
+    return FileSystem.get(this.toUri(), conf,"");
   }
 
   /**
@@ -397,18 +389,9 @@ public class Path implements Comparable {
     return depth;
   }
 
-  /**
-   *  Returns a qualified path object.
-   *  
-   *  Deprecated - use {@link #makeQualified(URI, Path)}
-   */
-  @Deprecated
-  public Path makeQualified(FileSystem fs) {
-    return makeQualified(fs.getUri(), fs.getWorkingDirectory());
-  }
+
   
   /** Returns a qualified path object. */
-  @InterfaceAudience.LimitedPrivate({"HDFS", "MapReduce"})
   public Path makeQualified(URI defaultUri, Path workingDir ) {
     Path path = this;
     if (!isAbsolute()) {

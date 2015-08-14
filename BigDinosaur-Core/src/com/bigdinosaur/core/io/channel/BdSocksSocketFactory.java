@@ -12,6 +12,11 @@ import java.net.UnknownHostException;
 
 import javax.net.SocketFactory;
 
+import com.bigdinosaur.config.Configurable;
+import com.bigdinosaur.config.Configuration;
+
+
+
 
 
 
@@ -115,10 +120,7 @@ Configurable
             port));
   }
   
-  @Override
-  public Configuration getConf() {
-  
-  }
+
 
   @Override
   public void setConf(Configuration conf) {
@@ -130,16 +132,10 @@ Configurable
   }
 
 
-  @Override
-  public void setConf(org.bigdinosaur.conf.Configuration conf)
-  {
-    return this.conf;
-    
-  }
 
 
   @Override
-  public org.bigdinosaur.conf.Configuration getConf()
+  public Configuration getConf()
   {
     // TODO Auto-generated method stub
     return null;
