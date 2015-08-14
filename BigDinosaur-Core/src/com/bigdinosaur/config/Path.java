@@ -32,15 +32,16 @@ public class Path implements Comparable {
 
   /**
    * Pathnames with scheme and relative path are illegal.
+   * @throws Exception 
    */
-  void checkNotSchemeWithRelative() {
+  void checkNotSchemeWithRelative() throws Exception {
     if (toUri().isAbsolute() && !isUriPathAbsolute()) {
       throw new Exception(
           "Unsupported name: has scheme but relative path-part");
     }
   }
 
-  void checkNotRelative() {
+  void checkNotRelative() throws Exception {
     if (!isAbsolute() && toUri().getScheme() == null) {
       throw new Exception("Path is relative");
     }
@@ -262,9 +263,10 @@ public class Path implements Comparable {
   /** Convert this to a URI. */
   public URI toUri() { return uri; }
 
-  /** Return the FileSystem that owns this Path. */
-  public FileSystem getFileSystem(Configuration conf) throws IOException {
-    return FileSystem.get(this.toUri(), conf);
+  /** Return the FileSystem that owns this Path. 
+   * @throws InterruptedException */
+  public FileSystem getFileSystem(Configuration conf) throws IOException, InterruptedException {
+    return FileSystem.get(this.toUri(), conf,"abishkar");
   }
 
   /**
@@ -399,13 +401,11 @@ public class Path implements Comparable {
    *  
    *  Deprecated - use {@link #makeQualified(URI, Path)}
    */
-  @Deprecated
   public Path makeQualified(FileSystem fs) {
     return makeQualified(fs.getUri(), fs.getWorkingDirectory());
   }
   
   /** Returns a qualified path object. */
-  @InterfaceAudience.LimitedPrivate({"HDFS", "MapReduce"})
   public Path makeQualified(URI defaultUri, Path workingDir ) {
     Path path = this;
     if (!isAbsolute()) {
