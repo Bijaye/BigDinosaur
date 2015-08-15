@@ -9,6 +9,7 @@ public class BdRack
   public boolean isSingleRack() {
     return false;
   }
+  //key is node name and value is node location 
   public Map<String, String> getRackMap() {
     return null;
   }
