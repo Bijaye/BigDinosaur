@@ -4,18 +4,18 @@ import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
-public class BdRack
+public class BdSwitch
 {
-  public boolean isSingleRack() {
+  public boolean isSingleSwitch() {
     return false;
   }
   //key is node name and value is node location 
-  public Map<String, String> getRackMap() {
+  public Map<String, String> getSwitchMap() {
     return null;
   }
   public String dumpTopology() {
     // nodes is rack size 
-    Map<String, String> rack = getRackMap();
+    Map<String, String> rack = getSwitchMap();
     StringBuilder builder = new StringBuilder();
     builder.append("Mapping: ").append(toString()).append("\n");
     if (rack != null) {
