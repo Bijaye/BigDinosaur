@@ -1,4 +1,4 @@
-package com.bigdinosaur.core.io.channel;
+package com.bigdinosaur.core.net;
 
 import java.io.DataInput;
 import java.io.DataInputStream;
