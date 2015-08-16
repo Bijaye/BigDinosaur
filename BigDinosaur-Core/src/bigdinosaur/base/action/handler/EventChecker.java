@@ -1,4 +1,4 @@
-package com.bigdinosaur.event;
+package bigdinosaur.base.action.handler;
 
 public interface EventChecker
 {

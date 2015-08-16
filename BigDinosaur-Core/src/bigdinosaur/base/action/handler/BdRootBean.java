@@ -1,4 +1,4 @@
-package com.bigdinosaur.event;
+package bigdinosaur.base.action.handler;
 
 import java.util.HashMap;
 import java.util.Map;
