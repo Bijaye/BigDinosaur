@@ -1,4 +1,4 @@
-package com.bigdinosaur.base.client.basecomponent;
+package bigdinosaur.base.action.handler;
 
 
 

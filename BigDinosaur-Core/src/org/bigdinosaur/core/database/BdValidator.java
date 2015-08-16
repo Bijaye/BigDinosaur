@@ -7,7 +7,7 @@ import java.util.Iterator;
 import java.util.List;
 
 import com.bigdinosaur.base.client.basecomponent.ComponentParts;
-import com.bigdinosaur.base.client.validator.ValidatorTask;
+import com.bigdinosaur.base.validator.ValidatorTask;
 
 public class BdValidator
 {

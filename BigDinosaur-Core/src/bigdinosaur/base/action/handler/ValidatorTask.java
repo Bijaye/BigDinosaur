@@ -1,4 +1,4 @@
-package com.bigdinosaur.base.client.validator;
+package bigdinosaur.base.action.handler;
 
 import com.bigdinosaur.base.client.basecomponent.ComponentParts;
 

@@ -1,21 +1,21 @@
-package com.bigdinosaur.base.client.validator;
+package bigdinosaur.base.action.handler;
 
 import com.bigdinosaur.base.client.basecomponent.ComponentParts;
 
        
 
-public class RegExpValidator
+public class Validator
     implements ValidatorTask
 {
 
-            public RegExpValidator(ComponentParts field, String labelFieldId, String regExp)
+            public Validator(ComponentParts field, String labelFieldId, String regExp)
             {
        this.field = field;
        this.labelFieldId = labelFieldId;
        this.regExp = regExp;
    }
 
-            public RegExpValidator(ComponentParts field, String labelFieldId, String labelFieldText, String regExp)
+            public Validator(ComponentParts field, String labelFieldId, String labelFieldText, String regExp)
             {
        this.field = field;
        this.labelFieldId = labelFieldId;

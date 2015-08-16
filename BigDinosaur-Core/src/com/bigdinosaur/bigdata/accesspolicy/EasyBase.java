@@ -1,4 +1,4 @@
-package com.bigdinosaur.base.core.ui;
+package com.bigdinosaur.bigdata.accesspolicy;
 
 public interface EasyBase extends EasyCore {
 	EasyBase getSecurityOrigin();
