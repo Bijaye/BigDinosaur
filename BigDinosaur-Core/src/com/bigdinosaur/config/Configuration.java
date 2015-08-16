@@ -262,6 +262,15 @@ public class Configuration implements Iterable<Map.Entry<String,String>>
     catch( Exception x){
       
     }
+ 
     
   }
+  public String[]  getStrings(String key){
+    // search xml file on the basis of key and set in mappings array 
+    
+    String[] mappings = null;
+    return mappings;
+  }
+  
+  
                                        }
