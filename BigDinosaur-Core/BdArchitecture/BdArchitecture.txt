@@ -1,3 +1,66 @@
 BdtreeMultipleNode has many BdFileDirSingleVm-- 
 
 BdTreeClusterNode has many BdtreeMultipleNode--same concept as BdtreeMultipleNode
+
+---------------------for .net package -------------
+
+host1=r1,host2=r1,host3=r2
+
+on the basis of host name return rack ,different host name using same rack.
+It is very important to understand how many racks are there in all hosts .
+
+
+Streams time out ,
+Stream with a given timeout 
+list of hosts dependent on the provided host name.
+One host is dependent on another host 
+
+
+Node name 
+Node location 
+Data center
+Rack
+
+/dog/orange
+dog is data center and orange is rack 
+string representation of its
+String representation of network location is /dog/orange
+
+leaves represent data nodes (computers) and inner
+ * nodes represent switches/routers that manage traffic in/out of data centers,
+ * racks or physical host (with virtual switch).
+
+Adding and removing node from ClusterMap 
+
+Point of replica and dependent DNS 
+1 There are dependent DNS-names for a given DNS-name/IP-address
+2.Dependent DNs -names fall in same domain group .
+3.When creating replica it helps by finding dependent group
+4 compute server runs VMs
+5.compute server uses shared memory 
+6There is directly attached storage also 
+7.Data node falls in 2 domains 
+8.One domain is defined by compute server   
+9.Another domain is defined by attached storage
+10 With node group data nodes can be grouped based on server fault domain storag
+11 It can also can be grouped based on storage fault domain 
+12 Cross node dependencies help in block placement to ensure two replica will be on two dependent nodes 
+
+
+On passing host name must get the dependent nodes 
+
+Every node has parent node 
+Node in a network topology
+
+
+
+
+
+
+for example 
+host1 and host 2
+Switch 
+Rack 
+Node 
+Host name
+Host address
