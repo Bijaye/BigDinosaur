@@ -1,4 +1,4 @@
-package com.bigdinosaur.bigdata.accesspolicy;
+package com.bigdinosaur.core.acl;
 
 public interface SudoRoleDataGetter
 {
