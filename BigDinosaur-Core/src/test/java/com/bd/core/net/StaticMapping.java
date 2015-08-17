@@ -10,10 +10,12 @@ import java.util.Map;
 
 
 
+
 import com.bigdinosaur.config.Configuration;
+import com.bigdinosaur.core.net.AbstractDNSToSwitchMapping;
 import com.bigdinosaur.core.net.NetworkTopology;
 
-public class StaticMappingTest  {
+public class StaticMapping extends AbstractDNSToSwitchMapping   {
 
   /**
    * Key to define the node mapping as a comma-delimited list of host=rack
