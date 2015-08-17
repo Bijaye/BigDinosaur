@@ -1,27 +1,24 @@
-package com.bigdinosaur.common.server;
-import java.io.BufferedReader;
+package com.bigdinosaur.core.common;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-public class ServerSecond implements Runnable {
+public class ServerThird implements Runnable {
    private Thread t;
    private String threadName;
    
-   public ServerSecond( String name){
+   public ServerThird( String name){
        threadName = name;
        System.out.println("Creating " +  threadName );
    }
    public void run() {
-     int port = 8001;
+     
+     int port = 8003;
      ServerSocket serverSocket = null;
      DataInputStream dataInputStream = null;
      DataOutputStream dataOutputStream = null;
-     PrintWriter out = null;
      
      try
      {
@@ -38,15 +35,10 @@ public class ServerSecond implements Runnable {
          System.out.println("Client connected from  "+clientSocket.getInetAddress());
            
  
-//         dataInputStream = new DataInputStream
-//             (clientSocket.getInputStream());
-//         dataOutputStream = new DataOutputStream
-//             (clientSocket.getOutputStream());
-         
-          out =
-             new PrintWriter(clientSocket.getOutputStream(), true);
-         BufferedReader in = new BufferedReader(
-             new InputStreamReader(clientSocket.getInputStream()));
+         dataInputStream = new DataInputStream
+             (clientSocket.getInputStream());
+         dataOutputStream = new DataOutputStream
+             (clientSocket.getOutputStream());
      }
      catch(IOException e)
      {
@@ -57,25 +49,31 @@ public class ServerSecond implements Runnable {
  
  
      // communicate with the client
-     
-//         dataOutputStream.writeUTF("Welcome to the TCP Echo  Server!");
-//            
-//         String input;
-//         while(true)
+     try
+     {
+         dataOutputStream.writeUTF("Welcome to the TCP Echo  Server!");
+            
+         String input;
+         while(true)
          {
              // read data in from client
-//             input = dataInputStream.readUTF();
-             String inputmock="<!DOCTYPE html><html><head><title>Page Title</title></head><body><h1>This is a Heading</h1><p>This is a paragraph.</p></body></html>";
-             
-             System.out.println("You typed: "+inputmock);
+             input = dataInputStream.readUTF();
+             System.out.println("You typed: "+input);
  
              // write data back to client
-//             dataOutputStream.writeUTF(inputmock);
-//             PrintWriter        d= new PrintWriter(dataOutputStream ) ;
-             out.println(inputmock);
-         
+             dataOutputStream.writeUTF(input);
          }
+     }
+     catch(IOException e)
+     {
+         System.out.println("Client disconnected from server");
+     }
      
+     try
+     {
+         serverSocket.close();
+     }
+     catch(Exception e) { }
    }    
    
    

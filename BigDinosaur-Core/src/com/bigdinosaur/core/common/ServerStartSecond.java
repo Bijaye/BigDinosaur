@@ -1,4 +1,4 @@
-package com.bigdinosaur.common.server;
+package com.bigdinosaur.core.common;
 
 public class ServerStartSecond
 {

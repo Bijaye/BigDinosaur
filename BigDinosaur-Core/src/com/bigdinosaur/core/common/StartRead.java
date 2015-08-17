@@ -1,4 +1,4 @@
-package com.bigdinosaur.client.web;
+package com.bigdinosaur.core.common;
 
 import java.io.DataInputStream;
 import java.io.IOException;

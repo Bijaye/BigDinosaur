@@ -1,4 +1,4 @@
-package com.bigdinosaur.common.server;
+package com.bigdinosaur.core.common;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;
