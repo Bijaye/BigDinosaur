@@ -1,4 +1,4 @@
-package com.bigdinosaur.base.batch.service;
+package com.bigdinosaur.base.service;
 
 
 import com.base.bigdinosaur.batch.BatchRunner;

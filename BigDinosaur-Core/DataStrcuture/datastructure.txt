@@ -6,3 +6,11 @@ http://bigocheatsheet.com/
 http://people.csail.mit.edu/bradley/BenderKuszmaul-tutorial-xldb12.pdf
 
 The BigTable API can be thought of as a HashMap with some inbuilt versioning for ease. The underlying implementation handles nearly everything - fault tolerance, load distribution, and locality
+
+ bitmap, bitset, bit string, or bit vector
+ WeakHashMap
+hashing functions
+Bloom filter
+If the element is not in the bloom filter, then we know for sure we don't need to perform the expensive lookup. On the other hand, if it is in the bloom filter, we perform the lookup,
+
+Bloom filter before searching make sure data is present on that data structure or not ,If that is present then only search that data

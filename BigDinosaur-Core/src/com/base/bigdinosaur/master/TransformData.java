@@ -1,4 +1,4 @@
-package com.base.bigdinosaur.master.data;
+package com.base.bigdinosaur.master;
 
 import java.io.File;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package com.base.bigdinosaur.master.data;
+package com.base.bigdinosaur.master;
 
 import com.thoughtworks.xstream.annotations.XStreamAlias;
 

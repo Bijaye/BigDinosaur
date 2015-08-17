@@ -1,4 +1,4 @@
-package com.base.bigdinosaur.support;
+package org.bigdinosaur.core.datastructure;
 
 import java.util.HashMap;
 import java.util.Map;

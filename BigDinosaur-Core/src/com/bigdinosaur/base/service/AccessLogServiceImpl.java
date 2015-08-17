@@ -1,4 +1,4 @@
-package com.bigdinosaur.base.batch.server.service;
+package com.bigdinosaur.base.service;
 
 
 

@@ -1,4 +1,4 @@
-package com.bigdinosaur.base.batch.util;
+package com.base.bigdinosaur.utility;
 
 
 
