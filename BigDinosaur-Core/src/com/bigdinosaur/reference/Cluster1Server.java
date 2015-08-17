@@ -2,11 +2,13 @@ package com.bigdinosaur.reference;
 
 import java.net.*;
 import java.io.*;
-   
+   //Wordware.Java.1.4.Game.Programming.eBook-LiB
 public class Cluster1Server
 {
     public static void main(String args[])
     {
+      Cluster1Client client=new Cluster1Client();
+      client.main(args);
         int port = 8001;
         ServerSocket serverSocket = null;
         DataInputStream dataInputStream = null;
@@ -43,8 +45,11 @@ public class Cluster1Server
         // communicate with the client
         try
         {
+          // this value has to be read from another server 
+       
+        
           
-            dataOutputStream.writeUTF("Welcome to the TCP Echo    Server!");
+            dataOutputStream.writeUTF(client.getMessage());
              
             String input;
             while(true)

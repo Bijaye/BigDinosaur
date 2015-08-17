@@ -7,7 +7,7 @@ public class Cluster2Server
 {
     public static void main(String args[])
     {
-        int port = 8001;
+        int port = 8002;
         ServerSocket serverSocket = null;
         DataInputStream dataInputStream = null;
         DataOutputStream dataOutputStream = null;
@@ -43,6 +43,7 @@ public class Cluster2Server
         // communicate with the client
         try
         {
+          //
             dataOutputStream.writeUTF("Welcome to the TCP Echo    Server!");
              
             String input;

@@ -5,6 +5,19 @@ import java.io.*;
  
 public class Cluster1Client
 {
+  private static String message;
+    public static String getMessage()
+  {
+    return message;
+  }
+
+
+  public static void setMessage(String message)
+  {
+    Cluster1Client.message = message;
+  }
+
+
     public static class TCPEchoReader extends Thread
     {
         public TCPEchoReader(DataInputStream input)
@@ -19,7 +32,7 @@ public class Cluster1Client
             {
                 try
                 {
-                    String message = dataInputStream.readUTF();
+                     message = dataInputStream.readUTF();
                     System.out.println("Received from server:  "+message);
                       
                 }
@@ -42,7 +55,7 @@ public class Cluster1Client
       
       
         String address = "127.0.0.1";
-        int port = 8001;
+        int port = 8002;
         
         Socket socket = null;
         DataInputStream dataInputStream = null;
