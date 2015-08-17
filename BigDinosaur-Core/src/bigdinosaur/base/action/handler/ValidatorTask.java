@@ -1,6 +1,5 @@
 package bigdinosaur.base.action.handler;
 
-import com.bigdinosaur.base.client.basecomponent.ComponentParts;
 
 
 public interface ValidatorTask
