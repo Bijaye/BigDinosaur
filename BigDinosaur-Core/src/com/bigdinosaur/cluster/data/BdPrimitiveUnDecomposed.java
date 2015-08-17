@@ -1,4 +1,4 @@
-package com.bigdinosaur.bigdata.primitive;
+package com.bigdinosaur.cluster.data;
 
 public class BdPrimitiveUnDecomposed
 {

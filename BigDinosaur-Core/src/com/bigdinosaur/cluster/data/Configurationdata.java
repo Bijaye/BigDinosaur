@@ -1,4 +1,4 @@
-package com.bigdinosaur.bigdata.type;
+package com.bigdinosaur.cluster.data;
 
 public class Configurationdata
 {
