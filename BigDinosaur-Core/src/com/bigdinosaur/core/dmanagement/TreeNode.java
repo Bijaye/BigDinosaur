@@ -3,7 +3,8 @@ package com.bigdinosaur.core.dmanagement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.bigdinosaur.clusters.assimpletree.ClustersSimpleTree;
+import com.bigdinosaur.cluster.core.ClustersSimpleTree;
+
 
 
 

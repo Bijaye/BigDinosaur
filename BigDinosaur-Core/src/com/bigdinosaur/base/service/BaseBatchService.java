@@ -2,7 +2,6 @@ package com.bigdinosaur.base.service;
 
 
 import com.base.bigdinosaur.batch.BatchRunner;
-import com.bigdinosaur.base.batch.util.BatchUtils;
 import com.bigdinosaur.base.context.RequestContext;
 
 public abstract class BaseBatchService extends BatchRunner
@@ -30,7 +29,7 @@ public abstract class BaseBatchService extends BatchRunner
    private void initialize(String args[])
    {
        jobId = args[1].trim();
-       RequestContext reqCtx = (RequestContext)BatchUtils.getBean("nIRequestContext");
+//       RequestContext reqCtx = (RequestContext)BatchUtils.getBean("nIRequestContext");
 //       reqCtx.setBatchmoduleid(jobId);
    }
 

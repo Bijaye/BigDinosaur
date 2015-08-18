@@ -1,4 +1,5 @@
-package com.bd.core.abstractdatatype;
+package com.bigdinosaur.cluster.data;
+
 // it defines abstract data type from the view of the user 
 // purposed e.g
 //DataAdt

@@ -1,8 +1,9 @@
 package com.bigdinosaur.base.service;
 
+import com.bigdinosaur.base.model.BaseServiceDto;
 
 
-import com.bigdinosaur.batch.extend.model.BaseServiceDto;
+
 
 
 

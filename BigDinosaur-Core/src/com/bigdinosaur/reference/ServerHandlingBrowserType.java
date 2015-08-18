@@ -9,8 +9,9 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import com.bigdinosaur.client.web.ClientStart;
-import com.bigdinosaur.common.server.ServerStatusChecker;
+import com.bigdinosaur.core.common.ClientStart;
+import com.bigdinosaur.core.common.ServerStatusChecker;
+
 
 public class ServerHandlingBrowserType
     implements Runnable

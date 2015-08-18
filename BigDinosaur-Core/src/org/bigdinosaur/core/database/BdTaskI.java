@@ -3,8 +3,8 @@ package org.bigdinosaur.core.database;
 
 import java.util.logging.Logger;
 
-import com.bigdinosaur.base.batch.service.BaseBatchService;
-import com.bigdinosaur.base.batch.util.BatchUtils;
+import com.bigdinosaur.base.service.BaseBatchService;
+
 
 public class BdTaskI implements BdTask {
 
@@ -48,7 +48,7 @@ public class BdTaskI implements BdTask {
         }
         jobId = args[1].trim();
         try {
-            service = (BaseBatchService) BatchUtils.getBean(jobId);
+//            service = (BaseBatchService) BatchUtils.getBean(jobId);
         } catch (Exception e) {
 
             return false;

@@ -50,11 +50,11 @@ public class NetworkTopology {
    * @param conf the configuration to be used
    * @return an instance of NetworkTopology
    */
-  public static NetworkTopology getInstance(Configuration conf){
-    return ReflectionUtils.newInstance(
-        conf.getClass(CommonConfigurationKeysPublic.NET_TOPOLOGY_IMPL_KEY,
-        NetworkTopology.class, NetworkTopology.class), conf);
+  public  NetworkTopology getInstance(Object conf)
+  {
+    return null;
   }
+        
 
   /** InnerNode represents a switch/router of a data center or rack.
    * Different from a leaf node, it has non-null children.

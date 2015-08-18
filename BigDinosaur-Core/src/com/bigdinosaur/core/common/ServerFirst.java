@@ -9,7 +9,6 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
-import com.bigdinosaur.client.web.ClientStart;
 
 public class ServerFirst
     implements Runnable
