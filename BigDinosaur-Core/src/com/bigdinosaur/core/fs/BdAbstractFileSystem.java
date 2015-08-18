@@ -58,8 +58,39 @@ public abstract class BdAbstractFileSystem {
     return true;
   }
   
-
+  
+  /** 
+   * Create an object for the given class and initialize it from conf.
+   * @param theClass class of which an object is created
+   * @param conf Configuration
+   * @return a new object
+   */
+  @SuppressWarnings("unchecked")
+  static <T> T newInstance(Class<T> theClass,
+    URI uri, Configuration conf) {
+    T result = null;
+    return result;
+   
+  }
+  
   /**
+   * Get the statistics for a particular file system.
+   * 
+   * @param uri
+   *          used as key to lookup STATISTICS_TABLE. Only scheme and authority
+   *          part of the uri are used.
+   * @return 
+   * @return a statistics object
+   */
+   abstract    void getStatistics(URI uri) ;
+    
+  
+   /**
+    * Prints statistics for all file systems.
+    */
+   public static synchronized void printStatistics()
+  {
+  }  /**
    * Create a file system instance for the specified uri using the conf. The
    * conf is used to find the class name that implements the file system. The
    * conf is also passed to the file system for its configuration.

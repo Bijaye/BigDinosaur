@@ -29,6 +29,11 @@ import com.bigdinosaur.config.Configured;
  *****************************************************************/
 
 public abstract class FileSystem extends Configured implements Closeable {
+  /**
+   * A cache of files that should be deleted when filsystem is closed
+   * or the JVM is exited.
+   */
+  private Set<Path> deleteOnExit = new TreeSet<Path>();
   
   
   public abstract URI getUri();
