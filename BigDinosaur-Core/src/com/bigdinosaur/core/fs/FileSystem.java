@@ -5,6 +5,8 @@ package com.bigdinosaur.core.fs;
 import java.io.Closeable;
 import java.io.IOException;
 import java.net.URI;
+import java.util.Set;
+import java.util.TreeSet;
 
 import com.bigdinosaur.config.Configuration;
 import com.bigdinosaur.config.Configured;
