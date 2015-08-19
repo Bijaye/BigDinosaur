@@ -35,6 +35,7 @@ public class BdAbstractDto
   String[] tokenallfilesystem;
   String[] permissionforfilesystem;
   String[] directoriespermission;
+  boolean[] ispathbelongstofilesystem;
   
   
   /**
