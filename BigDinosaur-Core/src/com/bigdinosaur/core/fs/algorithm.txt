@@ -1,0 +1,13 @@
+algorithm.tx has bytes of 100000
+Fs function is that it can accept only 1000000 bytes and there can be 1000 no of blocks file
+min byte=0 and max byte= 1000000
+File data is stored in blocks 
+no of blocks size  is given by filesize/no of block 
+so size of each block=100000/10;
+where 10 is no of bloks
+so we can create 10000 size of block with no of bloks=10
+
+So there are 10 blocks with size 10000
+
+if again the bloks size is greater than 1000000 say suppose 100000000 then again this block is 
+divided into 1000 blocks with each holding of size 1000000
