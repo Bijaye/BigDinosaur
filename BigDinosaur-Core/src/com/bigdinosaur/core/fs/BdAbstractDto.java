@@ -36,6 +36,11 @@ public class BdAbstractDto
   String[] permissionforfilesystem;
   String[] directoriespermission;
   boolean[] ispathbelongstofilesystem;
+  //start offset into the given file
+  String offstartset;
+  String endoffset;
+  int sizeofportionoffile;
+  
   
   
   /**
