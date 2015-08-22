@@ -56,6 +56,7 @@ public class BdAbstractDto
  // file in sense of single file ,every single file has working dir,it has length 
   // file has length ,isDir, 1, blockSize, modTime, accessTime,
   //perms, owner, group, symlink, qualified
+  // FileStatus for single files 
   
   int filetotalspace;
   int filefreespace;
