@@ -1,13 +1,5 @@
 package com.bigdinosaur.core.fs;
 
-import java.io.DataOutputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.net.URI;
-import java.security.AccessControlException;
-import java.util.List;
-
-import com.bigdinosaur.cluster.acl.FsPermission;
 
 public class BdAbstractDto
 {
@@ -46,19 +38,27 @@ public class BdAbstractDto
   //start offset into the given file
   String offstartset;
   String endoffset;
+  //the current offset from the start of the file
+  int fileposition;
   int sizeofportionoffile;
   int nooffileswriteoperation;
   int nooffilereadoperation;
   int totalnoofbytewritten;
   int totalnoofbyteread;
   int fileacesstime;
+  // it need to be set on file 
   int fileowner;
+  int filegroup;
   //This is only applicable if the  corresponding FileSystem supports checksum
   boolean verifychecksumflag;
   String defaultreplicationpath;
   String link;
+ // file in sense of single file ,every single file has working dir,it has length 
   // file has length ,isDir, 1, blockSize, modTime, accessTime,
   //perms, owner, group, symlink, qualified
+  
+  int filetotalspace;
+  int filefreespace;
   
   
 }
