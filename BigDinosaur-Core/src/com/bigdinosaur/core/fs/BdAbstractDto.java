@@ -60,6 +60,14 @@ public class BdAbstractDto
   
   int filetotalspace;
   int filefreespace;
+  boolean ispathpermissionallowed;
+  boolean ispathexists;
+  boolean isdirectoryempty;
+  boolean ispathdirectory;
+  String[] pathnamelist;
+  boolean ispathalreadyexists;
+  boolean ispathaccessallowed;
+  boolean isparentdirectory;
   
   
 }
