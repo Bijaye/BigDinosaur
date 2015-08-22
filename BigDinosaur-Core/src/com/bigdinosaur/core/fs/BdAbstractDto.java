@@ -68,6 +68,17 @@ public class BdAbstractDto
   boolean ispathalreadyexists;
   boolean ispathaccessallowed;
   boolean isparentdirectory;
+ String baseUri;
+ String parturi;
+ boolean ispathvalid;
+ String homedirectory;
+ boolean iscreateparent;
+ //default server configuration 
+// private long blockSize;
+  int writePacketSize;
+// private short replication;
+  int fileBufferSize;
+  boolean encryptDataTransfer;
   
   
 }

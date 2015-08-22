@@ -1,0 +1,9 @@
+Every file has uri and path 
+Every file is defined buffersize ,no of replication,block size ,iscreateparent(it can be true and false )
+There can be default server configuration for 
+ //default server configuration 
+ private long blockSize;
+ private int writePacketSize;
+ private short replication;
+ private int fileBufferSize;
+ private boolean encryptDataTransfer;
