@@ -56,7 +56,9 @@ public class BdAbstractDto
   //This is only applicable if the  corresponding FileSystem supports checksum
   boolean verifychecksumflag;
   String defaultreplicationpath;
-  
+  String link;
+  // file has length ,isDir, 1, blockSize, modTime, accessTime,
+  //perms, owner, group, symlink, qualified
   
   
 }
