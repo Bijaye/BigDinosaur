@@ -11,4 +11,15 @@ There can be default server configuration for
  same file can e located on different blocks locations 
  for the same path there can be array of blocklocations
   BlockLocation[] locs and therefor can have more than one 
-  status FileStatus[] 
+  status FileStatus[]
+  
+   final FileSystem[] children = getChildFileSystems(); 
+  
+  /**
+   * Get all the immediate child FileSystems embedded in this FileSystem.
+   * It does not recurse and get grand children.  If a FileSystem
+   * has multiple child FileSystems, then it should return a unique list
+   * of those FileSystems.  Default is to return null to signify no children.
+   * 
+   * @return FileSystems used by this FileSystem
+   */

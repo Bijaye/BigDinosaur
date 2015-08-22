@@ -80,5 +80,7 @@ public class BdAbstractDto
   int fileBufferSize;
   boolean encryptDataTransfer;
   
+  String defaultfilesystemuri;
+  
   
 }
