@@ -10,4 +10,5 @@ There can be default server configuration for
  
  same file can e located on different blocks locations 
  for the same path there can be array of blocklocations
-  BlockLocation[] locs
+  BlockLocation[] locs and therefor can have more than one 
+  status FileStatus[] 
