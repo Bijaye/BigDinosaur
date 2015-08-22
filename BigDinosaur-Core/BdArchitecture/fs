@@ -7,3 +7,7 @@ There can be default server configuration for
  private short replication;
  private int fileBufferSize;
  private boolean encryptDataTransfer;
+ 
+ same file can e located on different blocks locations 
+ for the same path there can be array of blocklocations
+  BlockLocation[] locs
