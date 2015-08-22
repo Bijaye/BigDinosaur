@@ -54,6 +54,37 @@ public class BdAbstractDto
   boolean verifychecksumflag;
   String defaultreplicationpath;
   
+  
+  /** Return the total size of all files in the filesystem.*/
+  public long getUsed() throws IOException{
+    long used = 0;
+    FileStatus[] files = new FileStatus[11];
+    for(FileStatus file:files){
+      used += file.getLen();
+    }
+    return used;
+  }
+  
+  /**
+   * Get the block size for a particular file.
+   * @param f the filename
+   * @return the number of bytes in a block
+   */
+  public long getBlockSize(Path f) throws IOException {
+    return 222;
+  }
+  
+  
+  /**
+   * Return the number of bytes that large input files should be optimally
+   * be split into to minimize i/o time.
+   * 
+   */
+  public long getDefaultBlockSize() {
+    // default to 32MB: large enough to minimize the impact of seeks
+    return 4000;
+  }
+  
   /**
    * Get the default replication for a path.   The given path will be used to
    * locate the actual filesystem.  The full path does not have to exist.
