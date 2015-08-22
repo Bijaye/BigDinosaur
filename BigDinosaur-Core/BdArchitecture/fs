@@ -23,3 +23,15 @@ There can be default server configuration for
    * 
    * @return FileSystems used by this FileSystem
    */
+   
+   Generate stream after creating file system .
+   that stream will be used on that file system i.o
+   
+     public static FSDataOutputStream create(FileSystem fs,
+      Path file, FsPermission permission) throws IOException {
+    // create the file with default permission
+    FSDataOutputStream out = fs.create(file);
+    // set its permission to the supplied one
+    fs.setPermission(file, permission);
+    return out;
+  }
