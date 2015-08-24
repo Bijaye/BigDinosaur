@@ -79,6 +79,14 @@
 	<version>1.4</version>
 </dependency>
 
+<dependency>
+	<groupId>org.apache.avro</groupId>
+	<artifactId>avro</artifactId>
+	<version>1.7.7</version>
+</dependency>
+
+
+
 		
   </dependencies>
 

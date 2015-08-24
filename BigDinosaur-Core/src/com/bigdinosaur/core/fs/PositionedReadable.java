@@ -14,7 +14,7 @@ public interface PositionedReadable {
   //seek=5=position
     //  offset=2;
   //lenght=20;
-  //read starts from position 5 ,read 10 bytes and copy to buffer array starting from position 2
+  //read starts from position 5 ,read 20 bytes and copy to buffer array starting from position 2
  
   public int read(long position, byte[] buffer, int offset, int length)
     throws IOException;
