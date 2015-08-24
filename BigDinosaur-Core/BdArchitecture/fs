@@ -51,7 +51,9 @@ There can be default server configuration for
   
   Below creates block object with name block location 
   
+  suppose there is 
   test.txt text file 
+  it  exists in following network topology 
   
   Block location :
   There are 3 hosts 
