@@ -40,7 +40,7 @@ There can be default server configuration for
   
   a.txt 
   it has acl defined ,it has path ,it has no of block locations ,e.g that might be in one host 
-  another host ,it has defined buffer 
+  another host ,it has defined buffer ,it has file lenght 
   
   
     /user          -> hdfs://nnContainingUserDir/user
