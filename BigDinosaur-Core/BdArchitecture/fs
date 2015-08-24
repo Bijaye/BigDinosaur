@@ -49,5 +49,53 @@ There can be default server configuration for
   /tmp           -> hdfs://nnTmp/privateTmpForUserXXX
  
   
+  Below creates block object with name block location 
+  
+  test.txt text file 
+  
+  Block location :
+  There are 3 hosts 
+  localhost:8080
+  localhost:8081
+  localhost:8082
+  
+  topology 
+  hadoop11        /rack01
+hadoop12        /rack01
+hadoop13        /rack01
+hadoop14        /rack01
+haddop15        /rack01
+hadoop21        /rack02
+hadoop22        /rack02
+hadoop23        /rack02
+hadoop24        /rack02
+hadoop25        /rack02
+hadoop31        /rack03
+hadoop32        /rack03
+hadoop33        /rack03
+hadoop34        /rack03
+hadoop35        /rack03
+10.0.1.111      /rack01
+10.0.1.112      /rack01
+10.0.1.113      /rack01
+10.0.1.114      /rack01
+10.0.1.115      /rack01
+10.0.1.121      /rack02
+10.0.1.122      /rack02
+10.0.1.123      /rack02
+10.0.1.124      /rack02
+10.0.1.125      /rack02
+10.0.1.131      /rack03
+10.0.1.132      /rack03
+10.0.1.133      /rack03
+10.0.1.134      /rack03
+10.0.1.135      /rack03
+
+offset=0
+lenght of file=30
+
+
+  
+  
   
   
