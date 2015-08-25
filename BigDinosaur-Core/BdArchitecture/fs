@@ -96,6 +96,11 @@ hadoop35        /rack03
 offset=0
 lenght of file=30
 
+block has data of equal size 
+
+block has offset ,from where copy should starts 
+
+
 
   
   
