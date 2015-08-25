@@ -102,7 +102,12 @@ block has offset ,from where copy should starts
 
 
 
+   static protected int blockSize = 512;
+  static protected int numBlocks = 10;
   
+   byte[] buf = new byte[blockSize];
+    int bytesRead = fstr.read(buf, 0, blockSize)
+    
   
   
   
