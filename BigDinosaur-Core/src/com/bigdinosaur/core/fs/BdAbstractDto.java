@@ -1,5 +1,7 @@
 package com.bigdinosaur.core.fs;
 
+import java.net.URI;
+
 
 public class BdAbstractDto
 {
@@ -81,6 +83,8 @@ public class BdAbstractDto
   boolean encryptDataTransfer;
   
   String defaultfilesystemuri;
+   URI uri;
+   Path path;
   
   
 }

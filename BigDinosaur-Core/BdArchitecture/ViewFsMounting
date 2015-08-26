@@ -1,0 +1,16 @@
+ Make  user and data dirs - we creates links to them in the mount table
+There are 4  directories as user,data,dir2,dir3,aFile
+  fcTarget.mkdir(new Path(targetTestRoot,"user"),
+        FileContext.DEFAULT_PERM, true);
+    fcTarget.mkdir(new Path(targetTestRoot,"data"),
+        FileContext.DEFAULT_PERM, true);
+    fcTarget.mkdir(new Path(targetTestRoot,"dir2"),
+        FileContext.DEFAULT_PERM, true);
+    fcTarget.mkdir(new Path(targetTestRoot,"dir3"),
+        FileContext.DEFAULT_PERM, true);
+    FileContextTestHelper.createFile(fcTarget, new Path(targetTestRoot,"aFile"));
+    
+    
+    Now create mount file system to make up link with user and dir
+    
+    mount file system make link with actual file system 

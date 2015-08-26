@@ -109,5 +109,7 @@ block has offset ,from where copy should starts
     int bytesRead = fstr.read(buf, 0, blockSize)
     
   
+  -------------------------Mounting -----------------
   
+  mount point is a directory to access your data (files and folders) which is stored in your disks
   
