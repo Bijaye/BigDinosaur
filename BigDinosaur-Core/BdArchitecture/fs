@@ -127,9 +127,11 @@ block has offset ,from where copy should starts
     mnt/pd01
     mnt/pd02
     set a viewFileSystems with 3 mount points as 
-  mnt/pd0 -pointing to same in  target fs
+  mnt/pd0 -pointing to same in  target fs--target file system also has mnt/pd0--it is another path url 
     mnt/pd01-pointing to same in  target fs
     mnt/pd02-pointing to same in  target fs
+    
+    Important:Though in users prospective there are 3 mounting but the mounting points on another locations 
   
   
   
