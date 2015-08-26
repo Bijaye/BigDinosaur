@@ -118,6 +118,14 @@ block has offset ,from where copy should starts
    // Create file with a 3 component dirs
    //  local fs use 1 block
     // override for HDFS
+    
+    
+    view fs has different mounts 
+    from the prospective of user it is single or multiple mount but this mount also 
+    points to another real file path interesting?
+    e.g mnt/pd0
+    mnt/pd01
+    mnt/pd02
   
   
   
