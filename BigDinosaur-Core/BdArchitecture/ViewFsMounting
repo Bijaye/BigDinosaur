@@ -14,3 +14,6 @@ There are 4  directories as user,data,dir2,dir3,aFile
     Now create mount file system to make up link with user and dir
     
     mount file system make link with actual file system 
+    
+    
+    target file system is referenced from mount file system 
