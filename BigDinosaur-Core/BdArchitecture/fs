@@ -126,7 +126,10 @@ block has offset ,from where copy should starts
     e.g mnt/pd0
     mnt/pd01
     mnt/pd02
-  
+    set a viewFileSystems with 3 mount points as 
+  mnt/pd0 -pointing to same in  target fs
+    mnt/pd01-pointing to same in  target fs
+    mnt/pd02-pointing to same in  target fs
   
   
   
