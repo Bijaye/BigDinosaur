@@ -30,7 +30,11 @@ public class TransformData {
 		return Objects;
 	}
 
-	
+	public static void main(String[] args) throws Exception
+  {
+	  process(args);
+    
+  }
 
 	public static void process(String[] args) throws Exception {
 
