@@ -17,3 +17,10 @@ There are 4  directories as user,data,dir2,dir3,aFile
     
     
     target file system is referenced from mount file system 
+    
+    client access mount file system 
+    opt/pd0/sitedata
+    opt/pd0/organizationdata
+    opt/pd0/containerdata
+    sitedata ,organizationdata,containerdata is mount points 
+    These mount points to another file system defined by path 
