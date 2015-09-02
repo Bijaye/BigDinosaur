@@ -1,17 +1,17 @@
 <load>
 <BusinessDataImpl>
-  <start>start</start>
+  <bufferSize>30</bufferSize>
   
 </BusinessDataImpl>
 
 
 <DevelopmentDataImpl>
-  <end>end</end>
+  <replication>2</replication>
   
 </DevelopmentDataImpl>
 
 <MasteraccessImpl>
-  <role>role</role>
+  <blockSize>30</blockSize>
   
 </MasteraccessImpl>
 </load>

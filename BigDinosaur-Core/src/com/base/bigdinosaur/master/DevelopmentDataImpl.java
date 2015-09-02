@@ -4,14 +4,14 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 @XStreamAlias("DevelopmentDataImpl")
 public class DevelopmentDataImpl implements Master {
-	private String end;
+	private String replication;
 
 	public String getEnd() {
-		return end;
+		return replication;
 	}
 
-	public void setEnd(String end) {
-		this.end = end;
+	public void setEnd(String replication) {
+		this.replication = replication;
 	}
 
 	@Override

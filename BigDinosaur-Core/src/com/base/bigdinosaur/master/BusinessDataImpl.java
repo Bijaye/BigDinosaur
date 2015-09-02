@@ -4,14 +4,14 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 @XStreamAlias("BusinessDataImpl")
 public class BusinessDataImpl implements Master{
-	private String start;
+	private String bufferSize;
 
 	public String getStart() {
-		return start;
+		return bufferSize;
 	}
 
-	public void setStart(String start) {
-		this.start = start;
+	public void setStart(String bufferSize) {
+		this.bufferSize = bufferSize;
 	}
 
 	@Override

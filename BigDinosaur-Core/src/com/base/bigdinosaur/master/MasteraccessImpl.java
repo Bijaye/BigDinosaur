@@ -4,14 +4,14 @@ import com.thoughtworks.xstream.annotations.XStreamAlias;
 
 @XStreamAlias("MasteraccessImpl")
 public class MasteraccessImpl implements Master{
-	private String role;
+	private String blockSize;
 
 	public String getRole() {
-		return role;
+		return blockSize;
 	}
 
-	public void setRole(String role) {
-		this.role = role;
+	public void setRole(String blockSize) {
+		this.blockSize = blockSize;
 	}
 
 	@Override
