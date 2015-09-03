@@ -12,7 +12,7 @@ import java.util.StringTokenizer;
 import org.bigdinosaur.core.database.BdAcl;
 
 import com.bigdinosaur.cluster.acl.Permission;
-import com.bigdinosaur.config.Configuration;
+import com.bigdinosaur.config.BdConfiguration;
 
 
 
@@ -67,7 +67,7 @@ public abstract class BdAbstractFileSystem {
    */
   @SuppressWarnings("unchecked")
   static <T> T newInstance(Class<T> theClass,
-    URI uri, Configuration conf) {
+    URI uri, BdConfiguration conf) {
     T result = null;
     return result;
    
@@ -103,7 +103,7 @@ public abstract class BdAbstractFileSystem {
    * @throws UnsupportedFileSystemException file system for <code>uri</code> is
    *           not found
    */
-  public static BdAbstractFileSystem createFileSystem(URI uri, Configuration conf)
+  public static BdAbstractFileSystem createFileSystem(URI uri, BdConfiguration conf)
       {
    
     return null ;
@@ -146,7 +146,7 @@ public abstract class BdAbstractFileSystem {
    * @throws UnsupportedFileSystemException if the file system for
    *           <code>uri</code> is not supported.
    */
-  public static BdAbstractFileSystem get(final URI uri, final Configuration conf)
+  public static BdAbstractFileSystem get(final URI uri, final BdConfiguration conf)
       {
     return createFileSystem(uri, conf);
   }

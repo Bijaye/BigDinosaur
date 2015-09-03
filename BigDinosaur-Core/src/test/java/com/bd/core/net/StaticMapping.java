@@ -11,7 +11,7 @@ import java.util.Map;
 
 
 
-import com.bigdinosaur.config.Configuration;
+import com.bigdinosaur.config.BdConfiguration;
 import com.bigdinosaur.core.net.AbstractDNSToSwitchMapping;
 import com.bigdinosaur.core.net.NetworkTopology;
 
@@ -33,7 +33,7 @@ public class StaticMapping extends AbstractDNSToSwitchMapping   {
    * {@link #KEY_HADOOP_CONFIGURED_NODE_MAPPING} field
    * @param conf new configuration
    */
-  public void setConf(Configuration conf) {
+  public void setConf(BdConfiguration conf) {
     if (conf != null) {
       String[] mappings = conf.getStrings(KEY_HADOOP_CONFIGURED_NODE_MAPPING);
       if (mappings != null) {
@@ -48,10 +48,10 @@ public class StaticMapping extends AbstractDNSToSwitchMapping   {
 
   /**
    * retained lower case setter for compatibility reasons; relays to
-   * {@link #setConf(Configuration)}
+   * {@link #setConf(BdConfiguration)}
    * @param conf new configuration
    */
-  public void setconf(Configuration conf) {
+  public void setconf(BdConfiguration conf) {
     setConf(conf);
   }
 

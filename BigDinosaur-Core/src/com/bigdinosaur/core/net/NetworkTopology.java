@@ -11,7 +11,7 @@ import java.util.TreeMap;
 import java.util.concurrent.locks.ReadWriteLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import com.bigdinosaur.config.Configuration;
+import com.bigdinosaur.config.BdConfiguration;
 import com.google.common.annotations.VisibleForTesting;
 
 import org.apache.commons.logging.Log;

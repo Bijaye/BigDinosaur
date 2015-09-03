@@ -8,7 +8,7 @@ import junit.framework.TestCase;
 
 import org.junit.Test;
 
-import com.bigdinosaur.config.Configuration;
+import com.bigdinosaur.config.BdConfiguration;
 
 public class TestScriptBasedMappingWithDependency extends TestCase {
 
@@ -19,7 +19,7 @@ public class TestScriptBasedMappingWithDependency extends TestCase {
 
   @Test
   public void testNoArgsMeansNoResult() {
-    Configuration conf = new Configuration();
+    BdConfiguration conf = new BdConfiguration();
     conf.setInt(ScriptBasedMapping.SCRIPT_ARG_COUNT_KEY,
                 ScriptBasedMapping.MIN_ALLOWABLE_ARGS - 1);
     conf.set(ScriptBasedMapping.SCRIPT_FILENAME_KEY, "any-filename-1");
@@ -39,7 +39,7 @@ public class TestScriptBasedMappingWithDependency extends TestCase {
 
   @Test
   public void testNoFilenameMeansSingleSwitch() throws Throwable {
-    Configuration conf = new Configuration();
+    BdConfiguration conf = new BdConfiguration();
     ScriptBasedMapping mapping = createMapping(conf);
     assertTrue("Expected to be single switch", mapping.isSingleSwitch());
     assertTrue("Expected to be single switch",
@@ -48,11 +48,11 @@ public class TestScriptBasedMappingWithDependency extends TestCase {
 
   @Test
   public void testFilenameMeansMultiSwitch() throws Throwable {
-    Configuration conf = new Configuration();
+    BdConfiguration conf = new BdConfiguration();
     conf.set(ScriptBasedMapping.SCRIPT_FILENAME_KEY, "any-filename");
     ScriptBasedMapping mapping = createMapping(conf);
     assertFalse("Expected to be multi switch", mapping.isSingleSwitch());
-    mapping.setConf(new Configuration());
+    mapping.setConf(new BdConfiguration());
     assertTrue("Expected to be single switch", mapping.isSingleSwitch());
   }
 
@@ -62,7 +62,7 @@ public class TestScriptBasedMappingWithDependency extends TestCase {
     assertTrue("Expected to be single switch", mapping.isSingleSwitch());
   }
 
-  private ScriptBasedMappingWithDependency createMapping(Configuration conf) {
+  private ScriptBasedMappingWithDependency createMapping(BdConfiguration conf) {
     ScriptBasedMappingWithDependency mapping = 
         new ScriptBasedMappingWithDependency();
     mapping.setConf(conf);

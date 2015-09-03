@@ -4,7 +4,7 @@ package com.bigdinosaur.config;
 
 public interface Configurable {
 
-  void setConf(Configuration conf);
+  void setConf(BdConfiguration conf);
 
-  Configuration getConf();
+  BdConfiguration getConf();
 }

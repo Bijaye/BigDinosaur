@@ -13,7 +13,7 @@ import java.util.Set;
 import java.util.TreeSet;
 
 import com.bigdinosaur.cluster.acl.FsPermission;
-import com.bigdinosaur.config.Configuration;
+import com.bigdinosaur.config.BdConfiguration;
 import com.bigdinosaur.config.Configured;
 
 /****************************************************************
@@ -310,12 +310,12 @@ public abstract class FileSystem extends Configured implements Closeable {
   public abstract URI getUri();
 
   public abstract Path getWorkingDirectory();
-  public static FileSystem get(URI uri, Configuration conf) throws Exception{
+  public static FileSystem get(URI uri, BdConfiguration conf) throws Exception{
     Key key = new Key();
     return getInternal(uri, conf, key);
   }
   
-  public static FileSystem getInternal(URI uri, Configuration conf, Key key) throws IOException
+  public static FileSystem getInternal(URI uri, BdConfiguration conf, Key key) throws IOException
   {
     return null;
   }

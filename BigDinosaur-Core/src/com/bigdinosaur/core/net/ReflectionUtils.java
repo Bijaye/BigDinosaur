@@ -19,7 +19,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-import com.bigdinosaur.config.Configuration;
+import com.bigdinosaur.config.BdConfiguration;
 
 
 
@@ -45,7 +45,7 @@ public class ReflectionUtils {
    * @return a new object
    */
   @SuppressWarnings("unchecked")
-  public static <T> T newInstance(Class<T> theClass, Configuration conf) {
+  public static <T> T newInstance(Class<T> theClass, BdConfiguration conf) {
     T result;
     try {
       Constructor<T> meth = (Constructor<T>) CONSTRUCTOR_CACHE.get(theClass);
@@ -61,7 +61,7 @@ public class ReflectionUtils {
     setConf(result, conf);
     return result;
   }
-  public static void setConf(Object theObject, Configuration conf) {
+  public static void setConf(Object theObject, BdConfiguration conf) {
     if (conf != null) {
      
     }

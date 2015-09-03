@@ -13,7 +13,7 @@ import java.net.UnknownHostException;
 import javax.net.SocketFactory;
 
 import com.bigdinosaur.config.Configurable;
-import com.bigdinosaur.config.Configuration;
+import com.bigdinosaur.config.BdConfiguration;
 
 
 
@@ -25,7 +25,7 @@ import com.bigdinosaur.config.Configuration;
 public class BdSocksSocketFactory extends SocketFactory implements
 Configurable
      {
-  private Configuration conf;
+  private BdConfiguration conf;
 
   private Proxy proxy;
 
@@ -123,7 +123,7 @@ Configurable
 
 
   @Override
-  public void setConf(Configuration conf) {
+  public void setConf(BdConfiguration conf) {
     this.conf = conf;
     String proxyStr = conf.get("hadoop.socks.server");
     if ((proxyStr != null) && (proxyStr.length() > 0)) {
@@ -135,7 +135,7 @@ Configurable
 
 
   @Override
-  public Configuration getConf()
+  public BdConfiguration getConf()
   {
     // TODO Auto-generated method stub
     return null;

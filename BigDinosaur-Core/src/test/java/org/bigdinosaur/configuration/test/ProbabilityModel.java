@@ -15,7 +15,7 @@ public class ProbabilityModel {
   private static final float DEFAULT_PROB = 0.00f; //Default probability is 0%
   private static final float MAX_PROB = 1.00f; // Max probability is 100%
 
-  private static Configuration conf = FiConfig.getConfig();
+  private static BdConfiguration conf = FiConfig.getConfig();
 
   static {
     // Set new default probability if specified through a system.property

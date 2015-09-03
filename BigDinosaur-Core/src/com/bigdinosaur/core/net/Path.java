@@ -13,7 +13,7 @@ import java.util.regex.Pattern;
 
 import org.apache.commons.lang3.StringUtils;
 
-import com.bigdinosaur.config.Configuration;
+import com.bigdinosaur.config.BdConfiguration;
 import com.bigdinosaur.config.FileSystem;
 
 
@@ -258,7 +258,7 @@ public class Path implements Comparable {
 
   /** Return the FileSystem that owns this Path. 
    * @throws InterruptedException */
-  public FileSystem getFileSystem(Configuration conf) throws IOException, InterruptedException {
+  public FileSystem getFileSystem(BdConfiguration conf) throws IOException, InterruptedException {
     return FileSystem.get(this.toUri(), conf,"");
   }
 

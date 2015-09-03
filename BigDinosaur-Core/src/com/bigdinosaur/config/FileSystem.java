@@ -3,10 +3,12 @@ package com.bigdinosaur.config;
 import java.io.IOException;
 import java.net.URI;
 import java.security.PrivilegedExceptionAction;
+
+import com.bigdinosaur.core.fs.Path;
 public abstract class FileSystem
 {
   
-  public static FileSystem get(final URI uri, final Configuration conf,
+  public static FileSystem get(final URI uri, final BdConfiguration conf,
                                final String user) throws IOException, InterruptedException {
                            String ticketCachePath =
                              conf.get(CommonConfigurationKeys.KERBEROS_TICKET_CACHE_PATH);

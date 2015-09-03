@@ -51,7 +51,7 @@ import com.bigdinosaur.core.fs.Path;
  * <li>the umask (for file permissions)
  * </ul>
  * In general, these properties are obtained from the default configuration file in the user's
- * environment (see {@link Configuration}).
+ * environment (see {@link BdConfiguration}).
  * 
  * Further file system properties are specified on the server-side. File system operations default
  * to using these server-side defaults unless otherwise specified.

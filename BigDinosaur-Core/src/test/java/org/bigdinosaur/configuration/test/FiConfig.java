@@ -18,10 +18,10 @@ import test.java.org.bigdinosaur.configuration.test.ProbabilityModel;
 public class FiConfig {
   private static final String CONFIG_PARAMETER = ProbabilityModel.FPROB_NAME + "config";
   private static final String DEFAULT_CONFIG = "fi-site.xml";
-  private static Configuration conf;
+  private static BdConfiguration conf;
   static {
     if (conf == null) {
-      conf = new Configuration(false);
+      conf = new BdConfiguration(false);
       String configName = System.getProperty(CONFIG_PARAMETER, DEFAULT_CONFIG);
       conf.addResource(configName);
     }
@@ -32,7 +32,7 @@ public class FiConfig {
    * 
    * @return Configuration initialized with fault injection's parameters
    */
-  public static Configuration getConfig() {
+  public static BdConfiguration getConfig() {
     return conf;
   }
  
