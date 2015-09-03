@@ -1,8 +1,8 @@
 <load>
-<BusinessDataImpl>
+<BaseDataImpl>
   <bufferSize>30</bufferSize>
   
-</BusinessDataImpl>
+</BaseDataImpl>
 
 
 <DevelopmentDataImpl>

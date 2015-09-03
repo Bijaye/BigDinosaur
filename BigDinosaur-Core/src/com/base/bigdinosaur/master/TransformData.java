@@ -12,7 +12,7 @@ import com.thoughtworks.xstream.annotations.XStreamImplicit;
 public class TransformData {
 
 	@XStreamImplicit
-	private List<BusinessDataImpl> businessdata = new ArrayList<BusinessDataImpl>();
+	private List<BaseDataImpl> businessdata = new ArrayList<BaseDataImpl>();
 
 	@XStreamImplicit
 	private List<DevelopmentDataImpl> developmentdata = new ArrayList<DevelopmentDataImpl>();
@@ -42,7 +42,7 @@ public class TransformData {
 		String loadfile = "D://master.xml";
 		TransformData loader = createLoader(loadfile, xstream);
 
-		for (Master myObject : (loader).getObjects()) {
+		for (Master myObject : loader.getObjects()) {
 			myObject.Load();
 		}
 
@@ -61,13 +61,13 @@ public class TransformData {
 		XStream xstream = new XStream();
 		xstream.processAnnotations(TransformData.class);
 		xstream.processAnnotations(DevelopmentDataImpl.class);
-		xstream.processAnnotations(BusinessDataImpl.class);
+		xstream.processAnnotations(BaseDataImpl.class);
 		xstream.processAnnotations(MasteraccessImpl.class);
 
 		return xstream;
 	}
 
-	public List<BusinessDataImpl> getBusinessdata() {
+	public List<BaseDataImpl> getBusinessdata() {
 		return businessdata;
 	}
 
@@ -79,7 +79,7 @@ public class TransformData {
 		return masterdata;
 	}
 
-	public void setBusinessdata(List<BusinessDataImpl> businessdata) {
+	public void setBusinessdata(List<BaseDataImpl> businessdata) {
 		this.businessdata = businessdata;
 	}
 
