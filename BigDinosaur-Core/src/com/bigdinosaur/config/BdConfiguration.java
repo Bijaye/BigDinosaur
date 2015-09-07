@@ -140,78 +140,9 @@ Writable {
     // TODO Auto-generated method stub
     return null;
   }
-  public void writeXml(OutputStream out) throws IOException {
-    writeXml(new OutputStreamWriter(out, "UTF-8"));
+
+
+
   }
+  
 
-  /** 
-   * Write out the non-default properties in this configuration to the given
-   * {@link Writer}.
-   * 
-   * @param out the writer to write to.
-   */
-  public void writeXml(Writer out) throws IOException {
-    Document doc = asXmlDocument();
-
-    try {
-      DOMSource source = new DOMSource(doc);
-      StreamResult result = new StreamResult(out);
-      TransformerFactory transFactory = TransformerFactory.newInstance();
-      Transformer transformer = transFactory.newTransformer();
-
-      // Important to not hold Configuration log while writing result, since
-      // 'out' may be an HDFS stream which needs to lock this configuration
-      // from another thread.
-      transformer.transform(source, result);
-    } catch (TransformerException te) {
-      throw new IOException(te);
-    }
-  }
-  private synchronized Document asXmlDocument() throws IOException {
-    Document doc;
-    try {
-      doc =
-        DocumentBuilderFactory.newInstance().newDocumentBuilder().newDocument();
-    } catch (ParserConfigurationException pe) {
-      throw new IOException(pe);
-    }
-    Element conf = doc.createElement("configuration");
-    doc.appendChild(conf);
-    conf.appendChild(doc.createTextNode("\n"));
-    for (Enumeration<Object> e = properties.keys(); e.hasMoreElements();) {
-      String name = (String)e.nextElement();
-      Object object = properties.get(name);
-      String value = null;
-      if (object instanceof String) {
-        value = (String) object;
-      }else {
-        continue;
-      }
-      Element propNode = doc.createElement("property");
-      conf.appendChild(propNode);
-
-      Element nameNode = doc.createElement("name");
-      nameNode.appendChild(doc.createTextNode(name));
-      propNode.appendChild(nameNode);
-
-      Element valueNode = doc.createElement("value");
-      valueNode.appendChild(doc.createTextNode(value));
-      propNode.appendChild(valueNode);
-
-      if (updatingResource != null) {
-        String[] sources = updatingResource.get(name);
-        if(sources != null) {
-          for(String s : sources) {
-            Element sourceNode = doc.createElement("source");
-            sourceNode.appendChild(doc.createTextNode(s));
-            propNode.appendChild(sourceNode);
-          }
-        }
-      }
-      
-      conf.appendChild(doc.createTextNode("\n"));
-    }
-    return doc;
-  }
-
-}
