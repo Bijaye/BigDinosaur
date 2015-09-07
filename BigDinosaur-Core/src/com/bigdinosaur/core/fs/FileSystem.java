@@ -8,7 +8,9 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.URI;
 import java.security.AccessControlException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -36,6 +38,10 @@ import com.bigdinosaur.config.Configured;
  *****************************************************************/
 
 public abstract class FileSystem extends Configured implements Closeable {
+  // data is stored on the basis of key and Filesystem
+  // key contains uri and configuration 
+  
+  private final Map<Key, FileSystem> map = new HashMap<Key, FileSystem>();
   /**
    * A cache of files that should be deleted when filsystem is closed
    * or the JVM is exited.
@@ -61,7 +67,9 @@ public abstract class FileSystem extends Configured implements Closeable {
     return null;
     
   }
-
+  public FileSystem getFileSystem(URI uri) throws Exception {
+    return FileSystem.get(uri, getConf());
+  }
   /**
    * Create an FSDataOutputStream at the indicated Path.
    * @param f the file name to create
@@ -252,6 +260,11 @@ public abstract class FileSystem extends Configured implements Closeable {
     return null;
     
   }
+  // get the filesystem based on uri 
+  FileSystem get(URI uri, Configuration conf) throws IOException{
+    Key key = new Key(uri, conf);
+    return getInternal(uri, conf, key);
+  }
   /**
    * Gets the ACL of a file or directory.
    *
@@ -310,14 +323,21 @@ public abstract class FileSystem extends Configured implements Closeable {
   public abstract URI getUri();
 
   public abstract Path getWorkingDirectory();
-  public static FileSystem get(URI uri, BdConfiguration conf) throws Exception{
+  public  FileSystem get(URI uri, BdConfiguration conf) throws Exception{
     Key key = new Key();
     return getInternal(uri, conf, key);
   }
   
-  public static FileSystem getInternal(URI uri, BdConfiguration conf, Key key) throws IOException
+  public  FileSystem getInternal(URI uri, BdConfiguration conf, Key key) throws IOException
   {
-    return null;
+    FileSystem fs;
+    synchronized (this) {
+      fs = map.get(key);
+    }
+    if (fs != null) {
+      return fs;
+    }
+    return fs;
   }
     
   
