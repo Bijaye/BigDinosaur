@@ -19,6 +19,7 @@ public void SeekableTest() throws IOException{
    BdPartition partitin=new BdPartition();
    byte[]  read=partitin.read(seek, raf);
    Assert.assertEquals(10, read.length);
+   System.out.println("test");
    
    
 }
