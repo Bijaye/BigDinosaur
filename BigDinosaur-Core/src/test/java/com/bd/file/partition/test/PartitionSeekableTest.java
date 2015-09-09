@@ -20,6 +20,11 @@ public void SeekableTest() throws IOException{
    byte[]  read=partitin.read(seek, raf);
    Assert.assertEquals(10, read.length);
    System.out.println("test");
+  int newseek= seek.getNoofbytesread();
+  seek.setSeekposition(newseek+1);
+ Assert.assertEquals(11, newseek+1);
+ byte[]  readnew=partitin.read(seek, raf);
+ 
    
    
 }
