@@ -339,6 +339,9 @@ public abstract class FileSystem extends Configured implements Closeable {
     }
     return fs;
   }
+  getLocal(){
+    
+  }
     
   
 }

@@ -26,6 +26,7 @@ import javax.xml.transform.stream.StreamResult;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
+import com.base.bigdinosaur.master.TransformData;
 import com.bigdinosaur.core.fs.Path;
 import com.bigdinosaur.core.io.Writable;
 
@@ -36,6 +37,9 @@ import com.bigdinosaur.core.io.Writable;
 
 public class BdConfiguration implements Iterable<Map.Entry<String,String>>,
 Writable {
+  // 
+  TransformData dataconfiguration; 
+  
   private HashMap<String, String> updatingResource;
   private static final CopyOnWriteArrayList<String> defaultResources =
       new CopyOnWriteArrayList<String>();
@@ -48,7 +52,10 @@ Writable {
  public  BdConfiguration(boolean loadDefaults){
     this.loadDefaults=loadDefaults;
   }
-
+ public  BdConfiguration(TransformData transform){
+   this.dataconfiguration=dataconfiguration;
+   
+ }
   public void set(String key, String value)
   {
     updatingResource.put(key, value);
