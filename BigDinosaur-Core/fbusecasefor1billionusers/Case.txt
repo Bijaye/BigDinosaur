@@ -1,0 +1,6 @@
+1 billions users divided into each of 1 millions users on the basis o alphabets 
+1 millions users is loaded on different nodes of clusters 
+1 millions users again divided into 1 lakhs users 
+now one lakhs users loaded in memory as array and search as binary tree 
+
+e.g arrays.asbinarytree(array,"nametosearch")
