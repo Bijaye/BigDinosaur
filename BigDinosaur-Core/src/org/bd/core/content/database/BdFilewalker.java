@@ -36,7 +36,7 @@ public class BdFilewalker {
     
     
     
-  static  ArrayList<ArrayList<BdFileContent>>  read(String filepath){
+  public static  ArrayList<ArrayList<BdFileContent>>  read(String filepath){
     ArrayList<BdFileContent> filecontentlisteachline=new    ArrayList<BdFileContent>();
     ArrayList<ArrayList<BdFileContent>> filecontentlisteachfile=new    ArrayList<ArrayList<BdFileContent>>();
       BufferedReader br = null;
@@ -77,7 +77,7 @@ public class BdFilewalker {
   
   
   
-  static  Map<String,String>  readasMap(String filepath){
+  public static  Map<String,String>  readasMap(String filepath){
     Map<String,String> map = new HashMap<String,String>() ;
       BufferedReader br = null;
       

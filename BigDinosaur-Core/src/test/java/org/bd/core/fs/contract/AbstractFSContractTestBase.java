@@ -218,99 +218,14 @@ public abstract class AbstractFSContractTestBase extends Assert
     LOG.info(text);
   }
 
-  /**
-   * Handle the outcome of an operation not being the strictest
-   * exception desired, but one that, while still within the boundary
-   * of the contract, is a bit looser.
-   *
-   * If the FS contract says that they support the strictest exceptions,
-   * that is what they must return, and the exception here is rethrown
-   * @param action Action
-   * @param expectedException what was expected
-   * @param e exception that was received
-   */
-  protected void handleRelaxedException(String action,
-                                        String expectedException,
-                                        Exception e) throws Exception {
-    if (getContract().isSupported(SUPPORTS_STRICT_EXCEPTIONS, false)) {
-      throw e;
-    }
-    LOG.warn("The expected exception {}  was not the exception class" +
-             " raised on {}: {}", action , e.getClass(), expectedException, e);
-  }
+  
 
-  /**
-   * Handle expected exceptions through logging and/or other actions
-   * @param e exception raised.
-   */
-  protected void handleExpectedException(Exception e) {
-    getLog().debug("expected :{}" ,e, e);
-  }
-
-  /**
-   * assert that a path exists
-   * @param message message to use in an assertion
-   * @param path path to probe
-   * @throws IOException IO problems
-   */
-  public void assertPathExists(String message, Path path) throws IOException {
-    ContractTestUtils.assertPathExists(fileSystem, message, path);
-  }
-
-  /**
-   * assert that a path does not
-   * @param message message to use in an assertion
-   * @param path path to probe
-   * @throws IOException IO problems
-   */
-  public void assertPathDoesNotExist(String message, Path path) throws
-                                                                IOException {
-    ContractTestUtils.assertPathDoesNotExist(fileSystem, message, path);
-  }
-
-  /**
-   * Assert that a file exists and whose {@link FileStatus} entry
-   * declares that this is a file and not a symlink or directory.
-   *
-   * @param filename name of the file
-   * @throws IOException IO problems during file operations
-   */
-  protected void assertIsFile(Path filename) throws IOException {
-    ContractTestUtils.assertIsFile(fileSystem, filename);
-  }
-
-  /**
-   * Assert that a file exists and whose {@link FileStatus} entry
-   * declares that this is a file and not a symlink or directory.
-   *
-   * @param path name of the file
-   * @throws IOException IO problems during file operations
-   */
-  protected void assertIsDirectory(Path path) throws IOException {
-    ContractTestUtils.assertIsDirectory(fileSystem, path);
-  }
+ 
+  
 
 
-  /**
-   * Assert that a file exists and whose {@link FileStatus} entry
-   * declares that this is a file and not a symlink or directory.
-   *
-   * @throws IOException IO problems during file operations
-   */
-  protected void mkdirs(Path path) throws IOException {
-    assertTrue("Failed to mkdir " + path, fileSystem.mkdirs(path));
-  }
-
-  /**
-   * Assert that a delete succeeded
-   * @param path path to delete
-   * @param recursive recursive flag
-   * @throws IOException IO problems
-   */
-  protected void assertDeleted(Path path, boolean recursive) throws
-                                                             IOException {
-    ContractTestUtils.assertDeleted(fileSystem, path, recursive);
-  }
+ 
+ 
 
   /**
    * Assert that the result value == -1; which implies
@@ -322,20 +237,7 @@ public abstract class AbstractFSContractTestBase extends Assert
     assertEquals(text + " wrong read result " + result, -1, result);
   }
 
-  boolean rename(Path src, Path dst) throws IOException {
-    return getFileSystem().rename(src, dst);
-  }
 
-  protected String generateAndLogErrorListing(Path src, Path dst) throws
-                                                                  IOException {
-    FileSystem fs = getFileSystem();
-    getLog().error(
-      "src dir " + ContractTestUtils.ls(fs, src.getParent()));
-    String destDirLS = ContractTestUtils.ls(fs, dst.getParent());
-    if (fs.isDirectory(dst)) {
-      //include the dir into the listing
-      destDirLS = destDirLS + "\n" + ContractTestUtils.ls(fs, dst);
-    }
-    return destDirLS;
-  }
+
+
 }

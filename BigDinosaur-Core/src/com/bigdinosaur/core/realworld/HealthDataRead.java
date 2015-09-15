@@ -1,4 +1,5 @@
-package org.bd.core.content.database;
+package com.bigdinosaur.core.realworld;
+
 
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -10,12 +11,17 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Map;
 
+import org.bd.core.content.database.BdFileContent;
+import org.bd.core.content.database.BdFilewalker;
+import org.bd.core.content.database.BdWriteFile;
+import org.bd.core.content.database.FileIndexing;
+
 //First create database folder-it is database name 
 //create table folder-e.g company table ,user table ,Likes table,Follow table 
 // Create file index table 
 // Insert 
 
-public class BdWriteFile
+public class HealthDataRead
 {
 
  void  write(String filepath,String webfilecontenet) throws IOException{
@@ -35,11 +41,12 @@ public class BdWriteFile
    //first search in indexed location.
    //if not found then only search in real location
    // it is checked against user id 
-   String index=searchIndexing("D://database//fileindex//fileindex.txt","123");
-   if(index==null){
-   System.out.println(write.search("", "123", "", ""));
-   }
-   else{
+//   String index=searchIndexing("C://Users//abishkar//Desktop//cbr//data.txt","123");
+//   if(index==null){
+//   System.out.println(write.search("", "123", "", ""));
+//   }
+  String index="C://Users//abishkar//Desktop//cbr//data.txt";
+//   else{
      System.out.println("file content path  from indexing" + index);
      // now search file from index
      BdFilewalker walker=new BdFilewalker();
@@ -55,7 +62,7 @@ public class BdWriteFile
        }
        
      }
-   }
+//   }
    
    
    
@@ -86,7 +93,7 @@ public static  String searchIndexing(String indexlocation,String id){
    
  }
  // before executing this method indexing value is need to be searched ,if it is not found in indexing then only this method is executed and it is indexed 
-public String search(String username,String content,String databasename,String tablename) throws IOException{
+String search(String username,String content,String databasename,String tablename) throws IOException{
   BdFilewalker walker=new BdFilewalker();
   ArrayList<ArrayList<ArrayList<BdFileContent>>> allfilecontent= walker.main("");
   for(int i=0;i<allfilecontent.size();i++){// loop all files
