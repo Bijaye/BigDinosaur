@@ -1,0 +1,3 @@
+When cloning one jvm to another ,the state of file system has to be same .what it means is that 
+the user,group,team ,path ,uri everything in previous file system has to be same ,it is importatnt to clone 
+one jvm to another to create scalable distributed file system 
