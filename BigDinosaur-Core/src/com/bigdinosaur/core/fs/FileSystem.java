@@ -164,7 +164,6 @@ public static final String DEFAULT_FS =  CommonConfigurationKeys.FS_DEFAULT_NAME
    */
   public static boolean mkdirs(FileSystem fs, Path dir, FsPermission permission) throws IOException
   {
-    boolean result = false;
     // create the directory using the default permission
      boolean result = fs.mkdirs(dir);
     // set its permission to be the supplied one
@@ -465,5 +464,8 @@ public static final String DEFAULT_FS =  CommonConfigurationKeys.FS_DEFAULT_NAME
   }
   public static URI getDefaultUri(BdConfiguration conf) {
     return URI.create(fixName(conf.get(FS_DEFAULT_NAME_KEY, DEFAULT_FS)));
+  }
+  public boolean mkdirs(Path f) throws IOException {
+    return mkdirs(f, FsPermission.getDefault());
   }
 }
