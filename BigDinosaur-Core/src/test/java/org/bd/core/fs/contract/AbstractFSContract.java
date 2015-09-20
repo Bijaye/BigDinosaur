@@ -5,7 +5,10 @@ import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.bigdinosaur.config.BdConfiguration;
 import com.bigdinosaur.config.Configured;
+import com.bigdinosaur.core.fs.FileSystem;
+import com.bigdinosaur.core.fs.Path;
 
 import java.io.IOException;
 import java.net.URI;
@@ -33,7 +36,7 @@ public abstract class AbstractFSContract extends Configured {
    * Constructor: loads the authentication keys if found
    * @param conf configuration to work with
    */
-  protected AbstractFSContract(Configuration conf) {
+  protected AbstractFSContract(BdConfiguration conf) {
     super(conf);
     if (maybeAddConfResource(ContractOptions.CONTRACT_OPTIONS_RESOURCE)) {
       LOG.debug("Loaded authentication keys from {}", ContractOptions.CONTRACT_OPTIONS_RESOURCE);
@@ -123,33 +126,9 @@ public abstract class AbstractFSContract extends Configured {
     this.enabled = enabled;
   }
 
-  /**
-   * Query for a feature being supported. This may include a probe for the feature
-   *
-   * @param feature feature to query
-   * @param defval default value
-   * @return true if the feature is supported
-   * @throws IOException IO problems
-   */
-  public boolean isSupported(String feature, boolean defval) {
-    return getConf().getBoolean(getConfKey(feature), defval);
-  }
 
-  /**
-   * Query for a feature's limit. This may include a probe for the feature
-   *
-   * @param feature feature to query
-   * @param defval default value
-   * @return true if the feature is supported
-   * @throws IOException IO problems
-   */
-  public int getLimit(String feature, int defval) {
-    return getConf().getInt(getConfKey(feature), defval);
-  }
 
-  public String getOption(String feature, String defval) {
-    return getConf().get(getConfKey(feature), defval);
-  }
+
 
   /**
    * Build a configuration key

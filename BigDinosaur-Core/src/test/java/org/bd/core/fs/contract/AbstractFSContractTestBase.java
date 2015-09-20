@@ -11,6 +11,10 @@ import org.junit.rules.Timeout;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.bigdinosaur.config.BdConfiguration;
+import com.bigdinosaur.core.fs.FileSystem;
+import com.bigdinosaur.core.fs.Path;
+
 import java.io.IOException;
 import java.net.URI;
 
@@ -54,7 +58,7 @@ public abstract class AbstractFSContractTestBase extends Assert
    * -provide the FS contract
    * @return the FS contract
    */
-  protected abstract AbstractFSContract createContract(Configuration conf);
+  protected abstract AbstractFSContract createContract(BdConfiguration conf);
 
   /**
    * Get the contract
@@ -114,8 +118,8 @@ public abstract class AbstractFSContractTestBase extends Assert
    * Create a configuration. May be overridden by tests/instantiations
    * @return a configuration
    */
-  protected Configuration createConfiguration() {
-    return new Configuration();
+  protected BdConfiguration createConfiguration() {
+    return new BdConfiguration();
   }
 
   /**

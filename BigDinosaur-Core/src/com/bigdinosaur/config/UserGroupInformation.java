@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.security.PrivilegedAction;
 import java.security.PrivilegedExceptionAction;
 
-public class UserGroupInformation
+public class UserGroupInformation<T>
 {
 
   public static UserGroupInformation getBestUGI(String ticketCachePath, String user)

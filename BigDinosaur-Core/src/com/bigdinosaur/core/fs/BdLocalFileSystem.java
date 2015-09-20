@@ -10,7 +10,7 @@ import com.bigdinosaur.cluster.acl.FsPermission;
 
 
 public class BdLocalFileSystem extends FileSystem {
-
+  static final URI NAME = URI.create("file:///");
   @Override
   public void close() throws IOException
   {

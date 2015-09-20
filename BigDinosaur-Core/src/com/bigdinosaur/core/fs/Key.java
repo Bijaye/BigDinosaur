@@ -3,7 +3,9 @@ package com.bigdinosaur.core.fs;
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
+import java.net.URI;
 
+import com.bigdinosaur.config.BdConfiguration;
 import com.bigdinosaur.core.io.WritableComparable;
 
 
@@ -11,6 +13,17 @@ public class Key implements WritableComparable<Key> {
   /** Byte value of key */
   byte[] bytes;
   
+  
+  URI uri;
+  BdConfiguration conf;
+  
+  public Key(URI uri, BdConfiguration conf)
+  {
+    super();
+    this.uri = uri;
+    this.conf = conf;
+  }
+
   /**
    * The weight associated to <i>this</i> key.
    * <p>

@@ -2,6 +2,7 @@ package com.bigdinosaur.config;
 
 
 public class CommonConfigurationKeys  {
+  public static final String  FS_DEFAULT_NAME_KEY = "fs.defaultFS";
 
   /** Default location for user home directories */
   public static final String  FS_HOME_DIR_KEY = "fs.homeDir";
