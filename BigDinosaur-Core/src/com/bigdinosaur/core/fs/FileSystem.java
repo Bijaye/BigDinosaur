@@ -42,6 +42,7 @@ public abstract class FileSystem
 {
   
   public static final String FS_DEFAULT_NAME_KEY =   CommonConfigurationKeys.FS_DEFAULT_NAME_KEY;
+  
     
 public static final String DEFAULT_FS =  CommonConfigurationKeys.FS_DEFAULT_NAME_DEFAULT;
      
@@ -165,7 +166,7 @@ public static final String DEFAULT_FS =  CommonConfigurationKeys.FS_DEFAULT_NAME
   {
     boolean result = false;
     // create the directory using the default permission
-    // boolean result = fs.mkdirs(dir);
+     boolean result = fs.mkdirs(dir);
     // set its permission to be the supplied one
     // fs.setPermission(dir, permission);
     return result;
@@ -293,7 +294,7 @@ public static final String DEFAULT_FS =  CommonConfigurationKeys.FS_DEFAULT_NAME
   }
 
   // get the filesystem based on uri
-  static FileSystem get(URI uri, BdConfiguration conf) throws IOException
+  public static FileSystem get(URI uri, BdConfiguration conf) throws IOException
   {
     Key key = new Key(uri, conf);
     return getInternal(uri, conf, key);

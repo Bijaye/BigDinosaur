@@ -1,6 +1,7 @@
 package org.bd.core.fs.contract;
 
 
+
 import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -72,7 +73,7 @@ public abstract class AbstractFSContract extends Configured {
     URL url = this.getClass().getClassLoader().getResource(resource);
     boolean found = url != null;
     if (found) {
-      getConf().addResource(resource);
+      getConf().addResource(url);
     }
     return found;
   }

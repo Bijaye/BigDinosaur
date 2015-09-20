@@ -92,7 +92,6 @@ public abstract class AbstractFSContractTestBase extends Assert
    */
   protected void skipIfUnsupported(String feature) throws IOException {
     if (!isSupported(feature)) {
-      skip("Skipping as unsupported feature: " + feature);
     }
   }
 
@@ -103,7 +102,8 @@ public abstract class AbstractFSContractTestBase extends Assert
    * @throws IOException IO problems
    */
   protected boolean isSupported(String feature) throws IOException {
-    return contract.isSupported(feature, false);
+    return false;
+//    return contract.isSupported(feature, false);
   }
 
   /**
@@ -162,6 +162,9 @@ public abstract class AbstractFSContractTestBase extends Assert
     testPath = getContract().getTestPath();
     mkdirs(testPath);
   }
+  protected void mkdirs(Path path) throws IOException {
+    assertTrue("Failed to mkdir " + path, fileSystem.mkdirs(path));
+  }
 
   /**
    * Teardown
@@ -177,7 +180,6 @@ public abstract class AbstractFSContractTestBase extends Assert
    * @throws IOException
    */
   protected void deleteTestDirInTeardown() throws IOException {
-    cleanup("TEARDOWN", getFileSystem(), testPath);
   }
 
   /**
@@ -210,7 +212,8 @@ public abstract class AbstractFSContractTestBase extends Assert
    * @throws IOException IO problems
    */
   protected String ls(Path path) throws IOException {
-    return ContractTestUtils.ls(fileSystem, path);
+    return null;
+//    return ContractTestUtils.ls(fileSystem, path);
   }
 
   /**
