@@ -7,6 +7,11 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import com.bigdinosaur.config.BdConfiguration;
+import com.bigdinosaur.core.fs.Path;
+import com.bigdinosaur.core.io.FSDataInputStream;
+import com.bigdinosaur.core.net.CommonConfigurationKeysPublic;
+
 import java.io.EOFException;
 import java.io.IOException;
 import java.util.Random;
@@ -42,8 +47,8 @@ public abstract class AbstractContractSeekTest extends AbstractFSContractTestBas
   }
 
   @Override
-  protected Configuration createConfiguration() {
-    Configuration conf = super.createConfiguration();
+  protected BdConfiguration createConfiguration() {
+    BdConfiguration conf = super.createConfiguration();
     conf.setInt(CommonConfigurationKeysPublic.IO_FILE_BUFFER_SIZE_KEY, 4096);
     return conf;
   }

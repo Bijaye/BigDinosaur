@@ -147,9 +147,67 @@ Writable {
     // TODO Auto-generated method stub
     return null;
   }
+  /** 
+   * Get the value of the <code>name</code>. If the key is deprecated,
+   * it returns the value of the first key which replaces the deprecated key
+   * and is not null.
+   * If no such property exists,
+   * then <code>defaultValue</code> is returned.
+   * 
+   * @param name property name, will be trimmed before get value.
+   * @param defaultValue default value.
+   * @return property value, or <code>defaultValue</code> if the property 
+   *         doesn't exist.                    
+   */
+  public String get(String name, String defaultValue) {
+//    String[] names = handleDeprecation(deprecationContext.get(), name);
+    String result = null;
+//    for(String n : names) {
+//      result = substituteVars(getProps().getProperty(n, defaultValue));
+//    }
+    return result;
+  }
+  public int getInt(String name, int defaultValue) {
+    String valueString = getTrimmed(name);
+    if (valueString == null)
+      return defaultValue;
+    String hexString = getHexDigits(valueString);
+    if (hexString != null) {
+      return Integer.parseInt(hexString, 16);
+    }
+    return Integer.parseInt(valueString);
+  }
+  
+  private String getHexDigits(String value) {
+    boolean negative = false;
+    String str = value;
+    String hexString = null;
+    if (value.startsWith("-")) {
+      negative = true;
+      str = value.substring(1);
+    }
+    if (str.startsWith("0x") || str.startsWith("0X")) {
+      hexString = str.substring(2);
+      if (negative) {
+        hexString = "-" + hexString;
+      }
+      return hexString;
+    }
+    return null;
+  }
+  
 
-
-
+  public String getTrimmed(String name) {
+    String value = get(name);
+    
+    if (null == value) {
+      return null;
+    } else {
+      return value.trim();
+    }
+  }
+  
+  
   }
   
 
