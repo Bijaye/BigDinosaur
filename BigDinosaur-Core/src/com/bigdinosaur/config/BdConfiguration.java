@@ -206,7 +206,25 @@ Writable {
       return value.trim();
     }
   }
+  public void setInt(String name, int value) {
+    set(name, Integer.toString(value));
+  }
   
+  
+  public boolean getBoolean(String name, boolean defaultValue) {
+    String valueString = getTrimmed(name);
+    if (null == valueString || valueString.isEmpty()) {
+      return defaultValue;
+    }
+
+    valueString = valueString.toLowerCase();
+
+    if ("true".equals(valueString))
+      return true;
+    else if ("false".equals(valueString))
+      return false;
+    else return defaultValue;
+  }
   
   }
   

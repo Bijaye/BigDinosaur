@@ -10,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import com.bigdinosaur.config.BdConfiguration;
 import com.bigdinosaur.core.fs.Path;
 import com.bigdinosaur.core.io.FSDataInputStream;
+import com.bigdinosaur.core.io.IOUtils;
 import com.bigdinosaur.core.net.CommonConfigurationKeysPublic;
 
 import java.io.EOFException;
@@ -40,10 +41,10 @@ public abstract class AbstractContractSeekTest extends AbstractFSContractTestBas
     testPath = getContract().getTestPath();
     smallSeekFile = path("seekfile.txt");
     zeroByteFile = path("zero.txt");
-    byte[] block = dataset(TEST_FILE_LEN, 0, 255);
+    byte[] block = ContractTestUtils.dataset(TEST_FILE_LEN, 0, 255);
     //this file now has a simple rule: offset => value
-    createFile(getFileSystem(), smallSeekFile, false, block);
-    touch(getFileSystem(), zeroByteFile);
+    ContractTestUtils.createFile(getFileSystem(), smallSeekFile, false, block);
+    ContractTestUtils.touch(getFileSystem(), zeroByteFile);
   }
 
   @Override
@@ -155,10 +156,10 @@ public abstract class AbstractContractSeekTest extends AbstractFSContractTestBas
         "expected an exception, got data " + result + " at a position of " + p);
     } catch (EOFException e) {
       //bad seek -expected
-      handleExpectedException(e);
+//      handleExpectedException(e);
     } catch (IOException e) {
       //bad seek -expected, but not as preferred as an EOFException
-      handleRelaxedException("a negative seek", "EOFException", e);
+//      handleRelaxedException("a negative seek", "EOFException", e);
     }
     assertEquals(0, instream.getPos());
   }
@@ -214,15 +215,15 @@ public abstract class AbstractContractSeekTest extends AbstractFSContractTestBas
         //a failure wasn't expected
         throw e;
       }
-      handleExpectedException(e);
+//      handleExpectedException(e);
     } catch (IOException e) {
       //This is an error iff the FS claims to be able to seek past the EOF
       if (canSeekPastEOF) {
         //a failure wasn't expected
         throw e;
       }
-      handleRelaxedException("a seek past the end of the file",
-          "EOFException", e);
+//      handleRelaxedException("a seek past the end of the file",
+//          "EOFException", e);
     }
     //now go back and try to read from a valid point in the file
     instream.seek(1);
@@ -237,8 +238,8 @@ public abstract class AbstractContractSeekTest extends AbstractFSContractTestBas
   public void testSeekBigFile() throws Throwable {
     describe("Seek round a large file and verify the bytes are what is expected");
     Path testSeekFile = path("bigseekfile.txt");
-    byte[] block = dataset(65536, 0, 255);
-    createFile(getFileSystem(), testSeekFile, false, block);
+    byte[] block = ContractTestUtils.dataset(65536, 0, 255);
+    ContractTestUtils.createFile(getFileSystem(), testSeekFile, false, block);
     instream = getFileSystem().open(testSeekFile);
     assertEquals(0, instream.getPos());
     //expect that seek to 0 works
@@ -264,8 +265,8 @@ public abstract class AbstractContractSeekTest extends AbstractFSContractTestBas
     describe(
       "verify that a positioned read does not change the getPos() value");
     Path testSeekFile = path("bigseekfile.txt");
-    byte[] block = dataset(65536, 0, 255);
-    createFile(getFileSystem(), testSeekFile, false, block);
+    byte[] block = ContractTestUtils.dataset(65536, 0, 255);
+    ContractTestUtils.createFile(getFileSystem(), testSeekFile, false, block);
     instream = getFileSystem().open(testSeekFile);
     instream.seek(39999);
     assertTrue(-1 != instream.read());
@@ -294,9 +295,9 @@ public abstract class AbstractContractSeekTest extends AbstractFSContractTestBas
                                        DEFAULT_RANDOM_SEEK_COUNT);
     describe("Testing " + limit + " random seeks");
     int filesize = 10 * 1024;
-    byte[] buf = dataset(filesize, 0, 255);
+    byte[] buf = ContractTestUtils.dataset(filesize, 0, 255);
     Path randomSeekFile = path("testrandomseeks.bin");
-    createFile(getFileSystem(), randomSeekFile, false, buf);
+    ContractTestUtils.createFile(getFileSystem(), randomSeekFile, false, buf);
     Random r = new Random();
     FSDataInputStream stm = getFileSystem().open(randomSeekFile);
 
@@ -310,7 +311,7 @@ public abstract class AbstractContractSeekTest extends AbstractFSContractTestBas
 
         seeks[i % seeks.length] = seekOff;
         reads[i % reads.length] = toRead;
-        verifyRead(stm, buf, seekOff, toRead);
+        ContractTestUtils.verifyRead(stm, buf, seekOff, toRead);
       }
     } catch (AssertionError afe) {
       StringBuilder sb = new StringBuilder();

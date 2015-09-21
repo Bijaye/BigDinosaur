@@ -2,6 +2,7 @@ package org.bd.core.fs.contract;
 
 
 
+
 import org.junit.Assert;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -157,6 +158,17 @@ public abstract class AbstractFSContract extends Configured {
   @Override
   public String toString() {
     return "FSContract for " + getScheme();
+  }
+  
+  public int getLimit(String feature, int defval) {
+    return getConf().getInt(getConfKey(feature), defval);
+  }
+  protected boolean isSupported(String feature) throws IOException {
+    return false;
+//    return contract.isSupported(feature, false);
+  }
+  public boolean isSupported(String feature, boolean defval) {
+    return getConf().getBoolean(getConfKey(feature), defval);
   }
 
 }
