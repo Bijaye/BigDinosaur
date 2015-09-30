@@ -6,6 +6,10 @@ Scenario5:Data pattern of stackoverflow
 Scenario5:Data pattern of amazon
 
 
+Total data to be handled=total population of the world 
+If ideal business case has customers from all over the world that is equivalent to world population 
+ 
+storing and retriving of datas .How you handle it 
 
 Does your data pattern is matching with your storage system?
 Does your data pattern growth rate can be handled by your storage system 
