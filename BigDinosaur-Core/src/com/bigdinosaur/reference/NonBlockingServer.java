@@ -12,23 +12,9 @@ public class NonBlockingServer
     {
         try
         {
-            Selector selector = Selector.open();
-            
-            ServerSocketChannel serverSocketChannel =
-                ServerSocketChannel.open();
-            serverSocketChannel.configureBlocking(false);
-            
-            ServerSocket serverSocket = serverSocketChannel.socket();
-            
-            serverSocket.bind(new InetSocketAddress(9000));
-            
-            System.out.println("Non-blocking Server created on port  9000");
-              
-            
-            serverSocketChannel.register(selector,
-                SelectionKey.OP_ACCEPT);
-            
-            System.out.println("Waiting for client connections...");
+          // server is run 
+          // server is run on port 9000
+          Selector     selector=   runServer(8081);
             
             int amountToProcess = 0;
             while(true)
@@ -166,6 +152,28 @@ public class NonBlockingServer
             System.out.println(e);
         }
         
+    }
+
+    private static Selector runServer(int port) throws IOException, ClosedChannelException
+    {
+      Selector selector = Selector.open();
+      
+      ServerSocketChannel serverSocketChannel =
+          ServerSocketChannel.open();
+      serverSocketChannel.configureBlocking(false);
+      
+      ServerSocket serverSocket = serverSocketChannel.socket();
+      
+      serverSocket.bind(new InetSocketAddress(port));
+      
+      System.out.println("Non-blocking Server created on port  8080");
+        
+      
+      serverSocketChannel.register(selector,
+          SelectionKey.OP_ACCEPT);
+      
+      System.out.println("Waiting for client connections...");
+      return selector;
     }
 }
 

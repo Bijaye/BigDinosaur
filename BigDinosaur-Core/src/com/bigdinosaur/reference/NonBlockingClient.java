@@ -13,7 +13,7 @@ public class NonBlockingClient
         {
             SocketChannel socketChannel = SocketChannel.open();
             socketChannel.connect(new InetSocketAddress("127.0.0.1",
-                9000));
+                8081));
             
             // wait for the message from the server...
             ByteBuffer incomingLengthInBytes =
