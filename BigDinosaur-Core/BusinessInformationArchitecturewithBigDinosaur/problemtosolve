@@ -17,3 +17,51 @@ extendable system for long term storage and analysis
 connect disparate data and make it possible to process and analyze multi-structured data from all sources.
 more business expend means more data generations ,more sales channel creation means more data geneations 
 technology provide scalable way to expand their busines 
+
+
+
+upstream and downstream lineage of data to verify reliability
+
+Scale for any data source, amount of time or type of data
+Scalaing for any data source imp 
+Aggregate, correlate and analyze data across internal and external data sources  from all key workloads in one place.
+Single Platform, Multiple Workloads
+Efficient, Scalable, Centralized
+
+ how data is being accessed, from where the data originated and when changes occur.
+ require access to terabytes of aggregated data to evaluate exposures and risks
+ 
+ analyze and correlate data from any source,
+  analyze and correlate data from any source of any type, in any amount, for all types of workloads
+   The amount of work that a machine produces or can produce in a specified time 
+
+    data tends to reside in silos spread across hundreds of systems and platforms. Breaking down these data silos is one of the biggest challenges to gaining a unified 360-degree view of their customers. Driving a true 360-degree view requires a new approach. 
+    
+    
+    A typical wireless service provider generates approximately 1-6 Billion Call Detail Records (CDRs) daily
+    
+    integrating insight data from multiple sources is their greatest barrier to a 360-degree view of customers
+    
+    
+    Massive Scale of Data
+Organizations today generate an avalanche of data. A typical mobile service provider generates millions of CDRs per second and terabytes of data from structured & unstructured sources. Collecting storing and analyzing this scale of data is very costly and resource intensive.
+
+
+Data Spread across Silos
+For most large organizations, customer data tends to reside in silos spread across hundreds of systems and platforms. Breaking down these data silos is one of the biggest challenges to gaining a unified 360-degree view of the customer across channels and fragmented systems.
+
+
+
+Single, Centralized, Scalable Platform
+Consolidate, store, process and explore all types of data, across multiple channels and sources into a single, central, active repository for a true 360-degree view of each customer
+
+As traditional architectures grow naturally through business demands, different systems begin to store different data types. This causes challenges for analysts as they require complete data access for their analyses.
+
+
+We selected BigDinosaur and were able to deploy a two terabyte/day log stream into production in just one week. The BigDinosaur service enables us to rapidly make data-driven decisions to improve our fast-growing and innovative video technology service.”
+LogReduce Analytics
+Data Collection (any source)
+Live Streaming Dashboards
+Powerful Search
+
+The Sumo Logic™ service can effortlessly collect terabytes of data from any app, cloud, device, custom hardware, sensor, server and network sources. Lightweight collectors replace traditional complex setups and effortlessly collect, compress, cache and encrypt the data for secure transfer. Centralized logging eliminates the need for additional archiving, backups and restores. Data can be pre-parsed and partitioned on ingest. A wide range of collector and search API’s also helps administrators easily develop and integrate data sources with the Sumo Logic service
